@@ -1,0 +1,541 @@
+@CHARSET "UTF-8";
+
+/* COMPANY COLORS */
+
+.green{
+	color:#C4BD06;
+}
+
+.green2{
+	color:#787304;
+}
+
+.bk_green{
+	background:#C4BD06;
+}
+
+.bk_green2{
+	background:#787304;
+}
+
+
+
+li.bk_green:hover{
+	background:#787304;
+}
+
+.nav-company:hover{
+	background:#C4BD06;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+
+.nav-company ul li{
+	background:#C4BD06;
+}
+
+.nav-company ul li:hover{
+	border-left:none;
+	border-right:none;
+	border-right:none;
+	background:#787304;
+
+	}
+	
+.company-page .bt-submenu:before{
+	color:#C4BD06 !important;
+	}
+	
+.company-page ul.sub-nav-menu li a:after {
+	  border-right: 8px solid #fff;
+
+	}
+.company-page .sub-nav-menu-ct{
+background:#787304 !important;
+}
+
+
+.company-page ul.sub-nav-menu li{
+background:#C4BD06;
+}
+
+.company-page ul.sub-nav-menu li a{
+color:#787304;
+	
+}
+
+
+
+.company-page{
+	display:block;
+	position:relative;
+	background:url(../images/bk_green.png) repeat-x top #787304;
+	background-attachment:fixed;
+	width:100%;
+	height:auto;
+}
+
+.company-page h1{
+	color:#C4BD06;
+}
+
+.company-page h2{
+	color:#787304;
+}
+
+.company-page h3{
+	color:#C4BD06;
+}
+
+.company-page h4{
+	color:#787304;
+}
+
+.company-page h5{
+	color:#C4BD06;
+}
+
+.company-page h6{
+	color:#C4BD06;
+}
+
+.company-page .block-text-ct{
+
+	border-left:6px solid #787304;
+
+	
+}
+.company-page .block-text{
+	background:#787304;
+
+
+}
+
+.sidebar-link a{
+	color:#C4BD06;
+	
+}
+
+.company-page .sep{
+	border-top:1px dotted #C4BD06;
+}
+
+.social-pyramid{
+	display:block;
+	width:47%;
+	float:right;
+	text-align:center;
+	padding-bottom:0 0 16px 3%;
+	margin:0 auto;
+}
+
+.social-pyramid img{
+	display:block;
+	width:100%;
+	max-width:186px;
+	margin:0px auto;
+}
+.company-page .dec{
+	width:100%;
+	max-width:900px;
+	height:52px;
+	margin:16px auto 32px auto;
+	/*background:url(../images/dec_company.png) no-repeat center center;*/
+	background:url(../images/dec_saw.png) no-repeat center center;
+}
+
+.company-page .dec-short{
+	width:100%;
+	max-width:362px;
+	height:41px;
+	margin:32px auto;
+	background:url(../images/dec_company_short.png) no-repeat center center;
+	background-size:100%;
+}
+
+.company-page h4 a{
+	color:#787304;
+	text-decoration:none;
+}
+
+.company-page h4 a:hover{
+	color:#fff;
+	background:#787304;
+	text-decoration:none;
+}
+
+.company-page .subNav .menu-item a{
+	background:url(../../images/subNav_cap_company_off.png) no-repeat left #C4BD06;
+}
+
+.company-page .subNav .menu-item a:hover{
+	background:url(../../images/subNav_cap_company_on.png) no-repeat left #787304;
+}
+
+.company-page .subNav .current_page_item a{
+	background:url(../../images/subNav_cap_company_on.png) no-repeat left #787304;
+}
+
+.company-page .subNav .current_page_item a:hover{
+	background:url(../../images/subNav_cap_company_off.png) no-repeat left #C4BD06;
+}
+
+
+.company-page .circ{
+	background:#C4BD06;
+}
+
+.company-page .circ:hover{
+	background:#787304;
+}
+
+.company-page .callout{
+	border:16px solid #C4BD06;
+	background:#fff;
+}
+
+.company-page .callout-text{
+	color:#C4BD06;
+}
+
+.company-page .inline-nav{
+	background:#C4BD06;
+	}
+	
+.company-page .content-wrapper .sidebar-left .saw-med{
+	background:url(../images/saw_med_green.png) no-repeat;
+	background-size:contain;
+}
+
+.company-page .three_cols{
+	background:url(../../images/diagonal.png) no-repeat #fff;
+}
+
+.company-page .highlight{
+	background:#787304;
+}
+
+.company-page .ribbon-left{
+	background:#C4BD06;
+	color:#fff;
+}
+
+.company-page .ribbon-left a, .company-page .ribbon-right a{
+	color:#fff;
+	text-decoration:none;
+	
+}
+
+.company-page .ribbon-left:hover, .company-page .ribbon-right:hover{
+	background:#787304;
+}
+
+
+.company-page .highlight_cap{
+	/*content:url(../../images/ribbon_cap_40_green2.png) no-repeat;*/
+	border-right-color:#787304;
+	border-top-color:#787304;
+	border-left-color:transparent;
+	border-bottom-color:#787304;
+}
+
+.company-page .arrow_highlight_inner{
+	background:url(../../images/arrow_32x40_green2.png) no-repeat #fff left;
+}
+
+.company-page .dec1{
+	background:url(../../images/dec_green2.png) no-repeat center;
+}
+
+.arrow1{
+	background:url(../../images/arrow_32x40_green1.png) no-repeat;
+}
+
+.arrow2{
+	background:url(../../images/arrow_32x40_green2.png) no-repeat;
+}
+
+.company-page ul{
+	margin: 8px 0px 0px 16px;
+	list-style:outside;
+}
+
+.company-page ul li{
+	color:#C4BD06;
+	line-height:115%;
+	padding:0px 0px 12px 0px;
+}
+
+.company-page ul li span{
+	color:#666;
+}
+
+.company-page .next-arrow, .company-page .prev-arrow{
+	/* background:#eae6b5; */
+}
+
+.company-page .next-arrow .next-arrow-inner, .company-page .prev-arrow .prev-arrow-inner{
+	/* color:#787304; */
+}
+
+
+
+
+
+		.company-page .ordered dt {
+
+		}
+		.company-page .ordered dt:before {
+		background:#fff;
+		border:1px solid #C4BD06;
+		color:#C4BD06;
+		
+		}
+		
+
+		
+		.company-page 	.unordered dt:before{
+		content: url(../images/saw_green_24px.png);
+		background:#fff;
+		}
+		
+		
+		.company-page .ordered dd {
+			
+		}	
+		.company-page .ordered dt, .company-page .ordered dd {
+		
+		}
+		
+.person-ct{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	margin:0px auto;
+	padding:0px 32px;
+
+}
+
+.person-content-ct{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	color:#888888;
+	width:90%;
+	padding: 0px;
+	margin:0 auto;
+}
+
+.people-left-col{
+	float:left;
+	width:50%;
+	padding:0 32px 32px 32px;
+	background:#fff;
+}
+
+.people-right-col{
+	float:left;
+	width:50%;
+	padding:0 0px 32px 0px;
+}
+
+.people-bio-image-ct{
+	display:inline-block;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:50%;
+	padding:0 16px 0 0;
+} 
+.people-bio-image{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+
+.people-bio-intro{
+	padding:0 32px 0 0;
+	font-family:"MuseoSans-300", serif;
+	color:#C4BD06;
+	text-transform:uppercase;
+	
+}
+
+.people-bio-image img{
+	width:100%;
+	display:block;
+}
+
+.people-fun-fact-ct{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:50%;
+	float:left;
+	background:#fff !important;
+	padding:0 0 0 16px;
+}
+
+.people-fun-box-inner{
+	padding:24px;
+	display:block;
+	position:relative;
+	height:100% !important;
+}
+
+.people-fun-box-text{
+	margin:auto;
+	font-family: 'MuseoSlab-300';
+	font-size:16px;
+	line-height:20px;
+	text-transform:uppercase;
+	color:#000;
+}
+
+.people-contact-link{
+		display:block;
+		position:absolute;
+		bottom:24px;
+		margin-right:24px;
+}
+
+.people-fun-box-text a{
+	color: #c3bd06 !important;
+	text-decoration:none;
+}
+
+.people-fun-fact-image-ct{
+	display:inline-block;
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	background:#787304;
+}
+
+
+.people-title-box{
+	display:table;
+	position:relative;
+	overflow:hidden;
+	width:50%;
+	background:#787304;
+	font-family: 'MuseoSlab-300';
+	font-size:24px;
+}
+
+.people-title-box-inner{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.people-name{
+	color:#C4BD06;
+}
+
+.people-title{
+	color:#fff;
+}
+
+.people-social-ct{
+	display:block;
+	position:relative;
+	overflow:visible;
+	margin:32px auto;
+}
+
+.people-social{
+	width:96px;
+	height:96px;
+	background:#000;
+	border-radius:50%;
+	display:block;
+	margin:0px auto;
+	padding-top:12px;
+	text-align:center;
+}
+
+.people-social-name, .people-social-name a{
+	font-family: 'MuseoSlab-300';
+	color:#fff !important;
+	font-size:14px;
+	line-height:14px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.people-social-line{
+	display:block;
+	position:relative;
+	height:48px;
+	width:1px;
+	border:1px solid #000;
+	margin:0px auto;
+}
+
+
+.company-page .social-twitter:before, .company-page .social-instagram:before, .company-page .social-pinterest:before, .company-page .social-twitter:before{
+	color:#C4BD06 !important;
+	font-size:20px;	
+	font-weight:lighter;
+	}
+
+.people-bio-text-ct{
+	background:#fff;
+	padding:0 32px 0 0;
+	display:block;
+}
+
+.people-bio-text{
+	font-family: 'MuseoSans-300';
+	font-size:14px;
+	}
+	
+
+
+.people-random-image-ct{
+	display:inline-block;
+	position:absolute;
+	bottom:0px;
+	overflow:hidden;
+	background:#fff;
+	padding:32px 32px 0 0;
+
+}
+
+.people-random-image{
+	display:block;
+	position:relative;
+	bottom:0px;
+	overflow:hidden;
+	width:100%;
+}
+
+.people-random-image img{
+	width:100%;
+	display:block;
+}
+
+.people-fun-fact-image-ct img{
+	width:100%;
+	margin:auto;
+	padding:2.5%;
+}
+
+.next-person-ct{
+	display:block;
+	clear:both;
+	float:right;
+	overflow:hidden;
+}
+.next-person{
+	display:inline-block;
+	clear:both;
+	float:left;
+	text-align:right;
+	font-family: 'MuseoSlab-300';
+	font-size:20px;
+	padding:16px;
+}

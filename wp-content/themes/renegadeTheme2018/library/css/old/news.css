@@ -1,0 +1,308 @@
+@CHARSET "UTF-8";
+
+.news-page .saw-small-inv{
+	background-color:#00698A;
+}
+.news-page{
+	display:block;
+	position:relative;
+	background:url(../images/bk_blue.png) repeat-x top #00a3d6;
+	background-attachment:fixed;
+	width:100%;
+	height:auto;
+}
+
+.nav-news:hover{
+	background:#00A3D6;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+
+.nav-news ul li{
+	background:#00A3D6;
+}
+
+.nav-news ul li:hover{
+	border-left:none;
+	border-right:none;
+	background: #00698A;
+
+}
+
+.news-page h1{
+	color:#00a3d6;
+}
+
+.news-page h2{
+	color:#00698A;
+	margin-bottom:24px;
+}
+
+.news-page h3{
+	font-size:20px;
+	color:#00a3d6;
+	
+}
+
+
+.article-item{
+	display:block;
+	background:#fff;
+	position:relative;
+	padding:32px;
+	margin:32px 32px 32px 32px;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	height:auto;
+}
+
+.newsletter-ct{
+	clear:both;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	background:#fff;
+	
+}
+
+.newsletter-content-ct{
+	padding:0px 0px 0px 0px;
+}
+
+.newsletter-title{
+	font-family: 'MuseoSlab-500', Georgia, serif;
+	font-size:32px;
+	color:#00a3d6;
+	text-transform:capitalize;
+	padding:0 0 0 40px;
+}
+
+.newsletter-date{
+	font-family: 'MuseoSlab-500', Georgia, serif;
+	font-size:16px;
+	color:#000;
+	padding:0 0 0 40px;
+}
+
+.newsletter-banner{
+	width:100%;
+	background:#1ac3ec;
+	vertical-align: bottom;
+}
+
+.newsletter-banner img{
+	display:block;
+}
+
+.newsletter-intro{
+	width:100%;
+	padding:40px 48px;
+	background:#00a3d6;
+	color:#fff;
+	font-family: 'MuseoSlab-300', Georgia, serif;
+	font-size:20px;
+}
+
+.newsletter-header{
+	display:block;
+	position:relative;
+	width:100%;
+	background:#fff;
+	overflow:hidden;
+	padding:0px 0px 16px 8px;
+}
+
+h3.newsletter{
+	font-size:24px;
+	color:#00a3d6;
+	clear:none;
+	padding: 6px 0 0 48px;
+}
+
+.newsletter-text{
+	font-family:'MuseoSans-300', Gotham, Helvetica, Arial, sans-serif;
+	color:#808080;
+	font-size:14px;
+	font-weight:normal;
+	padding:8px 32px 0 48px;
+}
+
+.newsletter-section{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	padding:24px 24px 24px 0;
+	background:#fff;
+	margin-bottom:24px;
+	margin-right:24px;
+	
+}
+		
+.newsletter-footer{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	height:8px;
+	background:#006889;
+}
+	
+		
+dl.news-unordered{
+		display:block;
+		position:relative;
+}
+
+dl.news-unordered dt:before{
+
+		content: url(../images/saw_blue_24x24.png);
+		background:#fff;
+		border:4px solid #00a3d6;
+		color:#00a3d6;
+		border-radius:50%;
+		width:40px;
+		height:40px;
+		vertical-align: -50%;
+		text-align:center;
+		padding:4px 0 0 0px;
+		z-index:999;
+		margin-left:2px;
+		float:left;
+			display:block;
+		position:relative;
+		
+}
+		
+.blue-border{
+	position:absolute;
+	border-left:16px solid #00a3d6;
+	height:100%;
+	z-index:800;
+	
+}
+		
+/**********
+ARTICLES CLASSES
+***********/
+
+.ra-author{
+	font-family: 'MuseoSans-300';
+	font-size:14px;
+	color:#666;
+}
+
+.ra-date{
+	font-family: 'MuseoSans-300';
+	font-size:14px;
+	color:#00698a;
+}	
+
+.ra-blurb{
+	font-family: 'MuseoSans-300';
+	font-size:14px;
+	color:#808080;
+}
+
+
+	
+/**********
+HOME PAGE NEWS SECTION CLASSES
+***********/
+.hm_news{
+	width: 100%;
+	height: 100%;
+}
+
+.hm_theCut{
+	position:relative;
+}
+
+.hm_cutTitle{
+	font-family:'MuseoSans-500', sans-serif;
+	font-size: 32px;
+	color:#000;
+	font-weight:light;
+	padding: 32px 0px 16px 0px;
+}
+
+.hm_cutTitle:before{
+	  content:url(../../images/saw_white_28x28.png) no-repeat left;
+}
+
+
+
+.hm_theCut h1{
+	font-family:'MuseoSlab-300', serif;
+	font-size:48px;
+	color: #FFF;
+	padding: 0px 0px 32px 0px;
+	margin: 0px;
+	font-weight:light;
+}
+
+.hm_theArticles{
+}
+
+	/* NEWS FLOATING ELEMENTS */
+
+.float_saw{
+	margin-left: 32px;
+	position: absolute;
+	bottom: 0px;
+	background:url(../images/saw_bigBlue_cropped.png) no-repeat bottom;
+	width: 527px;
+	height: 374px;
+}
+
+.float_pinky{
+	background:url(../images/hm_news_pinky.png) no-repeat center;
+	width:227px;
+	height: 210px;
+	float:right;
+	position:absolute;
+	margin-left:360px;
+	bottom: 0px;
+	z-index:10;
+}
+
+.float_sawSM{
+	background:url(../images/saw_blue_64x64.png) no-repeat center;
+	width:64px;
+	height: 64px;
+	
+}
+
+/**********
+MOBILE PORTRAIT STYLES
+***********/
+@media all and (max-width: 490px){
+	
+
+.hm_theCut h1{
+	font-size:40px;
+	padding: 0px 0px 0px 0px;
+}
+	
+.hm_cutTitle{
+	font-size: 24px;
+	padding: 16px 0px 8px 0px;
+}
+
+.float_pinky{
+	background:url(../images/hm_news_pinky_148x137.png) no-repeat center;
+	width:148px;
+	height: 137px;
+	margin-left:0px;
+}
+	
+}
+
+.news .ribbon-right, .blog-page .ribbon-left{
+	background:#00A3D6;
+	cursor:pointer;
+}
+
+.news  .ribbon-right:hover, .blog-page .ribbon-left:hover{
+	background:#00698A;
+}

@@ -1,0 +1,308 @@
+
+RewriteOptions inherit
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-nolet$ "http\:\/\/renegadellc\.wpengine\.com\/projects\/nolet\-spirits\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^case\-ubisoft$ "http\:\/\/renegadellc\.wpengine\.com\/projects\/ubisoft\-hells\-highway\-launch\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-ubisoft$ "http\:\/\/renegadellc\.wpengine\.com\/projects\/ubisoft\-hells\-highway\-launch\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-toasted$ "http\:\/\/renegadellc\.wpengine\.com\/projects\/toasted\-head\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-panasonic_ast$ "http\:\/\/renegadellc\.wpengine\.com\/projects\/panasonic\-share\-the\-air\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-panasonic_oxyride$ "http\:\/\/renegadellc\.wpengine\.com\/projects\/panasonic\-oxyride\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-hsbc$ "http\:\/\/renegadellc\.wpengine\.com\/case\-hsbc" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-bluefly$ "http\:\/\/renegadellc\.wpengine\.com\/case\-studies\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-doubleclick$ "http\:\/\/renegadellc\.wpengine\.com\/case\-studies\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-gildas$ "http\:\/\/renegadellc\.wpengine\.com\/case\-studies\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-blurts$ "http\:\/\/renegadellc\.wpengine\.com\/case\-studies\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-cablevision$ "http\:\/\/renegadellc\.wpengine\.com\/case\-studies\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jan2016$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/2016\-clear\-the\-air" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^cut\-nov2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/spelling\-out\-a\-content\-roadmap" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-oct2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/customer\-care\-the\-new\-super\-people" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-sep2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/read\-really\-exciting\-authors\-delight" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-aug2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/up\-with\-sharing" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-may2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/one\-of\-a\-kind" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-apr2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/take\-a\-walk\-on\-the\-audacious\-side" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-mar2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/social\-inspired\-marketing" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-feb2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/the\-high\-cs\-of\-creativity" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jan2015$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/5\-resolutions\-for\-cmos\-in\-15" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-dec2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/food\-for\-thought" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-nov2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/6\-new\-rules\-for\-social\-media\-and\-content\-marketing" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-sep2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/new\-numbers\-for\-2015" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-aug2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/moving\-ideas" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jul2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/wow\-thats\-weird" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jun2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/marketing\-as\-service\-rides\-on" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-apr2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/facing\-up\-to\-facebook" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-mar2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/mobile\-madness" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-feb2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/ramping\-up\-your\-content\-game" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jan2014$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/the\-realities\-of\-real\-time\-marketing" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-dec2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/getting\-social\-in\-2014" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-nov2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/stuffing\-you\-with\-insights" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-oct2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/not\-so\-scary\-social\-stuff" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-sep2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/back\-to\-school" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-aug2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/marrying\-into\-influencer\-marketing" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jul2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/debating\-social\-media\-roi" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jun2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/dont\-forget\-the\-media\-in\-social\-media" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-may2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/from\-cmo\-to\-ceo\-in\-one\-knight" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-apr2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/how\-cmos\-sharpen\-their\-saws" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-mar2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/march\-gladness\-5\-ideas\-you\-cant\-hate" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-feb2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/cutting\-through\-in\-2013" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jan2013$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/10\-bold\-moves\-for\-2013" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-nov2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/5\-marketing\-myths\-busted\-by\-small\-business\-Saturday" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-oct2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/social\-media\-trick\-or\-treat" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-sep2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/high\-on\-social\-media" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jul2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/7\-plays\-every\-marketer\-needs" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jun2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/sharpen\-your\-saws" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-may2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/you\-oughta\-be\-in\-pictures" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-apr2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/social\-media\-fitness" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^cut\-mar2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/rethinking\-facebook" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-feb2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/avoiding\-social\-presbyopia" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jan2012$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/what\-apps\-can\-teach\-brands" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-dec2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/bold\-resolutions" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-nov2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/do\-you\-speak\-tweetese" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-oct2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/its\-time\-to\-look\-ahead" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-sep2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/sink\-your\-teeth\-into\-social\-business" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-aug2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/summer\-reading" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jul2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/social\-media\-reality\-check" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-jun2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/fighting\-social\-media\-fatigue" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-may2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/driving\-revenue\-growth" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-apr2011B$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/social\-media\-mistakes\-how\-to\-fix\-them\-part\-2" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-apr2011A$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/social\-media\-mistakes\-how\-to\-fix\-them\-part\-1" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^cut\-mar2011$ "http\:\/\/renegadellc\.wpengine\.com\/newsletters\/making\-twitter\-work\-for\-you" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^case\-nolet\/$ "http\:\/\/renegadellc\.wpengine\.com\/projects\/nolet\-spirits" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^renegadellc\.wpengine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.renegadellc\.wpengine\.com$
+RewriteRule ^fitness\/$ "http\:\/\/www\.slideshare\.net\/dneisser\/social\-media\-fitness\-study\ " [R=301,L]
+
+redirect 410 /fullbleed/
+redirect 410 /social.renegade.com/
+
+ErrorDocument 410 /410-custom/
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+# Wordfence WAF
+
+<Files ".user.ini">
+<IfModule mod_authz_core.c>
+	Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+	Order deny,allow
+	Deny from all
+</IfModule>
+</Files>
+
+# END Wordfence WAF
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 78.46.65.36
+deny from 5.189.143.39
+

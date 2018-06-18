@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+.acf-table, .acf-repeater.-row > table > tbody > tr > td, .acf-repeater.-block > table > tbody > tr > td{
+	border:none;
+}
+
+.layout-level-1 .acf-field .acf-label label{
+	color:#333;
+}
+
+.layout-level-1 .acf-label{
+	float:left;
+	padding: 0 12px 0 0;
+}
+
+.fNone .acf-label{
+	float:none !important;
+
+}
+
+input[type="radio"]{
+	float:left;
+}
+
+.grid-label{
+	border-top:8px solid #444 !important;
+}
+
+.section-label{
+	border-top:2px solid #808080  !important;
+}
+
+.layout-level-1{
+	display:block;
+	color:#fff;
+	background:#444 !important;
+}
+
+.layout-level-1 .description{
+	color:#ccc !important;
+}
+
+.layout-level-1 .acf-row-handle.order, .layout-level-1 .acf-row-handle.remove{
+	background:#999;
+	color:#fff;
+	border-top:8px solid #444 !important;
+}
+
+.layout-level-2{
+	display:block;
+	color:#333;
+	background:#f2f2f2;
+	border-bottom:4px solid #ccc;
+}
+
+.layout-level-2 .acf-row-handle.order, .layout-level-2 .acf-row-handle.remove{
+	background:#dedede;
+	color:#fff;
+	border-top:2px solid #808080 !important;
+}
+
+.acf-label p.description{
+	color:#808080 !important;
+}
+
+.acf-radio-list{
+	color:#999 !important;
+}

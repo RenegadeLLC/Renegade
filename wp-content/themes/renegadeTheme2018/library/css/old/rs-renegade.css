@@ -1,0 +1,482 @@
+/******************************
+*
+*  RoyalSlider Renegade Skin
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-renegade.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+
+
+/* Background */
+.renegadeSkin,
+.renegadeSkin .rsOverflow,
+.renegadeSkin .rsSlide,
+.renegadeSkin .rsVideoFrameHolder,
+.renegadeSkin .rsThumbs {
+	background: transparent;
+	color: #FFF;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.renegadeSkin .rsArrow {
+	height: 100%;
+	width: 60px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+.renegadeSkin.rsVer .rsArrow {
+	width: 100%;
+	height: 60px;
+	
+}
+.renegadeSkin.rsVer .rsArrowLeft { top: 0; left: 0; }
+.renegadeSkin.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.renegadeSkin.rsHor .rsArrowLeft { left: 0; top: 0; }
+.renegadeSkin.rsHor .rsArrowRight { right: 0; top:0; }
+
+.renegadeSkin .rsArrowIcn {		
+	width: 32px;
+	height: 32px;
+	top: 50%;
+	left: 50%;
+	margin-top:-16px;	
+	margin-left: -16px;
+
+	position: absolute;	
+	cursor: pointer;	
+	background: url('rs-universal.png');
+	opacity: 0.5;
+	border-radius: 2px;
+}
+.renegadeSkin .rsArrow:hover .rsArrowIcn {
+	opacity: 1;
+}
+
+.renegadeSkin.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
+.renegadeSkin.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+
+.renegadeSkin.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.renegadeSkin.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.renegadeSkin .rsArrowDisabled .rsArrowIcn { opacity: .1 !important; filter: alpha(opacity=20);  *display: none; }
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.renegadeSkin .rsBullets {
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	z-index: 35;
+	padding-top: 4px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto; 
+
+	text-align: center;
+	line-height: 5px;
+	overflow: hidden;
+}
+.renegadeSkin .rsBullet {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 5px;
+}
+.renegadeSkin .rsBullet span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #BBB;
+}
+.renegadeSkin .rsBullet.rsNavSelected span {
+	background-color: #383838;
+}
+
+
+
+
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.renegadeSkin .rsThumbsHor {
+	width: 50%;
+	height: 72px;
+	margin: 0px !important;
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	margin: 0px !important;
+	padding: 0px !important;
+	background:transparent !important;
+
+}
+.renegadeSkin .rsThumbsVer {
+	width: 96px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.renegadeSkin.rsWithThumbsHor .rsThumbsContainer {
+	position:absolute;
+	right:0;
+	background: #000;
+	height: 100%;
+	float:right;
+	
+	
+}
+.renegadeSkin.rsWithThumbsVer .rsThumbsContainer {
+	position: relative;
+	width: 100%;
+}
+.renegadeSkin .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 96px;
+	height: 72px;
+	background: #000;
+}
+.renegadeSkin .rsThumb img {
+	width: 100%;
+	height: 100%;
+}
+.renegadeSkin .rsThumb.rsNavSelected {
+	background: #333;
+}
+.renegadeSkin .rsThumb.rsNavSelected img {
+	opacity: 0.7;
+	filter: alpha(opacity=30);
+}
+.renegadeSkin .rsThumb.rsNavSelected .thumbIco {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 1px solid #FFF;
+	border: 1px solid rgba(255,255,255,0.9);
+	-webkit-backface-visibility: hidden;
+} 
+
+.renegadeSkin .rsTmb {
+	display:inline-block;
+}
+
+/* Thumbnails with text */
+.renegadeSkin .rsTmb h5 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	color: #FFF;
+}
+.renegadeSkin .rsTmb span {
+	color: #DDD;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+
+/* Thumbnails arrow icons */
+.renegadeSkin .rsThumbsArrow {
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	display: block;
+	cursor: pointer;	
+	z-index: 21;	
+}
+.renegadeSkin .rsThumbsArrow:hover {
+
+}
+.renegadeSkin.rsWithThumbsVer .rsThumbsArrow {
+	width: 100%;
+	height: 20px;
+}
+.renegadeSkin.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.renegadeSkin.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.renegadeSkin.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.renegadeSkin.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.renegadeSkin .rsThumbsArrowIcn {		
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+	margin-top:-8px;	
+	margin-left: -8px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('rs-renegade.png') transparent;
+}
+
+.renegadeSkin.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.renegadeSkin.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.renegadeSkin.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.renegadeSkin.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.renegadeSkin .rsThumbsArrowDisabled { display: none !important; }
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.renegadeSkin .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.renegadeSkin .rsThumbsHor {
+		height: 44px;
+	}
+	.renegadeSkin .rsThumbsVer {
+		width: 59px;
+	}
+}
+
+
+
+
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.renegadeSkin .rsTabs {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+	overflow: hidden; padding-top: 0px; position: relative;
+}
+.renegadeSkin .rsTab {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	height: auto;
+	width: auto;
+	color: #333;
+	padding: 5px 13px 6px;
+	min-width: 72px;
+	border: 1px solid #D9D9DD;
+	text-decoration: none;
+
+	background: #FFF;
+	border-right: none;
+	*display:inline; 
+	*zoom:1;
+	*border-right: 1px solid #d9d9d9;
+	
+}
+.renegadeSkin .rsTab:first-child {
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+}
+.renegadeSkin .rsTab:last-child { 
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	border-right: 1px solid #D9D9DD;
+}
+.renegadeSkin .rsTab:active { 
+	background-color: #f4f4f4;
+}
+.renegadeSkin .rsTab.rsNavSelected { 
+	color: #FFF;
+	background: #383838;
+	border-color: #383838;
+}
+
+
+
+
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.renegadeSkin .rsFullscreenBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 22;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	
+}
+.renegadeSkin .rsFullscreenIcn {
+	display: block;
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+
+	background: url('rs-universal.png') 0 0 transparent;
+	opacity: 0.7;
+	border-radius: 2px;
+
+}
+.renegadeSkin .rsFullscreenBtn:hover .rsFullscreenIcn {
+	opacity: 1;
+}
+.renegadeSkin.rsFullscreen .rsFullscreenIcn {
+	background-position: -32px 0;
+}
+
+
+
+
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+
+.renegadeSkin .rsPlayBtn {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top:-32px;
+	cursor: pointer;
+}
+.renegadeSkin .rsPlayBtnIcon {
+	width:64px;
+	display:block;
+	height:64px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+
+	background:url(rs-universal.png) no-repeat 0 -32px;
+	background-color: #383838;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #383838;
+}
+.renegadeSkin .rsPlayBtn:hover .rsPlayBtnIcon {
+	background-color: rgba(0,0,0,0.9);
+}
+.renegadeSkin .rsBtnCenterer {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width: 20px;
+	height: 20px;
+}
+.renegadeSkin .rsCloseVideoBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 500;
+	position: absolute;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	
+}
+.renegadeSkin .rsCloseVideoBtn.rsiOSBtn {
+	top: -38px;
+	right: -6px;
+}
+
+.renegadeSkin .rsCloseVideoIcn {
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+	background: url('rs-universal.png') -64px 0;
+	background-color: #383838;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #383838;
+}
+.renegadeSkin .rsCloseVideoIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.renegadeSkin .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(../preloaders/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}
+
+
+
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.renegadeSkin .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+	background: #222;
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}

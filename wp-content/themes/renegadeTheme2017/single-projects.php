@@ -1,0 +1,548 @@
+<?php
+/**
+ * Template Name: Single Projects Page Template
+ *
+ * Description: A page template that provides a key component of WordPress as a CMS
+ * by meeting the need for a carefully crafted introductory page. The front page template
+ * in Twenty Twelve consists of a page content area for adding text, images, video --
+ * anything you'd like -- followed by front-page-only widgets in one or two columns.
+ *
+ * @package Renegade
+ * @subpackage Renegade
+ * @since 2016
+ */
+
+get_header();
+
+$grid_num = 0;
+$grid_index = 0;
+
+
+$header = get_field('header');
+$subheader = get_field('subheader');
+$headline_background_color = get_field('headline_background_color');
+$grid = get_field('grid');
+
+$projectID = get_the_title( $post->ID );
+$project_title = get_field('project_title');
+
+$pageHTML = '';
+
+// GET GRIDS
+
+	if( have_rows('grid') ):
+	
+	while ( have_rows('grid') ) : the_row();	
+	$section_index = 0;
+		$grid_class;
+	
+		$customize_wrapper_row_background = get_sub_field('customize_wrapper_row_background');
+		
+		//if($customize_wrapper_row_background == 'Yes'):
+			$wrapper_background_color = get_sub_field('background_color');
+			$wrapper_background_image = get_sub_field('background_image');
+			$wrapper_background_repeat = get_sub_field('wrapper_background_repeat');
+			$wrapper_background_image_size = get_sub_field('wrapper_background_image_size');
+			$wrapper_background_image_position = get_sub_field('wrapper_background_image_position');
+		//endif;
+
+		
+		$gutter_spacing = get_sub_field('gutter_spacing');
+		$grid_width = get_sub_field('grid_width');
+		$vertical_align = get_sub_field('vertical_alignment');
+		$content_section = get_sub_field('modules');
+	
+	
+		
+		$client = get_field('client_name');
+		
+		if($client):
+			$client_name = $post->name;
+			$client_name = get_the_title( $client->ID );
+		endif;	
+		
+		switch($gutter_spacing){
+				
+			case '0%':
+				$grid_class = 'grid-g-0';
+			break;
+			
+			case '2%':
+				$grid_class = 'grid-g-2';
+			break;
+			
+			case '3%':
+				$grid_class = 'grid-g-3';
+			break;
+				
+		}
+		
+		if($vertical_align == 'Bottom'):
+			$grid_class = 'B' . $grid_class;
+		endif;
+		
+		$pageHTML .= '<div class="row"';
+		
+		if($customize_wrapper_row_background == 'Yes'):
+			$pageHTML .= ' style="';
+		endif;
+		
+		if($wrapper_background_color):
+			$pageHTML .=	'background-color:' . $wrapper_background_color . '; ';
+		endif;
+		
+		if($wrapper_background_image):
+			$pageHTML .= ' background-image:url('. $wrapper_background_image . ');';
+		endif;
+			
+		if($wrapper_background_image_size):
+			$pageHTML .= ' background-size:' . $wrapper_background_image_size . ';';
+		endif;
+		
+		if($wrapper_background_repeat):
+			$pageHTML .= ' background-repeat:' . $wrapper_background_repeat . ';';
+		else:
+			$pageHTML .= ' background-repeat:no-repeat;';
+		endif;
+		
+		if($wrapper_background_image_position):
+			$pageHTML .= ' background-position:' . $wrapper_background_image_position . ';';
+		endif;
+					
+		if($customize_wrapper_row_background == 'Yes'):
+			$pageHTML .= '"';
+		endif;
+		//close out row styling
+		
+		$pageHTML .= ' class="background-image">';
+		
+		
+		//IF THIS IS THE FIRST GRID, ADD THE HEADLINE AND SUBHEADLINE BEFORE IT
+			
+		
+		if($grid_num == 0):
+		
+		
+			if($grid_width == 'Yes'):
+				$pageHTML .= '<div class="wrapper">';
+			endif;
+		
+			$pageHTML .= '<div class="headline-ct">';
+			
+			if($client_name){
+				$pageHTML .= '<h1 class="text-center white">'. $client_name;
+			}
+			
+			if($project_title){
+				$pageHTML .= ' <span class="light-serif gray">' . $project_title . '</span></h1><!--<a href="#submenu" id="bt-submenu"><div class="bt-submenu"></div></a>-->';
+			}	
+			
+			$pageHTML .= '</div><!-- headline-ct -->';
+			
+			$pageHTML .= '<div class="clear-fix"></div><!-- .clearfix -->';
+			?>			
+			<div class="submenu-toggle"><a href="#submenu-work"><div class="bt-submenu-work"></div></a><div class="sub-nav-menu-ct" id="submenu-work"><?php wp_nav_menu( array( 'menu' => 'work', 'theme_location' => 'work', 'menu_class' => 'sub-nav-menu' , 'before' => '<span>', 'after' => '</span>') ); ?></div></div>
+			<?php
+			if($grid_width == 'Yes'):
+				$pageHTML .=  '</div><!-- .wrapper-->';
+			endif;
+			
+		endif;
+		
+		$grid_num++;
+		
+		if($grid_width == 'Yes'):
+			$pageHTML .= '<div class="wrapper">';
+		else:
+			$pageHTML .= '<div class="wrapper" style="max-width:100% !important;">';
+		endif;
+		
+		$pageHTML .= '<div class="grid ' . $grid_class . ' case-study"';
+		
+		$customize_grid_background = get_sub_field('customize_grid_background');
+		
+		if($customize_grid_background = 'Yes'):
+			$grid_background_color = get_sub_field('grid_background_color');
+			$grid_background_image = get_sub_field('grid_background_image');
+			$grid_background_image_repeat = get_sub_field('grid_background_image_repeat');
+			$grid_background_image_size = get_sub_field('grid_background_image_size');
+			$grid_background_image_position = get_sub_field('grid_background_image_position');
+		else:
+			$grid_background_color = 'transparent';
+		endif;
+		
+		if($customize_grid_background = 'Yes'):
+			$pageHTML .= 'style="';
+		endif;
+		
+		if($customize_grid_background = 'Yes'):
+		
+			if($grid_background_image):
+				$pageHTML .= 'background-image:url(' . $grid_background_image . '); ';
+			endif;
+			
+			if($grid_background_color):
+				$pageHTML .= 'background-color:' . $grid_background_color . '; ';
+			endif;
+			
+			$customize_grid_background_image = get_sub_field('customize_grid_background_image');
+			
+			if($customize_grid_background_image == 'Yes'):
+			
+				if($grid_background_image_repeat):
+					$pageHTML .= 'background-repeat:' . $grid_background_image_repeat . '; ';
+				else:
+					$pageHTML .= 'background-repeat:no-repeat; ';
+				endif;
+				
+				if($grid_background_image_size):
+					$pageHTML .= 'background-size:' . $grid_background_image_size . ';';
+				endif;
+				
+				if($grid_background_image_position):
+					$pageHTML .= 'background-position:' . $grid_background_image_position . ';';
+				endif;
+				
+			endif;
+			
+			if($customize_grid_background = 'Yes'):
+				$pageHTML .= '"';
+			endif;
+		endif;
+		
+$pageHTML .='><div class="grid-gutter"></div>';
+
+//CONTENT SECTION REPEATERS
+
+if( have_rows('modules') ):
+
+	// GET CONTENT MODULES AND VARS
+	while ( have_rows('modules') ) : the_row();
+
+		$module_name = get_sub_field('module_name');
+		$module_width = get_sub_field('module_width');
+		$module_height = get_sub_field('module_minimum_height');
+		$customize_background = get_sub_field('customize_background');
+		$content_type = get_sub_field('content_type');
+		$image = get_sub_field('image');
+		$post_type = get_sub_field('post_type');
+		$number_posts = get_sub_field('number_posts');
+		$section_background_color = get_sub_field('section_background_color');
+		$section_background_image = get_sub_field('section_background_image');
+		$section_background_position = get_sub_field('section_background_position');
+		$section_background_repeat = get_sub_field('section_background_repeat');
+		$text_color = get_sub_field('text_color');
+		$custom_class = get_sub_field('custom_class');
+		
+		$pageHTML .= '<div class="case-grid-item';
+
+	//GET MODULE WIDTH
+			if($module_width == '100%'):
+				$pageHTML .= ' case-grid-item-w-100';
+			elseif($module_width == '75%'):
+				$pageHTML .= ' case-grid-item-w-75';
+			elseif($module_width == '67%'):
+				$pageHTML .= ' case-grid-item-w-67b';
+			elseif($module_width == '50%'):
+				$pageHTML .= ' case-grid-item-w-50';
+			elseif($module_width == '33%'):
+				$pageHTML .= ' case-grid-item-w-33b';
+			elseif($module_width == '25%'):
+				$pageHTML .= ' case-grid-item-w-25';
+			endif;
+
+//GET CUSTOM CLASS
+
+		if($content_type == 'Text Highlight'):
+			$pageHTML .= ' square';
+		endif;
+		
+		//close custom class
+		
+		$pageHTML .= '" ';
+		
+		//GET STYLE OPTIONS
+		
+		if($section_background_color || $section_background_image || $text_color || $module_height):
+		
+			$pageHTML .= ' style="';
+		
+				if($section_background_color):
+			  
+					$pageHTML .= 'background-color:' . $section_background_color . ';';
+				
+				endif;
+	
+				if($section_background_image && $section_background_image !=''):
+			
+					$pageHTML .= ' background-image:url(' . $section_background_image . '); background-repeat:' . $section_background_repeat . ';';
+				endif;
+				
+				if($section_background_position):
+					$pageHTML .= ' background-position:' . $section_background_position . '; ';
+				endif;
+		
+				if($module_height && $content_type != 'Text Highlight'):
+					$pageHTML .= ' min-height:' . $module_height . 'px;';
+				else:
+					$pageHTML .= ' height:' . $module_height . 'px;';
+				endif;
+				
+				if($text_color):
+					$pageHTML .= ' color:' . $text_color . ';';
+				endif;
+		
+			//close style dec
+			$pageHTML .= '"';
+			
+		endif;
+		
+		//close class and style dec
+		$pageHTML .= '>';
+	
+		//if($custom_class):
+		$pageHTML .= '<div class="' . $custom_class . '">';
+		//endif;
+		
+		//GET CONTENT TYPE AND LOAD RENDERING FUNCTIONS
+		
+		switch($content_type){
+			
+			case 'Text or Mixed':
+				$pageHTML .= '<div class="vert-center-outer"><div class="vert-center-inner">';
+				$pageHTML .= '<div class="case-study-text">';
+				require(FUNCTIONS . '/mod_text_mixed.php');
+				$pageHTML .= '</div>';
+				$pageHTML .= '</div><!--.vert inner--></div><!--.vert outer-->';
+				
+			break;
+			
+			
+			case 'Text Highlight':
+				$pageHTML .= '<div class="vert-center-outer"><div class="vert-center-inner">';
+				require(FUNCTIONS . '/mod_text_highlight.php');
+				$pageHTML .= '</div><!--.vert inner--></div><!--.vert outer-->';
+			break;
+			
+			case 'Image':
+				$pageHTML .= '<img src="' . $image . '" class="lazys">';
+			break;
+			
+			case 'Spacer':
+				$pageHTML .= '<div class="space" style="minimum-height:' . $module_height . 'px; background-color:transparent;"></div><!--.space-->';
+				break;
+			
+		}//end content type switch
+		
+//SET UP POST SCROLLER
+
+		if($number_posts > 1):
+			$pageHTML .= '<div class="dot-nav-vertical-ct">';
+			$single_type_left = substr($post_type, 0, -1);
+		
+		for($i=0; $i< $number_posts ; $i++){
+			$pageHTML .= '<div class="dot-nav" id="bt_' . $single_type_left . '_' . $i .'"></div>';
+		}
+		
+		$pageHTML .='</div>';//ends dot-nav container
+		endif;
+				
+		$pageHTML .= '</div><!--.custom-class-->';
+//CLOSE GRID ITEM	
+		$pageHTML .= '</div><!--.case-grid-item-->';
+		
+	
+		$grids = get_field('grid');
+		$num_grids = count($grids, 0);
+		
+		$content_sections = get_sub_field('modules');
+		$num_sections = count($content_sections, 0);
+	/*
+		
+		if($grid_index >= $num_grids && $section_index >= $num_sections):
+		
+	
+		//SERVICES PROVIDED
+		
+		$service_types = get_field('service_type');
+		
+		
+		$pageHTML .= '<div class="case-grid-item case-grid-item-w-100"><div class="services-provided">';
+		
+		if($service_types):
+			$pageHTML .= '<h3>Services Provided</h3>';
+			
+			foreach( $service_types as $service ):
+				$service_name = $service->name;
+				$pageHTML .= $service_name . '<br>';
+			endforeach;
+		
+		endif;
+		
+		$pageHTML .= '</div></div>';
+		
+		endif;
+		
+		$section_index++;
+		$grid_index++;
+		*/
+		endwhile;//end repeater loop
+		
+	
+	
+	
+		endif;//END REPEATER LOOP
+	
+		
+		
+		
+	$pageHTML .= '</div><!--.grid-->';
+	
+		//if($grid_width == 'Yes'):
+
+			$pageHTML .=  '</div><!-- .wrapper-->';
+		//endif;
+			//$pageHTML  .= '<div class="wrapper"><div style="display:block; position:relative; overflow:hidden; height:48px; width:100%; background-color:"></div></div><!-- .wrapper-->';
+					
+	$pageHTML .= '<div class="clearfix"></div>';
+		$pageHTML .= '</div><!--.row-->';
+	
+	
+	
+	
+	endwhile;//end grid repeater loop
+	
+	
+	endif;//END GRID REPEATER 
+	
+	$pageHTML .= '</div><!--.case-study-->';
+
+wp_reset_postdata();
+echo $pageHTML;
+?>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$(function() {
+		$('#submenu-work').mmenu({
+			navbar 		: {
+				title		: 'Case Studies',
+			},
+			isMenu: true,
+			dragOpen: true,
+			slidingSubmenus: true,
+			//setSelected, true,
+			offCanvas: 
+				{
+              position  : 'right',
+             //   menuWrapperSelector : 'div',
+             //   pageSelector: 'site-content',
+            //    moveBackground : false,
+                //modal: true,
+           zposition	: "front"
+             }
+	         // options
+	      }, {
+	         // configuration
+	         classNames: {
+		         divider: 'menu-item',
+
+		      //   panel: 'site-content',
+	            fixedElements: {
+	              fixedTop: "header-ct",
+	              // fixedBottom: "footer"
+	            },
+	            onClick: {
+	            	setSelected: true,
+	            	close: true
+	            }
+
+	         //   panelNodetype: "div"
+	           
+	         }
+			});
+	});
+});
+	
+jQuery(document).ready(function($) {
+
+	  $('.grid-g-0').isotope({
+			 percentPosition: true,
+		  layoutMode: 'packery',
+		  //   layoutMode: 'masonry',
+		    itemSelector: '.case-grid-item',
+		    isOriginTop: false,
+		    packery: {
+		  // masonry: {
+		      gutter: '.grid-gutter'
+		      }
+		  });
+
+	  $('.grid-g-0').imagesLoaded( function() {
+		  $('.grid-g-0').isotope('layout');
+			
+		});
+		
+	  $('.Bgrid-g-0').isotope({
+			 percentPosition: true,
+		  layoutMode: 'packery',
+		  //   layoutMode: 'masonry',
+		    itemSelector: '.case-grid-item',
+		    isOriginTop: false,
+		    packery: {
+		  // masonry: {
+		      gutter: '.grid-gutter'
+		      }
+		  });
+		  
+		  $('.Bgrid-g-0').imagesLoaded( function() {
+			  $('.Bgrid-g-0').isotope('layout');
+				
+			});
+
+		  $('.grid-g-2').isotope({
+				 percentPosition: true,
+			  layoutMode: 'packery',
+			  //   layoutMode: 'masonry',
+			    itemSelector: '.case-grid-item',
+			    packery: {
+			  // masonry: {
+			      gutter: '.grid-gutter'
+			      }
+			  });
+
+			  $('.grid-g-2').imagesLoaded( function() {
+				  $('.grid-g-2').isotope('layout');
+					
+				});
+				
+		  $('.grid-g-3').isotope({
+			 percentPosition: true,
+		  layoutMode: 'packery',
+		  //   layoutMode: 'masonry',
+		    itemSelector: '.case-grid-item',
+		    packery: {
+		  // masonry: {
+		      gutter: '.grid-gutter'
+		      }
+		  });
+
+		  $('.grid-g-3').imagesLoaded( function() {
+			  $('.grid-g-3').isotope('layout');
+				
+			});
+		  
+		  
+	  
+	});
+
+</script>
+
+
+</div></div><!-- .content-wrapper -->
+</div><!-- .company-page -->
+
+<?php get_footer(); ?>

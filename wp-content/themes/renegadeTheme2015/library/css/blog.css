@@ -1,0 +1,302 @@
+@CHARSET "UTF-8";
+
+ul.rss{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+
+
+.nav-blog:hover{
+	background:#BB1C5C;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+}
+
+.nav-blog ul li{
+	background:#BB1C5C;
+}
+.nav-blog ul li:hover{
+	border:none;
+	background:#821446;
+
+	}
+	
+.blog-page{
+	display:block;
+	position:relative;
+	background:url(../images/bk_pink.png) repeat-x top #BB1C5C;
+	background-attachment:fixed;
+	width:100%;
+	height:auto;
+}
+
+.blog-page h1{
+	color:#BB1C5C;
+}
+
+.blog-page h2{
+	color:#821446;
+}
+
+.blog-page a{
+	color:#821446;
+	
+}
+
+.blog-title-ct{
+	display:block;
+	margin:0px;
+}
+
+h3.entry-title, h3.entry-title a, h4.entry-title, h4.entry-title a{
+	display:inline-block;
+	background:#821446;
+	/*background:#111;*/
+	color:#fff;
+	line-height:100%;
+}
+
+h3.entry-title, h3.entry-title a{
+	font-size:20px;
+	padding:8px 8px 4px 32px;
+
+}
+
+h4.entry-title, h4.entry-title a{
+	font-size:16px;
+	padding:4px 8px 2px 18px;
+
+}
+
+.blog-post-ct{
+	display:inline-block;
+	float:left;
+	width:75%;
+	overflow:hidden;
+}
+
+.blog-header-ct{
+	display:block;
+	margin-bottom:8px;
+	
+}
+.blog-post{
+	display:block;
+	background:#fff;
+	margin:0px 32px 0px 0px;
+	max-width:90%;
+}
+
+.blog-page h5{
+	color:#821446;
+	font-family:'MuseoSans-300';
+	font-size:16px;
+	border-top:1px dotted #dedede;
+	padding:16px 0 16px 0;
+}
+
+.blog-page .entry-content{
+	display:block;
+	padding:16px 32px;
+	max-width:90%;
+	background:#fff;
+	font-size:14px;
+	color:#808080;
+	margin:0px;
+}
+
+.blog-post-content{
+	display:block;
+	padding:8px 32px 8px 32px;
+}
+
+.blog-page .entry-meta{
+	margin:0px 0px 0px 32px;
+	padding:8px 0px 0px 0px;
+}
+.blog-page .categories, .blog-page .categories a{
+	font-size:12px;
+	background:#f8e8ee;
+	padding:2px 0px 2px 2px;
+	color:#BB1C5C;
+}
+
+.blog-page  .date, .blog-page .author, .blog-page .read-more{
+	font-size:12px;
+	color:#808080;
+}
+
+ .blog-page .author a, .blog-page .comments-link, .blog-page .comments-link a, .blog-page a.read-more {
+	font-size:12px;
+	color:#BB1C5C;
+}
+
+.blog-page .spacer{
+	font-size:12px;
+	color:#999;
+}
+
+.blog-page .post-edit-link{
+	float:right;
+	margin:0px 32px;
+	font-weight:bold;
+}
+
+ul.blog-no-list{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+.blog-page .photo-credits{
+	font-size:12px;
+	color:#999;
+}
+
+.blog-page .sidebar-right{
+
+}
+.blog-page .saw-small-inv{
+	background-color:#821446;
+	
+}
+
+.blog-page .widget{
+	margin:0px;
+}
+
+.blog-page .ribbon-right, .blog-page .ribbon-left{
+	background:#BB1C5C;
+	cursor:pointer;
+}
+
+.blog-page .ribbon-right:hover, .blog-page .ribbon-left:hover{
+	background:#821446;
+}
+
+.widgetGuts h3{
+	display:none;
+}
+
+
+
+h1.widget-title{
+	display:none;
+}
+
+.widget_simplesubscribe .required{
+	clear:both;
+	
+}
+
+.widgetGuts{
+	text-align:right;
+	padding:0px 0px 20px 0px;
+	float:right;
+	margin:1px 0px 0 0;
+}
+
+.blog-page .search-form{
+	float:right;
+	margin:0px 0px 0 0;
+	text-align:right;
+	padding:0px 0px 16px 0;
+	
+}
+
+.search-form{
+	max-width:220px;
+}
+
+.widgetGuts .required{
+	font-size:12px;
+	text-align:right;
+	color:#fff;
+	font-family:'MuseoSans-300', sans-serif;
+	margin-right:20px;
+}
+
+.widgetGuts dd{
+	margin:0px 0px 0px 0px;
+}
+
+.subscribeButton, .blog-page .search-submit{
+	background:#821446 !important;
+	color:#fff !important;
+	border-radius:0px !important;
+	text-shadow:none !important;
+	border:none !important;
+	box-shadow:none !important;
+	font-family:'MuseoSans-300', sans-serif;
+	text-transform:uppercase;
+	padding-top:8px !important;
+
+	}
+	
+	::-webkit-input-placeholder {
+   font-size:12px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size:12px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size:12px;  
+}
+
+:-ms-input-placeholder {  
+   font-size:12px;  
+}
+	
+.widgetGuts dd input[type=text], .search-field{
+	border-radius:0px !important;
+	max-width:180px !important;
+}
+
+.widget_simplesubscribe{
+	margin:0px !important;
+}
+
+.recent-posts, .archive-list,  .categories-list,  .tags-list{
+padding:0px;
+clear:both;
+margin:0 12px 0 0;
+padding:12px 0;
+}
+
+.recent-posts h5, .archive-list h5, .categories-list h5, .tags-list h5{
+	margin:8px 0px 8px 40px;
+	max-width:220px;
+	padding:0px 0px 4px 0px;
+	font-size:13px !important;
+	border:none;
+	text-align:right;
+	line-height:14px;
+}
+
+.archive-list ul, .categories-list ul, .tags-list{
+	list-style:none;
+	text-align:right;
+}
+
+.archive-list li, .categories-list li, .tags-list li{
+	font-size:13px;
+}
+
+li.archive-year{
+	font-size:16px;
+	margin:16px 0 4px 0;
+	font-family: 'MuseoSans-500';
+	line-height:100%;
+}
+
+li.archive-year:first-of-type{
+	margin:8px 0 4px 0;
+}
+
+.blog-page img{
+	clear:both;
+}

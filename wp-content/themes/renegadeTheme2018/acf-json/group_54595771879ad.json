@@ -1,0 +1,134 @@
+{
+    "key": "group_54595771879ad",
+    "title": "CPT - Articles Post Type Fields",
+    "fields": [
+        {
+            "key": "field_5459577ff8849",
+            "label": "Article Author",
+            "name": "ra_author",
+            "type": "text",
+            "instructions": "Enter the author's name",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "field_type-text field_key-field_5459577ff8849 field_type-text field_key-field_5459577ff8849 field_type-text field_key-field_5459577ff8849",
+                "id": ""
+            },
+            "default_value": "Drew Neisser",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_545957a8f884a",
+            "label": "Publication",
+            "name": "ra_publication",
+            "type": "text",
+            "instructions": "Enter the name of the publication where the article appeared",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "field_type-text field_key-field_545957a8f884a field_type-text field_key-field_545957a8f884a field_type-text field_key-field_545957a8f884a",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_545957d3f884b",
+            "label": "Article Date",
+            "name": "ra_date",
+            "type": "date_picker",
+            "instructions": "Enter the date the article was published",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "field_type-date_picker field_key-field_545957d3f884b field_type-date_picker field_key-field_545957d3f884b field_type-date_picker field_key-field_545957d3f884b",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_54595802f884c",
+            "label": "Article URL",
+            "name": "ra_url",
+            "type": "url",
+            "instructions": "Enter the link to the article",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "field_type-url field_key-field_54595802f884c field_type-url field_key-field_54595802f884c field_type-url field_key-field_54595802f884c",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_54595826f884d",
+            "label": "Article Blurb",
+            "name": "ra_blurb",
+            "type": "textarea",
+            "instructions": "Enter the first paragraph of the article here",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "field_type-textarea field_key-field_54595826f884d field_type-textarea field_key-field_54595826f884d field_type-textarea field_key-field_54595826f884d",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "articles"
+            }
+        ]
+    ],
+    "menu_order": -4,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1504812674
+}

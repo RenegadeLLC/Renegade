@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+
+.nav-contact:hover{
+	background:#404041;
+	border-left:1px solid #fff;
+}
+
+.nav-contact ul li{
+	background:#404041;
+}
+.nav-contact ul li:hover{
+	border-left:none;
+	border-right:none;
+	background:#30301;
+
+	}

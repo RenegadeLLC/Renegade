@@ -1,0 +1,1135 @@
+@CHARSET "UTF-8";
+/********** TYPOGRAPHY STYLES ***********/
+
+body{
+	font-family:'MuseoSans-300', sans-serif !important;
+	font-size:1em;
+	line-height:24px;
+	color:#888888 !important;
+}
+
+
+p{
+
+}
+
+a{
+	text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	display:block;
+	position:relative;
+	padding:0px;
+}
+
+h1, h6{
+	font-family:'MuseoSlab-100', serif;
+}
+
+h2, h3, h4, h5{
+	font-family:'MuseoSans-300', sans-serif;
+}
+
+h1{
+
+	font-size:2.5em;
+	margin: 32px 0px;
+	line-height:120%;
+	letter-spacing:-1px;
+	text-transform:none;
+	text-align:center;
+	color:#fff;
+	background:transparent;
+}
+
+h2{
+	font-size:2.25em;
+	margin:0px 0 12px 0px;
+	line-height:140%;
+	text-align:center;
+	color:#fff;
+	letter-spacing:-1px;
+}
+
+/* H1 H2 mods for landing page */
+.home h1 {
+	margin:24px 0 0px 0;
+	font-size:2.5em !important;
+	text-align:left;
+	padding:32px 64px;
+}
+
+.home h2{
+	font-family:'MuseoSlab-100', serif;
+	text-align:left;
+	font-size:1.65em !important;
+}
+
+
+.case-study-text h2{
+	text-align:left !important;
+	font-family:'MuseoSans-500', sans-serif !important;
+	font-size:1.25em !important;
+	font-weight:normal;
+	padding:12px 0 0 0;
+	color:#000;
+}
+
+
+
+h3{
+	font-size:1.65em;
+	line-height:2em;
+	margin:0px;
+	color:#000;
+}
+
+
+h4{
+
+	font-size:1.35em;
+	line-height:1.5em;
+	margin:0px;
+	padding:12px 0px;
+	text-transform:uppercase;
+	
+}
+
+h5{
+	font-size:1.2em;
+	margin:0px;
+	padding:0px 0px 8px 0px;
+}
+
+h6{
+	font-size:16px;
+	margin:0px;
+	padding:0px 0px 8px 0px;
+	line-height:140%;
+}
+
+
+.text-highlight{
+	text-transform:uppercase;
+	font-size:1.5em;
+	line-height:100%;
+}
+
+.intro{
+	
+	font-family: 'MuseoSans-100', sans-serif;
+	text-transform:none;
+}
+
+.intro p{
+	margin:32px 0;
+}
+
+
+.case-study-text{
+	text-align:left;
+}
+
+
+.newsletter-page h2, .newsletter-page h3{
+	color:#000;
+}
+
+.case-study-text h1{
+	color:#fff;
+	font-size:1.65em;
+	text-align:center;
+	font-family:'MuseoSans-100', sans-serif !important;
+}
+
+.services-provided h3{
+	color:#fff !important;
+	text-transform:uppercase;
+}
+
+.clients-intro h2{
+	font-family:'MuseoSans-100', sans-serif !important;
+	font-size:1.5em;
+	font-weight:normal;
+	text-align:center !important;
+}
+
+.clients-intro h3, .cases-intro h3{
+	margin:16px 0;
+	line-height:120%;
+	font-size:1.5em;
+	text-align:left;
+}
+.entry-content h2{
+	text-align:left;
+	font-family:'MuseoSans-300', sans-serif !important;
+	color:#BD007A;
+	font-size:20px;
+}
+
+h1.entry-title, .featured-post-right-text h1, .featured-post-right-text h1 a{
+	font-family:'MuseoSans-100', sans-serif !important;
+	color:#000;
+	font-size:32px;
+	letter-spacing:0px;
+	margin:0px auto 8px 0px;
+	text-align:left;
+}
+
+.post-grid-item h3{
+	color:#C4BD06;
+	font-size:1.25em;
+	line-height:140%;
+}
+
+.blog-post h2{
+	color:#BD007A;
+	margin-left:64px;
+}
+
+.newsletter-page h2{
+	color:#000;
+}
+	
+.newsletter-page a, .sort-option{
+
+	cursor:pointer;
+	font-size:.9em;
+}
+
+.featured-post-right-text h1{
+	text-align:center !important;
+}
+
+.featured-post-right-text h1 a:hover, .blog-post a{
+	color:#BD007A;
+}
+
+.blog-title-ct h2 a{
+	display:block;
+	font-family:'MuseoSans-300', sans-serif !important;
+	font-size:16px !important;
+	line-height:20px !important;
+	color:#000;
+	text-align:center;
+}
+
+ul.section-list h2, ol.section-list h2{
+	text-align:left;
+	font-size:24px;
+	font-family:'MuseoSans-300', Helvetica, Gotham, Arial, sans-serif !important;
+	padding-left:0px !important;
+	margin:0px 0px 16px 0px !important;
+}
+
+.date{
+	margin:24px 0 16px 0;
+}
+
+.tracked{
+	letter-spacing:8px;
+}
+
+	
+	.utility-box h3{
+	font-size:1.1em;
+	color:#000;
+	font-family:'MuseoSans-500', sans-serif;
+	padding:0px;
+	margin:16px 0 0 0;
+	}
+	
+	.utility-box h3:first-of-type{
+	margin:0px;
+	}
+	.utility-box ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	}
+
+
+
+.mod-text-inner{
+	padding:56px 48px 0px 48px;
+	display:block;
+	position:relative;
+	overflow:hidden;
+}
+	
+.md-text, .md-text blockquote{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	padding:16px 8px;
+	font-size:1em;
+	line-height:180%;
+}
+
+.services .md-text{
+	padding:32px !important;
+}
+
+.services h2{
+	margin:24px auto 0 auto;
+}
+
+.services h3{
+	text-transform:uppercase;
+	margin:0 auto;
+}
+
+.clients-intro-text h2{
+	margin:0px auto 0 auto;
+	font-family: 'MuseoSans-100', sans-serif;
+	text-align:center;
+}
+
+.clients-intro-text h1{
+	margin:0 auto;
+	text-align:center;
+	font-family: 'MuseoSans-100', sans-serif;
+}
+
+
+.md-text blockquote {
+    margin: 0 5em;
+}
+
+.text-highlight{
+	font-size:1em;
+}
+
+.text-highlight h1{
+	text-transform:uppercase;
+}
+
+.text-highlight .cta{
+	font-size:1em;
+	color:#000;
+	line-height:120% !important;
+	max-width:75%;
+	text-align:center;
+	margin:auto;
+}
+
+.text-highlight h1{
+	font-family: 'MuseoSans-100', sans-serif;
+	font-size:2em;
+	line-height:120%;
+	margin:0px;
+	text-transform:uppercase;
+}
+
+.md-text h4{
+	line-height:120%;
+	margin-bottom:12px;
+}
+
+
+.grid-g-0 .md-text{
+	padding:40px;
+}
+
+	
+.md-text ul li:before{
+	font-family:'FontAwesome';
+	content: '\f10c ';
+	font-weight:bold;
+	margin-right:8px;
+}
+
+
+
+.inline-highlight{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	background-color:#D6D068 !important;
+	text-align:center;
+	width:75%;
+	margin:48px auto 32px auto;
+}
+
+.inline-highlight h1{
+	text-align:center;
+	font-family: 'MuseoSans-100', sans-serif;
+}
+.mod-blog h5, .mod-blog h5 a{
+	color:#EDC2D3 !important;
+	text-decoration:none;
+	font-size:1.25em;
+	line-height: 120%;
+}
+/******************************  FONT WEIGHTS  ******************************/
+
+.bold{
+	font-family: 'MuseoSans-700', sans-serif;
+}
+
+.semibold{
+	font-family: 'MuseoSans-500', sans-serif;
+}
+
+
+.light{
+	font-family: 'MuseoSans-100', sans-serif;
+}
+
+.light-serif{
+	font-family: 'MuseoSlab-100', sans-serif;
+}
+
+
+/******************************  COLORS  ******************************/
+
+.black{
+	color:#000;
+}
+
+.white{
+	color:#fff;
+}
+
+.gray{
+	color:#BBBDBF;
+}
+
+.green{
+	color:#C4BD06;
+}
+
+.green-bk{
+	background-color:#C4BD06;
+}
+
+.blue{
+	color:#00A3D6;
+}
+
+.red{
+	color: #DB4F26;
+}
+
+.pink{
+	
+}
+
+.smaller{
+	font-size:.75em;
+}
+
+/******************************  ICONS STYLES  ******************************/
+
+.email:before{
+	content:"\f0e0";
+	font-family:FontAwesome;
+	color:#fff;
+	font-size:2.5em;
+	display:block;
+}
+
+.email, .email a, bio-twitter a, .bio-instagram a, .bio-facebook a, .bio-pinterest a{
+	font-size:1em !important;
+	color:#fff;
+}
+
+.bio-twitter a, .bio-instagram a, .bio-facebook a, .bio-pinterest a{
+	font-size:1em !important;
+	color:#000 !important;
+}
+
+.bio-twitter:before, .bio-facebook:before, .bio-instagram:before, .bio-pinterest:before{
+	font-family: FontAwesome;
+	color:#000;
+	font-size:2.5em;
+	display:block;
+}
+
+.bio-twitter:before{
+	content: "\f099";
+}
+	
+.bio-facebook:before{
+	content: "\f09a";
+}
+	
+.bio-instagram:before{
+	content: "\f16d";
+}
+
+.bio-pinterest:before{
+	content: "\f0d2";
+}
+		
+.social-twitter:before{
+	content: "\f099";
+	font-family: FontAwesome;
+	color:#000;
+}
+
+.social-facebook:before{
+	content: "\f09a";
+	font-family: FontAwesome;
+}
+	
+.social-pinterest:before{
+	content: "\f0d2";
+	font-family: FontAwesome;
+}
+	
+.social-instagram:before{
+	content: "\f16d";
+	font-family: FontAwesome;	
+}
+	
+.social-linkedIn:before{
+	content: "\f0e1";
+	font-family: FontAwesome;
+}
+
+.social-youTube:before{
+	content: "\f167";
+	font-family: FontAwesome;
+}
+	
+.next-arrow-inner:before{
+	content: "\f105";
+	font-family: FontAwesome;
+	font-weight:lighter;
+}
+	
+.prev-arrow-inner:before{
+	content: "\f104";
+	font-family: FontAwesome;
+	font-weight:lighter;
+}
+	
+.corner-saw{
+	width:100%;
+	height:100%;
+	background-image: url(http://localhost:8888/Renegade/wp-content/uploads/sawWhite_800x800.png); 
+	background-color: transparent; 
+	background-position: -80px 72px; 
+	background-repeat: no-repeat;
+	background-size:110%;
+}	
+
+.saw-back{
+	width:100%;
+	height:100%;
+	background:url(../images/sawWhite_800x800.png) no-repeat;
+	background-size:100%, 100%;
+}
+
+
+.title-tag{
+		  position: absolute;
+		  left: 0px;
+		  top: 0px;
+		  color: #fff;
+		  text-transform: uppercase;
+		  display: block;
+		  padding: 8px 0 0 8px;
+		  border-left: 1px solid #fff;
+		  font-size: 12px;
+		  font-family: 'MuseoSans-500', sans-serif;
+	}
+	
+	
+/******* navigation STYLES **********/
+
+
+.bt-submenu:before{
+	content: '\f0c9';
+	font-family: FontAwesome;
+	font-size:20px;	
+	font-weight:lighter;
+	cursor:pointer;
+	text-align:center;
+}
+
+
+.primary-navigation li {
+	border: 0;
+	display: inline-block;
+	height: 76px;
+	line-height: 48px;
+	position: relative;
+	padding:16px 0px 24px 0px;
+}
+
+.primary-navigation a {
+	display: inline-block;
+	white-space: nowrap;
+	color:#000 !important;
+	text-decoration:none;
+	font-family: 'MuseoSans-300';
+	text-transform:uppercase;
+	font-size:14px;
+	padding:0px 12px 0px 12px;
+}
+
+.primary-navigation a:hover{
+	color:#fff !important;
+	background:#000 !important;
+}
+#bt-links, #bt-phone, #bt-search{
+	 font-family: 'FontAwesome';
+	 font-size:1.25em;
+	 color:#fff;
+	 text-align:center;
+	 padding: 4px 0 0 0;
+	 font-weight:normal;
+}
+
+#bt-links:after{
+	content:'\f0c1';
+}
+	
+#bt-phone:after{
+	content:'\f095';
+}
+	
+#bt-search:after{
+	content:'\f002';
+}
+.header-social-icons{
+	display:inline;
+	position:relative;
+	overflow:hidden;
+	height:64px;
+	font-size:1.25em;
+	color:#000;
+	padding:0px 0px 0 8px;
+	white-space: nowrap;
+	clear:none;
+}
+	
+	
+.mm-title, .mm-title:hover{
+	font-size:1.3em;
+	font-family: 'MuseoSlab-300';
+	color:#dedede !important;
+}
+	
+ ul.sub-nav-menu{
+	list-style:none !important;
+	margin:16px 0 0 0px !important;
+	padding:0px;
+}
+	
+.sub-nav-menu-ct a{
+	color:#fff;
+	text-decoration:none;
+}
+
+ul.sub-nav-menu li{
+	margin:0px;
+	padding:8px 0;
+	border-bottom:1px solid #666;
+}
+	
+ul.sub-nav-menu li a{
+	font-family: 'MuseoSans-300';
+	font-size:14px;
+	color:#fff !important;
+	text-transform:uppercase;
+}
+	
+ul.sub-nav-menu li a:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 12px solid transparent;
+	border-top: 12px solid transparent;
+}
+
+
+		
+/******************************  PAGINATION STYLES  ******************************/
+
+.nav-previous:before, .nav-next:after{
+	font-family:FontAwesome;
+	color:#fff;
+	font-size:1.2em;
+	display:inline;
+	color:#BD007A;
+	vertical-align:middle;
+}
+
+.nav-previous:before{
+	content:"\f137";	
+	padding-right:4px;
+}
+
+.nav-next:after{
+	content:"\f138";
+	padding-left:4px;
+}
+	
+/******* SIDEBAR list STYLES **********/
+
+.archive-year {
+	font-size:3em;
+	font-family:'MuseoSlab-100', sans-serif !important;
+	color:#000;
+	line-height:100%;
+}
+
+.archive-month, .archive-month a{
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	line-height:100%;
+}
+
+.archive-year a{
+	text-decoration:none;
+	color:#000;
+}
+ul.archive a, ul.post-categories a{
+	color:#fff !important;
+	font-size:.9em;
+}
+
+ul.archive a{
+		text-transform:uppercase;
+}
+
+.subscribe{
+	text-align:center;
+}
+
+.sidebar-item h1{
+	font-size:1.5em;
+	color:#fff;
+	font-family:'MuseoSans-100', sans-serif !important;
+	text-transform:uppercase;
+	margin:0px auto 8px auto;
+}
+
+.sidebar-item ul, .sidebar-item ol, .side-bar-item .sidebar-content ul, .side-bar-item .sidebar-content ol{
+	list-style-type:none !important;
+}
+
+.categories-list ul li, .categories-list ol li{
+	background:transparent !important;
+}
+
+.clients-grid-header h3, .clients-grid-header h4{
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	line-height:120%;
+}
+
+.sidebar-block h1{
+	float:left;
+	font-family:'MuseoSans-100', sans-serif !important;
+	text-transform:uppercase;
+	font-size:1.5em;
+	margin-top:0px;
+	text-align:left;
+	padding:0px;
+	margin:0px 0px 8px 0px !important;
+	clear:both !important;
+}
+
+.sidebar-block label{
+	font-size:14px;
+	clear:both !important;
+	font-family:'MuseoSans-300', sans-serif !important;
+	display:block;
+}
+/*******  SUBSCRIBE FORM STYLES **********/
+
+.mc4wp-form-basic {
+	margin-bottom:0;
+}
+
+/********  MAILCHIMP FORM STYLES  *********/
+
+.mc4wp-form{
+	margin-left:0px !important;
+}
+
+.mc4wp-form input[type=submit]:hover{
+	background-color:#fff !important;
+	color:#000 !important;
+	font-weight:bolder;
+}
+
+.mc4wp-form button, .mc4wp-form input[type=button], .mc4wp-form input[type=submit]{
+	background:#000 !important;
+	color:#fff;
+	border:none;
+	box-shadow:none;
+	border-radius: 0px;
+	text-transform:uppercase;
+	font-size:16px;
+	font-family:'MuseoSans-100', sans-serif !important;
+}
+
+
+
+.subscribe p{
+	padding:0;
+	margin:12px auto 0 auto;
+}
+
+.mc4wp-form-basic  input[type="text"], .mc4wp-form-basic  input[type="email"]{
+	border:none;
+	border-radius:0%;
+	max-width:200px !important;
+	margin:0 auto;
+}
+
+.mc4wp-form-basic label{
+	display:none !important;
+}
+
+/******************************  PAGE SPECIFIC STYLES  ******************************/
+
+
+
+/*******  MARKETING AS SERVICE TYPE **********/
+
+.marketing-as-service-ct{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	font-size:1em;
+	font-family:'MuseoSans-100', sans-serif !important;
+	line-height:100%;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.our-philosophy{
+	margin:1em auto 0 auto;
+	font-size:1.5em;
+	color:#fff;
+	font-family:'MuseoSlab-100', serif;
+	text-transform:none !important;
+	padding-top:24px;
+}
+
+.marketing{
+	font-size:4.75em;
+	color:#BBBDBF;
+	line-height:60%;
+	margin:1em 0 0 0;
+	letter-spacing:-2px;
+}
+
+.service{
+	font-size:9em;
+	letter-spacing:-6px;
+	color:#fff;
+	line-height:100%;
+	padding-bottom:40px;
+}
+
+
+/******************************  INDIVIDUAL PAGES STYLES  ******************************/
+
+.clients-intro, cases-intro{
+	font-size:1em;
+}
+
+.clients-intro-text, .cases-intro{
+	font-size:1.25em;
+	line-height:140%;
+	text-align:center;
+	margin:auto;
+	color:#fff;
+}
+
+.services-provided{
+	background-color:#333;
+	color:#fff;
+	text-align:center;
+	padding:24px;
+	margin-right:6%;
+}
+
+/******************************  PEOPLE POST TYPE STYLES  ******************************/
+
+.people-bio-intro{
+	background:#58595B;
+	color:#fff;
+	padding:4px 40px;
+	font-size:1.5em;
+}
+
+.people-bio-text{
+	padding:40px;
+	line-height:180%;
+}
+
+.people-bio-text-ct{
+	background:#fff;
+}
+
+.contact-box-inner{
+	background:#BB451F;
+}
+
+.contact-box-outer a{
+	text-transform:uppercase;
+	color:#fff !important;
+}
+
+.contact-box-outer a, .follow-box-outer a{
+	text-transform:uppercase;
+	font-size:1em !important;
+}
+
+.contact-box-outer .circle{
+	background:#BB451F;
+	width:75%;
+}
+
+.follow-box-outer{
+	background:#00A3D6;
+}
+
+.follow-box-outer .circle{
+	background:#fff;
+	width:75%;
+}
+.people-social{
+	margin:0px auto;
+	padding-top:16px;
+	text-align:center;
+}
+
+/****************************** CASE STUDY STYLES  ******************************/
+ 
+.case-study .headline-ct h1{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	color:#fff !important;
+	text-align:center;
+	margin:40px auto 32px auto;
+	font-size:3.5em;
+	line-height: 140%;
+}
+
+.case-text{
+		font-size:1.05em;
+		padding:40px;
+		line-height:160%;
+	}
+
+.case-text h3{
+	font-size:1.5em;
+	padding:0px;
+	margin:0 0 12px 0;
+	font-family:'MuseoSans-500', sans-serif;
+	line-height:140%;
+	
+}
+
+.ra-author{
+font-weight:lighter;
+}
+.home .article, .home .company{
+	color:#fff;
+}
+
+.home .newsletter, .home .blog{
+	color:#fff;	
+}
+
+.cut:before{
+	content:url(../images/saw_black_20x20.png);
+	margin:0 4px 0 0;
+}
+.cut{
+	display:inline;
+	font-family: 'MuseoSans-300';
+	font-size:20px;
+	text-transform:uppercase;
+}
+
+.cut{
+	color:#000;
+}
+.utility-nav:hover, .utility-on{
+	background:#C4BD06;
+}
+
+
+	
+/******************************  FOOTER STYLES  ******************************/ 
+	
+
+	.footer-text{
+		display:block;
+		background-position: 0% 50%;
+		padding:0px;
+		color:#fff;
+		font-family: 'MuseoSlab-100';
+		font-size:14px;
+		height:64px;
+		text-align:center;
+	}
+	
+	.footer-info{
+		font-size:11px;
+		font-family: 'MuseoSlab-100';
+		margin-top:8px;
+	}
+	.footer-logo{
+		display:block;
+		width:24px;
+		text-align:center;
+		margin:0px auto 0 auto;
+		padding-top:24px;
+	}
+	
+	/******************************  CASE STUDY PAGE STYLES  ******************************/ 
+	
+
+.highlight{
+	display:table-cell;
+	vertical-align:middle;
+	font-size:3.5em;
+	font-family:'MuseoSlab-100', serif;
+	padding:64px 48px;
+	text-align: center;
+	line-height:120%;
+}
+
+.case-highlight{
+	display:block;
+	vertical-align:middle;
+	font-size:24px;
+	font-family:'MuseoSlab-100', serif;
+	text-align: center;
+	line-height:120%;
+	margin:0 auto;
+	max-width:960px;
+}
+/******************************  NEWSLETTER PAGE STYLES  ******************************/ 
+.newsletter-tag{
+	font-family: 'MuseoSans-300', Helvetica, Gotham, Arial, sans-serif;
+	font-size:14px;
+	color:#fff;
+	margin:11px;
+	float:left;
+}
+
+
+.newsletter-title{
+	font-family: 'MuseoSans-100', Georgia, serif;
+	font-size:3em;
+	color:#000;
+	padding:0px;
+	line-height:44px;
+	margin:0 0 8px 0;
+	text-transform:none;
+	text-align:left;
+	letter-spacing:-1px;
+
+}
+
+.newsletter-date{
+	font-family: 'MuseoSans-500', Helvetica, Gotham, Arial, sans-serif;
+	font-size:16px;
+	padding:0px;
+	text-transform:uppercase;
+	text-align:left;
+	margin:16px 0 0px 0;
+}
+
+.newsletter-intro{
+	width:100%;
+	padding:32px 24px;
+	background:#58595B;
+	color:#fff;
+	font-family: 'MuseoSans-300', Helvetica, Arial, sans-serif;
+	font-size:16px;
+}
+
+.newsletter-intro a{
+	color:#333;
+	text-decoration:none;
+	background-color:#fff;
+}
+.newsletter-final-note{
+	font-family: 'MuseoSans-300', Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#666;
+	padding:32px;
+}
+
+.newsletter-text{
+	font-family:'MuseoSans-300', Gotham, Helvetica, Arial, sans-serif;
+	color:#808080;
+	font-size:14px;
+	font-weight:normal;
+	padding:0px 56px 24px 56px;
+}
+	
+	.hm_cutTitle{
+	font-family:'MuseoSans-500', sans-serif;
+	font-size: 32px;
+	color:#000;
+	font-weight:light;
+	padding: 32px 0px 16px 0px;
+}
+
+.hm_cutTitle:before{
+	  content:url(../../images/saw_white_28x28.png) no-repeat left;
+}
+
+
+
+.hm_theCut h1{
+	font-family:'MuseoSlab-300', serif;
+	font-size:48px;
+	color: #FFF;
+	padding: 0px 0px 32px 0px;
+	margin: 0px;
+	font-weight:light;
+}
+	
+	.contact .md-text{
+		max-width:500px !important;
+		width:100%;
+}
+
+
+.photo-credit{
+	display:block;
+	font-size:.75em;
+	clear:both !important;
+	text-align:center;
+	margin:0 0 12px 0;
+	float:none;
+}
+.blog-left .date{
+	display:block;
+	position:relative;
+	margin:0 0 16px 64px;
+	color:#333;
+	text-align:left !important;
+	font-size:1em;
+}
+
+.blog-page .quote{
+	color:#BD007A !important;
+}
+
+
+	
+		

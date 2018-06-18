@@ -1,0 +1,390 @@
+@CHARSET "UTF-8";
+
+body{
+	font-family:'MuseoSans-300', sans-serif;
+	font-size:14px;
+	line-height:24px;
+	color:#888888;
+}
+
+a{
+	text-decoration:none;
+}
+
+.contentCirc-inner a{
+color:#fff !important;
+line-height:100%;
+text-transform:uppercase;
+font-size:18px;
+display:block;
+}
+
+.sm-blk, .sm-blk a{
+	font-size:11px;
+	color:#000;
+}
+
+h1{
+	display:block;
+	position:relative;
+	font-family:'MuseoSlab-100', serif;
+	font-size:64px;
+	font-weight:normal;
+	margin:0px;
+	padding:24px 0px 0px 3%;
+	line-height:100%;
+	letter-spacing:-1px;
+}
+
+h2{
+	display:block;
+	position:relative;
+	font-family:'MuseoSlab-300', serif;
+	font-size:32px;
+	font-weight:normal;
+	margin:0px;
+	padding:0px 0px 8px 64px;
+}
+
+.three_cols h2{
+	padding:32px 0px 0px 0px;
+	
+}
+h3{
+	font-family:'MuseoSlab-100', sans-serif;
+	font-size:20px;
+	line-height:28px;
+	margin:0px;
+	padding:0px 0px 12px 0px;
+	
+}
+
+.slide-text{
+	font-family:'MuseoSans-300', sans-serif;
+	font-size:16px;
+	font-weight:300;
+	line-height:24px;
+}
+
+.slide h1{
+	display:block;
+	position:relative;
+	font-family:'MuseoSlab-100', serif;
+	font-size:24px;
+	line-height:32px;
+	font-weight:normal;
+	margin:0px 0 8px 0;
+	padding:0px;
+	color:#fff;
+}
+
+
+.slide p{
+	font-family:'MuseoSans-300', sans-serif;
+	font-size:16px;
+	font-weight:300;
+	line-height:28px;
+	padding:8px 32px;
+	
+}
+
+.one-col h3{
+	margin-bottom: -12px;
+}
+
+h4{
+	font-family:'MuseoSlab-300', serif;
+	font-size:20px;
+	font-weight:300;
+	margin:0px;
+	padding:0px 0px 4px 0px;
+	line-height:140%;
+}
+
+h5{
+	font-family:'MuseoSans-300', sans-serif;
+	font-size:16px;
+	font-weight:300;
+	margin:0px;
+	padding:0px 0px 8px 0px;
+	line-height:100%;
+}
+
+h6{
+	font-family:'MuseoSlab-300', serif;
+	font-size:16px;
+	font-weight:300;
+	margin:0px;
+	padding:0px 0px 8px 0px;
+	line-height:140%;
+}
+
+p{
+	margin:16px 0px 16px 0px;
+}
+
+.section-content{
+	font-family: 'MuseoSans-300';
+	color:#808080;
+}
+
+.sidebar-link, .sidebar-link a{
+	font-size:12px;
+	line-height:16px;
+	margin:12px 0;
+	text-align:center;
+}
+.callout-text{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.block-text-ct{
+	margin:8px 0px 24px 0px;
+	padding:0px 0px;
+	display:block;
+	max-width:400px;
+
+}
+.block-text, .block-text a{
+	display:inline;
+	position:relative;
+	font-family:'MuseoSlab-300', serif;
+	color:#fff;
+	text-transform:uppercase;
+	padding:4px;
+	line-height:100%;
+	-webkit-box-decoration-break: clone;
+}
+
+
+.home-case-ct h1{
+	font-family:'MuseoSans-300', serif;
+	padding:0px;
+	margin:0px 0 8px 0;
+	line-height:120%;
+	max-width:500px;
+	font-size:20px;
+}
+
+.home-case-ct h1 a{
+	text-transform:uppercase;
+	color:#e9582e;
+	-webkit-box-decoration-break: clone;
+		background:#fff;
+		padding:8px;
+		line-height:120%;
+}
+
+.home .newsletter h1{
+	font-family:'MuseoSlab-100', serif;
+	color:#fff;
+	margin:24px 0 0 0px;
+	padding:0px;
+	font-size:48px;
+	line-height:120%;
+}
+
+.home .article, .home .company{
+	/*border-right:1px solid #fff;*/
+	padding:80px 40px 40px 40px;
+	height:400px;
+}
+
+.home .newsletter, .home .blog{
+	padding:80px 40px 40px 0px;
+	height:400px;
+	
+}
+.title-tag{
+	position:absolute;
+	left:0px;
+	top:24px;
+	color:#fff;
+	text-transform:uppercase;
+	display:block;
+	padding:2px 0 0 8px;
+	border-left:1px solid #fff;
+	font-size:12px;
+	font-family:'MuseoSans-500', serif;
+}
+.home .article h2 {
+	font-family:'MuseoSlab-300', serif;
+	font-size:24px;
+	/*color:#a8ddf2;*/
+	color:#fff;
+	letter-spacing:0px;
+	margin:20px 0px 0px 0 !important;
+	padding:0 !important;
+	line-height:120%;
+}
+
+.home .article h1{
+	font-family:'MuseoSlab-300', serif;
+	font-size:28px;
+	color:#fff;
+	padding:0px 0 24px 0;
+	font-weight:normal;
+	letter-spacing:.5px;
+}
+
+.home .work h1{
+	font-family:'MuseoSlab-300', sans-serif;
+	color:#db4d21;
+	font-size:24px;
+	line-height:120%;
+	padding:8px 8px 4px 0px;
+	margin:0px;
+}
+
+.home .work h1 span{
+	color:#db4d21;
+}
+.home .work h2{
+	font-family:'MuseoSans-300', sans-serif;
+	color:#fff;
+	font-size:16px;
+	padding:0px;
+	margin:0px;	
+}
+
+.home .work h1 span, .home .work h2 span{
+		-webkit-box-decoration-break: clone;
+		background:#fff;
+}
+
+.home .blog h1{
+	color:#fff;
+	font-size:40px !important;
+	text-transform:lowercase;
+	margin:0;
+	padding:0 0 16px 0;
+}
+
+.blog h5, .home .blog h2{
+	font-family:'MuseoSlab-100', serif;
+	font-size:24px;
+	line-height:120%;
+	color:#db99bc;
+	margin:24px 0 12px 0px;
+	padding:0px;
+}
+
+.home .blog a{
+	color:#db99bc;
+}
+
+.home .blog {
+	font-size:14px;
+	color:#fff;
+}
+.home .article .ra-date, .home .article .ra-author, .home .article .ra-publication, .article .circ .circ-inner{
+	font-size:14px;
+	color:#000;
+}
+
+.home .article .ra-date, .home .article .ra-publication, .article .circ .circ-inner{
+	font-family:'MuseoSans-300', sans-serif;
+}
+
+
+.home .article .ra-publication, .home .article .ra-author{
+	display:inline;
+}
+.home .article .ra-author{
+	font-family:'MuseoSans-500', sans-serif;
+}
+
+.slide-text span{
+-webkit-box-decoration-break: clone;
+	color:#000;
+	padding:8px;
+	background:#fff;
+}
+
+.padded-multiline { 
+  line-height: 1.4; 
+  padding: 2px 0; 
+  width: 400px;
+  margin: 20px auto;
+}
+.padded-multiline span { 
+  background-color: #c0c;
+  color: #fff; 
+  display: inline;
+  padding: 0.45rem;
+  
+  /* Needs prefixing */
+  -webkit-box-decoration-break: clone;
+}
+
+.cut, .cut-date{
+	display:inline;
+	font-family: 'MuseoSans-300';
+	font-size:16px;
+	text-transform:uppercase;
+}
+
+.cut{
+		color:#000;
+}
+
+.cut-date{
+	color:#a8ddf2;
+}
+
+.article .circ{
+	background:#fff;
+	width:80%;
+	max-width:350px;
+}
+
+.article .circ .circ-inner{
+	text-align:left !important;
+	vertical-align:bottom !important;
+	padding:0 0 56px 44px;
+
+}
+.home .article-date{
+	
+}
+h1.widget-title{
+	font-size:16px;
+	font-family:'MuseoSlab-500';
+	
+}
+
+.dcwss.dc-wall.col-4 .stream li{
+	
+}
+
+.dcwss.dc-wall .stream li {
+background: #FFF;
+-webkit-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+-moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+font-size: 11px;
+padding: 15px 0 0 0;
+position: relative;
+font-family: Arial, sans-serif;
+line-height: 1.35em;
+margin: 0 2% 2% -1px;
+
+}
+
+.dcwss.dc-wall .stream li .section-intro {
+padding: 7px 15px 7px 30px;
+display: block;
+color: #fff;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+z-index: 2;
+position: relative;
+
+}
+
+.dcwss.dc-wall.col-4 .stream li {
+width: 100%;
+}

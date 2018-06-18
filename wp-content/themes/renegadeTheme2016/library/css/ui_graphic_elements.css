@@ -1,0 +1,372 @@
+@CHARSET "UTF-8";
+
+/******************************  LIST STYLES  ******************************/
+
+ul, ol{
+list-style-position:outside !important;
+	padding:0px;
+	margin-left:0px;
+}
+
+ol{
+	counter-reset:li; /* Initiate a counter */
+	list-style-position:outside !important;
+}
+
+ol > li:before{
+	content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+}
+
+ol.section-list{
+	margin:0px 0 0 0px !important;
+}
+
+ul.section-list > li:before{
+	content:url(../images/saw_white_16px.png);
+}
+
+ul.section-list li, ol.section-list li{
+	padding-left:48px;
+}
+
+ol > li, ul > li{
+	list-style-position:outside !important;
+    position:relative; /* Create a positioning context */
+    margin:0px 0px 0px 0; /* Give each list item a left margin to make room for the numbers */
+    padding:8px 8px 12px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+	line-height:1.5em;
+}
+
+ol > li:before, ul > li:before{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	font-size:16px;
+	font-weight:lighter;
+	font-family:'MuseoSlab-300', serif !important;
+}
+
+ul.nav-menu{
+	list-style-type:none;
+}
+
+ul.nav-menu li:before{
+	content:'';
+}
+/******* section list colors **********/
+
+ul li{
+	color:#000;
+}
+
+li:before{
+	float:left;
+}
+
+ul.green li:before{
+	color:#C4BD06;
+	background-color:transparent;
+}
+
+ul.blue li:before{
+	color:#1AC3EC;
+	background-color:transparent;
+}
+
+ul.pink li:before{
+	color:#BD007A;
+}
+
+/******* Small List Style **********/
+
+ul.small-list{
+	margin:16px 0 16px 0px;
+	color:#000;
+	list-style-position:outside !important;
+}
+
+ul.small-list li{
+	padding:0px 20px 8px 20px; !important;
+}
+
+ul.red li:before{
+	color: #DB4F26;
+}
+
+ul.small-list li:before{
+	font-family: 'FontAwesome' !important;
+    content: '\f10c ' !important; 
+    font-size:14px;
+    font-weight: bold !important;
+    margin-right: 8px !important;
+    width:auto !important;
+    height:auto !important;
+    background-color:transparent !important;
+    vertical-align:middle;
+    padding:0px;
+}
+
+
+/******* Small List section colors **********/
+
+.blog-post ul.small-list{
+	padding-left:64px;
+}
+
+
+.blog-post ol > li:before, .blog-post ul > li:before{
+	background-color:#BD007A;
+}
+
+
+
+
+/******* GRAPHIC ELEMENTS **********/
+
+.circle{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	/*width:300px;
+	height:300px;*/
+	width:85%;
+	border-radius:50%;
+	padding:0%;
+	margin:auto;
+	text-align:center;
+}
+
+.circle-big{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	/*width:300px;
+	height:300px;*/
+	width:100%;
+	border-radius:50%;
+	padding:0%;
+	margin:auto;
+	text-align:center;
+}
+
+.square{
+	display:block;
+	position:relative;
+	overflow:hidden;
+}
+
+.sep{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	background:#dedede;
+	width:100%;
+	height:2px;
+	margin:16px 0 0 0;
+}
+
+.contact .sep{
+
+	background-color:transparent;
+	border-bottom:1px dotted #dedede;
+	margin:24px 0 24px 0 !important;
+	overflow:hidden;
+	display:block;
+	position:relative;
+	
+}
+.saw-ct-64{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	margin:0 auto 16px auto;
+	width:64px;
+	height:64px;
+	border-radius:50%;
+	background-image:url(../images/saw_white_64px.png);
+	background-repeat:no-repeat;
+	background-size:75%;
+	background-position: center;
+	
+}
+
+.mark{
+	position:absolute;
+	display:block;
+	overflow:hidden;
+	margin:0 8px 0 0;
+}
+.sidebar-block .mark{
+	top:16px;
+	left:0px;
+	width:28px;
+	height:28px;
+	background:url(../images/saw_white_20x20.png) no-repeat center #000;
+}
+
+.newsletter-page .mark{
+	top:0px;
+	left:0px;
+	width:48px;
+	height:48px;
+	background:url(../images/saw_white_32px.png) no-repeat center #000;
+}
+
+/******************************  BUTTON STYLES  ******************************/
+
+
+.bt-black{
+	display:inline-block;
+	position:relative;
+	text-transform:uppercase;
+	background:#000;
+	color:#fff;
+	padding:4px 8px 2px 8px;
+	clear:both;
+	float:none;
+	font-size:12px;
+	margin:24px 0 0 0;
+}	
+
+.bt-black a{
+	color:#fff !important;
+}
+
+
+/******************************  NEWSLETTER STYLES  ******************************/
+.newsletter-content{
+max-width:900px;
+width:100%;
+background-color:#fff;
+float:left;
+}
+
+
+.newsletter-page ol, .newsletter-page ul{
+	margin:0px;
+	list-style-position:outside !important;
+}
+.newsletter-page ol > li h3, .newsletter-page ul > li h3{
+	padding-left:56px;
+	padding-top:8px;
+	padding-bottom:4px;
+}
+.newsletter-page ol > li, .newsletter-page ul > li{
+	padding:0px 0 0px 0;
+}
+
+.newsletter-content ul > li:before{
+	display:block;
+	float:right;
+	overflow:hidden;
+	background-image:url(../images/saw_white_64px.png);
+	background-repeat:no-repeat;
+	background-size:40%;
+	background-position:80% 83%;
+	content:'';
+	width:40px;
+	height:40px;
+	color:#fff;
+}
+.newsletter-page ol > li:before{
+	color:#fff;
+	width:40px;
+	height:40px;
+	vertical-align:top;
+	padding: 16px 8px 8px 8px;
+	text-align:right;
+	font-size:12px;
+	float:right;
+}
+
+.section-list li{
+	font-size:1em;
+	line-height:150%;
+}
+ol.section-list  > li:before  {
+	/*background-color: #fff;
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: top !important;
+    margin-top: 8px !important;
+    border-radius:50%;
+    border:2px solid #DB4F26;
+    color:#DB4F26 !important;
+    */
+}
+
+ul.section-list > li:before, ol.section-list > li:before {
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 18px 8px 0 0;
+    font-size: .75em;
+}
+
+
+
+.newsletter-page ol > li:nth-child(even), .newsletter-page ul > li:nth-child(even) {
+	background-color:#f1f2f1;
+}
+
+.newsletter-page ol > li:nth-child(odd), .newsletter-page ul > li:nth-child(odd) {
+	background-color:#fff;
+}
+.newsletter-mark{
+	display:block;
+	position:absolute;
+	overflow:hidden;
+	background:url(../images/saw_black_64px.png) no-repeat center;
+	width:40px;
+	height:40px;
+	top:0px;
+	right:0px;
+	background-size:65%;
+	padding:16px;
+}
+
+.newsletter-logo{
+	display:block;
+	width:135px;
+	height:40px;
+	background:url(../images/renegade_cut_logo@2x.png) no-repeat #fff;
+	float:left;
+	background-size:100%;
+	background-position:0px 4px;
+	padding:16px;
+}
+
+
+	/* 	FLOATING ELEMENTS */
+
+.float_saw{
+	margin-left: 32px;
+	position: absolute;
+	bottom: 0px;
+	background:url(../images/saw_bigBlue_cropped.png) no-repeat bottom;
+	width: 527px;
+	height: 374px;
+}
+
+.float_pinky{
+	background:url(../images/hm_news_pinky.png) no-repeat center;
+	width:227px;
+	height: 210px;
+	float:right;
+	position:absolute;
+	margin-left:360px;
+	bottom: 0px;
+	z-index:10;
+}
+
+.float_sawSM{
+	background:url(../images/saw_blue_64x64.png) no-repeat center;
+	width:64px;
+	height: 64px;
+	
+}
+

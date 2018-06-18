@@ -1,0 +1,252 @@
+@CHARSET "UTF-8";
+
+
+@media all and (max-width: 1280px){
+	
+	.wrapper{
+		width:90%;
+	}
+}
+
+@media all and (max-width: 1100px){
+	
+	h1{
+			font-size:2.5em;
+		}
+
+		.marketing-as-service-ct{
+	font-size:.95em;
+}
+
+}
+
+
+
+@media all and (max-width: 900px){
+	.primary-navigation a {
+		padding:0px 6px 0px 6px !important;
+	}
+	
+	.header-social-icons-ct {
+  	  padding: 6px 0 0 6px;
+	}
+
+	.nav-ct {
+	    margin-top: 0px;
+	}
+	
+	.logo {
+    width: 160px;
+	}
+	
+		.marketing-as-service-ct{
+	font-size:.85em;
+}
+}
+
+@media all and (max-width: 800px){
+	
+	.mobile-hide{
+		display:none;
+	}
+	
+	.mobile-show{
+		display:block;
+	}
+	
+	
+	h1{
+		font-size:2.2em;
+	
+		}
+		
+		.grid-item-w-25{
+		width:25%;
+		float:left;
+		}
+			
+		.grid-item-w-33{	
+			width:33%;
+		}
+		
+		.grid-item-w-33b{	
+			width:25%;
+		}
+			
+		.grid-item-w-40{
+			width:100%;
+		}
+			
+		.grid-item-w-50{
+			width:75%;
+		}
+			
+		.grid-item-w-67{
+			width:100%;
+		}
+		
+		.grid-item-w-67b{
+			width:75%;
+		}
+			
+		.grid-item-w-75{
+			width:75%;
+			float:left;
+		}
+		
+		.grid-item-w-75b{
+			width:100%;
+			float:left;
+		}
+			
+		.grid-item-w-100, .grid-item-w-100 img{
+		max-width:800px !important;
+		max-height:800px !important;
+			width:100%;
+		}
+		
+		.grid-gutter{
+			width:0%;
+			height:0%
+		}
+		
+
+
+.random-inline-image{
+		
+		width:75%;
+		margin:40px auto 0 auto;
+	}
+	.grid, .case-grid, .post-grid, .client-logo-grid{
+		background: #fff;
+	}
+	
+	.people-bio-text{
+		padding:32px !important;
+		line-height:180%;
+	}
+	
+	.people-bio-intro {
+	    padding: 4px 32px !important;
+	}
+	
+	.intro p {
+		font-size:1.5em;
+		line-height:160%;
+	    margin: 16px 0 !important;
+	}
+	
+	.follow-box-outer a {
+	    font-size: .85em !important;
+	    word-wrap: normal !important;
+	    max-width: 110px !important;
+	    display: block;
+	    margin: 0 auto;
+	    line-height:110% !important;
+	}
+	
+	.email, .email a, bio-twitter a, .bio-instagram a, .bio-facebook a, .bio-pinterest a {
+    font-size: .85em !important;
+
+}
+
+.people-bio-image{
+	max-height:
+}
+		
+	}
+
+@media all and (max-width: 720px){
+	
+	.wrapper{
+		width:100%;
+	}
+	
+	.page-top{
+		height:10%;
+		width:100%;
+		background:#000;
+	}
+	
+	.bt-submenu{
+		top:16px;
+		display:none;
+	}
+
+	h1{
+	margin:24px auto;
+	}
+	
+		
+	.marketing-as-service-ct{
+	font-size:.75em;
+}
+.our-philosophy{
+	font-size:1.75em !important;
+}
+
+}
+
+@media all and (max-width: 600px){
+
+.marketing-as-service-ct{
+	font-size:.65em;
+}
+
+.our-philosophy{
+	font-size:1.95em !important;
+}
+.marketing{
+	font-size:4.75em;
+	letter-spacing:-2px;
+}
+
+.service{
+	font-size:9em;
+	letter-spacing:-4px;
+}
+
+
+	
+	.tracked{
+	letter-spacing: 2px;
+	}
+}
+
+/**********
+MOBILE PORTRAIT STYLES
+***********/
+@media all and (max-width: 490px){
+	.marketing-as-service-ct{
+	font-size:.5em;
+}
+	
+
+.hm_theCut h1{
+	font-size:40px;
+	padding: 0px 0px 0px 0px;
+}
+	
+.hm_cutTitle{
+	font-size: 24px;
+	padding: 16px 0px 8px 0px;
+}
+
+.float_pinky{
+	background:url(../images/hm_news_pinky_148x137.png) no-repeat center;
+	width:148px;
+	height: 137px;
+	margin-left:0px;
+}
+	
+}
+
+.news .ribbon-right, .blog-page .ribbon-left{
+	background:#00A3D6;
+	cursor:pointer;
+}
+
+.news  .ribbon-right:hover, .blog-page .ribbon-left:hover{
+	background:#00698A;
+}
+	

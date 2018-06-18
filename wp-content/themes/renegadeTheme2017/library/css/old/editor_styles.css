@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+.quote{
+	display:block;
+	font-family:'MuseoSlab-100', serif;
+	font-size:1.25em;
+	
+	max-width:600px;
+	margin:40px 24px 16px 24px;
+}
+
+.quote:before, .quote:after{
+	font-family: 'TrendSlabFour';
+	font-size:64px;
+	line-height:24px;	 
+
+}
+
+.quote:before{
+	content:'“';
+	padding-right:4px;
+	vertical-align:text-top;
+}
+
+.quote:after{
+	content:'”';
+	vertical-align:-28px;
+}

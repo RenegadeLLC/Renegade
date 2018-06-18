@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* GENERIC COLORS */
+
+.white{
+	color: #fff;
+	font-weight:normal;
+}
+
+.bk_gray2{
+	background:#58595B;
+}
+
+
+
+
+/* COMPANY COLORS */
+
+.green{
+	color:#C4BD06;
+}
+
+.green2{
+	color:#787304;
+}
+
+.bk_green{
+	background:#C4BD06;
+}
+
+.bk_green2{
+	background:#787304;
+}
+
+li.bk_green:hover{
+	background:#787304;
+}
+
+
+
+/* WORK COLORS */
+
+
+.red{
+	color:#E9582E;
+}
+
+.bk_red{
+	background: #E9582E;
+}
+
+
+.red2{
+	color: #AB4122;
+}
+
+.red3{
+	color: #5B1303;
+}
+
+.bk_red2{
+	background: #AB4122;
+}
+
+li.bk_red:hover{
+	background: #AB4122;
+}
+
+
+/* NEWS COLORS */
+	
+.blue{
+	color:#00A3D6;
+}
+
+.blue2{
+	color: #00698A;
+}
+
+.blue3{
+	color: #A6DBEF;
+}
+
+
+.bk_blue{
+	background:#00A3D6;
+
+}
+
+.bk_blue2{
+	background: #00698A;
+}
+
+li.bk_blue:hover{
+	background: #00698A;
+}
+
+
+	/* BLOG COLORS */
+	
+.pink{
+	color:#BB1C5C;
+}
+
+.pink2{
+	color:#821446;
+}
+
+.bk_pink{
+	background:#BB1C5C;
+}
+
+.bk_pink2{
+	background:#821446;
+}
+
+.bk_pink3{
+	background:#c2336d;
+}
+
+li.bk_pink:hover{
+	background:#821446;
+}
+
+
+
+/********* CONTACT STYLING *****************/
+
+.bk_gray{
+	background:#808184;
+}
+
+.bk_gray2{
+	background: #333;
+}
+
+li.bk_gray:hover{
+	background: #333;
+}
+
+@m

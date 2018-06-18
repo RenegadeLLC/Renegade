@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+
+.mobile-hide{
+		display:block;
+}
+
+.mobile-show{
+		display:none;
+}
