@@ -20,18 +20,16 @@ require_once( FUNCTIONS . 'ajax_filter_posts.php' );
 //require_once( FUNCTIONS . 'archive_getter.php' );
 require_once( FUNCTIONS . 'query_custom_posts.php' );
 require_once (FUNCTIONS . '/color_link.php');
-//require_once (FUNCTIONS . '/pagination.php');
 //require_once (FUNCTIONS . '/build_sidebarB.php');
 
-function my_custom_query( $post_type, $taxonomy_type, $taxonomy_term, $orderby, $order, $meta_value, $year) {
+function my_custom_query( $post_type, $taxonomy_type, $taxonomy_term, $orderby, $order, $meta_value) {
 	$args = array(
 			'post_type' 	=> $post_type,
 			'taxonomy' 		=> $taxonomy_type,
 			'term'			=> $taxonomy_term,
 			'orderby' 		=> $orderby,
 			'order' 		=> $order,
-			'meta_value'	=> $meta_value,
-			'year'			=> $year
+			'meta_value'	=> $meta_value
 			// other args here
 	);
 	
@@ -626,5 +624,4 @@ function my_acf_json_save_point( $path ) {
 	return $path;
 
 }*/
-
 

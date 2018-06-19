@@ -1,0 +1,328 @@
+{
+    "key": "group_547c8c1661879",
+    "title": "CPT - Newsletter Post Type Fields",
+    "fields": [
+        {
+            "key": "field_5679a66b7e6a0",
+            "label": "Accent Color",
+            "name": "accent_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#00c3f1"
+        },
+        {
+            "key": "field_547c8c2178b51",
+            "label": "Newsletter Date",
+            "name": "rn_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 30,
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "F  Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_547c8c65b58b6",
+            "label": "Introduction",
+            "name": "rn_introduction",
+            "type": "wysiwyg",
+            "instructions": "Enter the intro copy for the newsletter",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "my-wysiwyg",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_547c8c9cb58b7",
+            "label": "Main Banner",
+            "name": "rn_banner",
+            "type": "image",
+            "instructions": "Select or upload the main banner image",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_547cfcc107895",
+            "label": "List Type",
+            "name": "rn_list_type",
+            "type": "select",
+            "instructions": "If the content sections should be numbered, select \"Ordered List\". ",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 30,
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Unordered List": "Unordered List",
+                "Ordered List": "Ordered List"
+            },
+            "default_value": [
+                "Unordered List"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_547c8cd3b58b8",
+            "label": "Content Section",
+            "name": "rn_section",
+            "type": "repeater",
+            "instructions": "Add a section of content",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Content Section",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_547c8cf6b58b9",
+                    "label": "Newsletter Section Header",
+                    "name": "rn_section_header",
+                    "type": "text",
+                    "instructions": "Enter the header for the section",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_547c8d27b58ba",
+                    "label": "Section Layout",
+                    "name": "rn_section_layout",
+                    "type": "select",
+                    "instructions": "Select the column layout for the section",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 30,
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "One Column": "One Column",
+                        "Two Columns": "Two Columns"
+                    },
+                    "default_value": [
+                        "One Column"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_547cfaa86f3cd",
+                    "label": "Section One Column Content",
+                    "name": "rn_one_column_content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_547c8d27b58ba",
+                                "operator": "==",
+                                "value": "One Column"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "my_wysiwyg",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_547cface6f3ce",
+                    "label": "Section Left Column Content",
+                    "name": "rn_left_column_content",
+                    "type": "wysiwyg",
+                    "instructions": "Enter content for the left column of the section.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_547c8d27b58ba",
+                                "operator": "==",
+                                "value": "Two Columns"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_547cfaf86f3cf",
+                    "label": "Section Right Column Content",
+                    "name": "rn_right_column_content",
+                    "type": "wysiwyg",
+                    "instructions": "Enter content for the right column of the section.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_547c8d27b58ba",
+                                "operator": "==",
+                                "value": "Two Columns"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54b8437f84a3a",
+            "label": "Final Note",
+            "name": "rn_final_note",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_56d9a167ddcae",
+            "label": "test",
+            "name": "test",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "newsletters"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "author",
+        "featured_image",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1504804899
+}

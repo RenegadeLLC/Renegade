@@ -1,10 +1,8 @@
 <?php
-global $max_pages;
-global $num_posts;
 
 function get_archives_func($atts, $content = null){
 	$archivesHTML = '';
-	shortcode_atts( array('type' => '', 'format' => 0, 'post_type' => '', 'posts_per_page' => ''), $atts);
+	shortcode_atts( array('type' => '', 'format' => 0, 'post_type' => ''), $atts);
 	
 	$type = $atts['type'];
 	$format = $atts['format'];
@@ -12,24 +10,15 @@ function get_archives_func($atts, $content = null){
 	$before = '<div class="archive-link">';
 	$after = '</div>';
 
-	$posts_per_page = $atts['posts_per_page'];
+	$posts_per_page = 200;
 	$start = 0;
 	$paged = get_query_var( 'paged') ? get_query_var( 'paged', 1 ) : 1; // Current page number
-	$max_pages = get_query_var( 'max_num_pages');
- //	$num_posts = get_query_var('post_count');
-	 if(!$posts_per_page):
-		 $num_posts = -1;
-	 else:
-	 $num_posts = $posts_per_page;
-	 endif;
- 	
 	$start = ($paged-1)*$posts_per_page;
 	
 	global $wpdb;
 	$limit = 0;
 	$year_prev = null;
 	$months = $wpdb->get_results("SELECT DISTINCT MONTH( post_date ) AS month ,	YEAR( post_date ) AS year, COUNT( id ) as post_count FROM $wpdb->posts WHERE post_status = 'publish' and post_date <= now( ) and post_type = '$post_type' GROUP BY month , year ORDER BY post_date DESC");
-	$year = current_time('Y');
 	
 	foreach($months as $month) :
 		$year_current = $month->year;
@@ -44,14 +33,7 @@ function get_archives_func($atts, $content = null){
 		
 			
 				if($type == 'yearly'):
-				//$archivesHTML.= $posts_per_page;
-					$archivesHTML.= '<li class="archive-year';
-					
-					if($month->year == $year && is_page_template( 'page-templates/articles_page_template.php' )):	
-					$archivesHTML .= ' active';
-					endif;
-					
-					$archivesHTML .= '">';
+					$archivesHTML.= '<li class="archive-year">';
 					$yearly_url = get_bloginfo('url') ;
 					$archivesHTML.= '<a href="' . $yearly_url . '/';
 					$archivesHTML.= $month->year;
@@ -64,12 +46,8 @@ function get_archives_func($atts, $content = null){
 				
 				elseif($type == 'monthly'):
 				
-					$archivesHTML.= '<div class="expander archive-year';
-					if($month->year == $year && is_page_template( 'page-templates/newsletter_page_template.php' ) || $month->year == $year && is_page_template( 'index.php' )):
-						$archivesHTML .= ' active';
-					endif;
-					
-					$archivesHTML .= '">';
+					$archivesHTML.= '<div class="expander archive-year">';
+				
 				endif;
 				
 			$archivesHTML.=  $month->year;

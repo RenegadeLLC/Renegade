@@ -156,8 +156,8 @@ $(document).ready(function(){
 			break;
 			
 			case 'GooglePlus':
-				$social_channel_link = get_field('googleplus_url', 'option');
-				$social_class = 'social-googleplus';
+				$social_channel_link = get_field('slideshare_url', 'option');
+				$social_class = 'social-slideshare';
 			break;
 			
 			case 'SlideShare':

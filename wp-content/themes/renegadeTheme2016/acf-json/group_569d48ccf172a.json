@@ -595,7 +595,7 @@
                                 "100%": "100%"
                             },
                             "default_value": [
-                                "50%"
+                                0
                             ],
                             "allow_null": 0,
                             "multiple": 0,
@@ -647,9 +647,9 @@
                                 "Video": "Video",
                                 "Spacer": "Spacer"
                             },
-                            "default_value": {
-                                "Standard": "Standard"
-                            },
+                            "default_value": [
+                                "Standard"
+                            ],
                             "allow_null": 1,
                             "multiple": 0,
                             "ui": 0,
@@ -1331,5 +1331,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1457372583
+    "modified": 1457385436
 }

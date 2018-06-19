@@ -61,8 +61,6 @@ $year = current_time('Y');
 $ra_date = get_field('ra_date');
 $ra_year = new DateTime(get_field('ra_date'));
 $ra_year = $ra_year->format('Y');
-$year_arr = array();
-$pub_arr = array();
 
 //$year = '';
 
@@ -77,19 +75,18 @@ $pub_arr = array();
 $ra_args = array( 
 	'post_type' => 'articles', 
 	'posts_per_page' => -1, 
-	'orderby' => $orderby, 
-	//'orderby'  => 'meta_value_num',  
+	//'orderby' => $orderby, 
+	'orderby'  => 'meta_value_num',  
 	'order' => $order, 
 	//'year' => $ra_year, 
 	'paged' => $paged, 
-	'post_status' => 'publish',
 	'max_num_pages' => 20,
-	'meta_key' => 'ra_publication',
+	'meta_key' => $ra_date,
 	'meta_query' => array(
 			
-		//	'key'		=> $ra_year,
-		//	'compare'	=> '!=',
-		//	'value'		=> $year,
+			'key'		=> $ra_year,
+			'compare'	=> '!=',
+			'value'		=> $year,
 		
 ),
 	

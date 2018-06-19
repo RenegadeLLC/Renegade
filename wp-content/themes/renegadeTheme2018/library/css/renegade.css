@@ -1278,8 +1278,7 @@ a{
 
 .article-item h3 a {
 	color: #C4BD06 !important;
-	font-family:'MuseoSlab-300', serif;
-	letter-spacing: 0;
+	font-family:'MuseoSans-500', sans-serif;
 }
 
 h3.widget-title{
@@ -1669,10 +1668,6 @@ ul.services, ol.services > li, ul.services > li{
     margin: 16px 0;
 }
 
-.newsletter-thumb{
-	margin-right:24px;
-}
-
 .cut {
     display: inline;
     font-family: 'MuseoSans-100';
@@ -1720,16 +1715,6 @@ ul.services, ol.services > li, ul.services > li{
     color:#000;
 }
 
-h1.article-group{
-	color:#000;
-	text-align:center;
-	padding:24px 0 16px 0;
-	margin:0;
-	/*border-bottom:2px dotted #ccc;
-	border-top:2px dotted #ccc;*/
-	max-width:90%;
-	background:#f2f2f2;
-}
 /*BUTTON STYLES*/
 
 .bt-black {
@@ -2823,7 +2808,7 @@ img{
 	background:#dedede;
 	width:100%;
 	height:1px;
-	margin:20px 0 0px 0;
+	margin:20px 0 20px 0;
 }
 
 .contact .sep{
@@ -2949,9 +2934,6 @@ img{
 
 /******************************  NEWSLETTER PAGE STYLES  ******************************/ 
 
-.newsletters{
-	background:#fff;
-}
 
 .newsletter-mark{
 	display:block;
@@ -3015,19 +2997,6 @@ img{
 	font-weight: normal;
 }
 
-.newsletter-title-sm{
-	font-family: 'MuseoSlab-500', Georgia, serif;
-	font-size:20px;
-	line-height:20px;
-	color:#00a3d6;
-	padding:0px;
-	margin:8px 0 0px 0;
-	text-transform:none;
-	text-align:left;
-	letter-spacing:-1px;
-	font-weight: normal;
-}
-
 .newsletter-date{
 	font-family: 'MuseoSans-300', Helvetica, Gotham, Arial, sans-serif;
 	font-size:16px;
@@ -3038,24 +3007,13 @@ img{
 	color:#000;
 }
 
-.newsletter-date-sm{
-	font-family: 'MuseoSans-700', Helvetica, Gotham, Arial, sans-serif;
-	font-size:14px;
-	padding:0px;
-	text-transform:uppercase;
-	text-align:left;
-	margin:0px 0 0px 0;
-	color:#000;
-}
-
 .newsletter-intro{
 	width:100%;
-	padding:12px 24px;
+	padding:32px 24px;
 	background:#58595B;
 	color:#fff;
 	font-family: 'MuseoSans-300', Helvetica, Arial, sans-serif;
 	font-size:16px;
-	
 }
 
 .newsletter-intro a{
@@ -3064,26 +3022,6 @@ img{
 	background-color:#fff;
 }
 
-.newsletter-excerpt{
-	padding:24px 24px 8px 24px;
-	background:#fff;
-	border-bottom:1px dotted #dedede;
-	clear:both;
-	display:block;
-	position:relative;
-	overflow:hidden;
-}
-
-.newsletter-info{
-
-	width:100%;
-}
-
-.newsletter .newsletter-excerpt a{
-	    color: #888888 !important;
-	    font-weight:normal !important;
-	    font-family: 'MuseoSans-300', sans-serif !important;
-}
 .newsletter-text a{
 	color:#C4BD06 !important;
 }

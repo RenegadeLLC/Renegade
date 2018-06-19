@@ -56,7 +56,7 @@ function load_archives(){
 
 	while ( $arc_loop->have_posts() ) : $arc_loop->the_post();
 		if($post_type == 'articles'):
-		  require( FUNCTIONS . 'articles_loop.php' );
+		//require( FUNCTIONS . 'articles_loop.php' );
 		endif;
 		
 	endwhile;

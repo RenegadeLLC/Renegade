@@ -519,10 +519,6 @@ h1{
 
 @media all and (max-width: 600px){
 
-.newsletter-info{
-	float:none;
-	width:100%;
-}
 		.algorithm-cols img{
 	max-height:none;
 	max-width:85%;

@@ -487,9 +487,9 @@
         ],
         [
             {
-                "param": "page_type",
+                "param": "page",
                 "operator": "==",
-                "value": "posts_page"
+                "value": "8420"
             }
         ]
     ],
@@ -513,5 +513,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1475508200
+    "modified": 1482442082
 }

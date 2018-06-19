@@ -172,14 +172,10 @@
 	display:none;
 }
 
-.hm-case-label-ct, .person-label-ct{
+.hm-case-label-ct{
 	display:block;
 }
-
-.person-info-ct:hover{
-	display:none;
-}
-
+	
 .mission .cta{
 	/*display:none;*/
 }
@@ -307,7 +303,7 @@ h1{
 }
 		
 .grid-item-w-33{	
-	width:50%;
+	width:33%;
 }
 		
 .grid-g-3 .grid-item-w-33{	

@@ -54,7 +54,7 @@ function get_recent_func($atts, $content = null){
 		} else if($post_type == 'newsletters'){
 			
 			$rn_date = '<div class="mod-newsletter-date"><div class="cut">THE CUT</div><div class="cut-date"> ' . get_field('rn_date') . '</div></div>';
-			$rn_header = '<h2><a href="' . $permalink . '">' . the_title('', '', false) . '</a></h2>';	
+			$rn_header = '<h2>' . the_title('', '', false) . '</h2>';	
 			$post_content .= $rn_date . $rn_header;
 		}
 	

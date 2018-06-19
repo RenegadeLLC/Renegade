@@ -191,7 +191,8 @@
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
-            "media_upload": 1
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_56d9e8bc60e79",
@@ -487,14 +488,21 @@
         ],
         [
             {
-                "param": "page_type",
+                "param": "page",
                 "operator": "==",
-                "value": "posts_page"
+                "value": "8420"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/articles_archive_page_template.php"
             }
         ]
     ],
-    "menu_order": 20,
-    "position": "normal",
+    "menu_order": 1,
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -513,5 +521,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1475508200
+    "modified": 1518820545
 }

@@ -29,32 +29,17 @@ $year = current_time('Y');
 $newsletterHTML = '';
 $newsletterPageHTML = '';
 $newsletterPageHTML .= '<div class="newsletters post-list" year="' . $year . '"></div>';
-$rn_args = array( 'post_type' => 'newsletters', 'posts_per_page' => -1, 'post_status' => 'publish', 'order' => 'DESC' );
+$rn_args = array( 'post_type' => 'newsletters', 'posts_per_page' => 1, 'post_status' => 'publish');
 
 $rn_query = new WP_Query( $rn_args );
-$i = 1;
-$newsletterHTML = '';
 
 	while ($rn_query->have_posts() ) : $rn_query->the_post();
-	
-	   if($i==1):
-         $newsletterHTML .= require (FUNCTIONS . 'newsletter_excerpt_feature_loop.php');
-	   else:
-	       $newsletterHTML .= require (FUNCTIONS . 'newsletter_excerpt_loop.php');
-       endif;
-      
-	
-    //   $newsletterHTML .= require (FUNCTIONS . 'newsletter_excerpt_loop.php');
-       
-       	$rn_title = get_the_title( $post->ID );
-        	$rn_date = get_field('rn_date');
-        	$rn_final_note = get_field('rn_final_note');
-        	
-		$i++;
-	
+		$newsletterHTML = require_once (FUNCTIONS . '/newsletter_loop.php');
+		$rn_title = get_the_title( $post->ID );
+		$rn_date = get_field('rn_date');
+		$rn_final_note = get_field('rn_final_note');
 	endwhile;
 	
-	//do_shortcode('[ajax_load_more id="newsletter" post_type="newsletters" posts_per_page="10" button_label="Load More" button_loading_label="Loading...."]');
 	wp_reset_postdata();
 	
 $newsletterPageHTML .= '<div class="' . $page_class .  '">';
@@ -68,14 +53,17 @@ $newsletterPageHTML .= '<div class="clear-fix"></div>';
 $newsletterPageHTML .= '</div><!-- .container-->';
 $newsletterPageHTML .= '</div><!-- .wrapper -->';
 $newsletterPageHTML .= '</div><!-- .outer-wrapper -->';
+$newsletterPageHTML .= '<div class="outer-wrapper" style="background-color:' . $body_wrapper_color . '; overflow:hidden;"><div class="wrapper"><div class="newsletter-content grid-item-w-75 float-left">';
 
-$newsletterPageHTML .= '<div class="outer-wrapper" style="background-color:' . $body_wrapper_color . '; overflow:hidden;"><div class="wrapper"><div class="newsletter-content">';
-$newsletterPageHTML .= '<div class="grid"><div class="grid-gutter"></div>';
 $newsletterPageHTML .= $newsletterHTML;
-	
-$newsletterPageHTML .= '</div><!--.grid --></div><!--.newsletter-content-->';
 
-$newsletterPageHTML .= '</div><!-- .wrapper --></div><!-- .outer-wrapper -->';
+	if($rn_final_note):
+		$newsletterPageHTML  .= '<div style="background-color:#333; color:#fff; padding:16px;">' . $rn_final_note . '</div>';
+	endif;
+	
+$newsletterPageHTML .= '</div>';
+
+$newsletterPageHTML .= '</div>';//newsletter-right
 	
 echo $newsletterPageHTML;
 	
@@ -99,6 +87,10 @@ echo $newsletterPageHTML;
 	  
 	});
 	</script>
-	
+	<div class="float-left grid-item-w-25">
+<div id="newsletter-sidebar">
+	<?php get_sidebar('newsletter-sidebar');?>
+		</div>
+	</div>
 	</div></div>
 	<?php get_footer(); ?>

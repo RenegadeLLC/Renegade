@@ -14,4 +14,3 @@ $(grouped_title).html('Social News Roundup');
 
 
 
-

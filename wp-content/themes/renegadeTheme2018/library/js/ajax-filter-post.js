@@ -235,6 +235,7 @@ jQuery(document).ready(function($) {
 		}else if(selected_orderby == 'publication'){
 			
 			selected_orderby = 'meta_value';
+			//selected_orderby = 'title';
 			selected_order='ASC';
 			metakey = 'ra_publication';
 		} 

@@ -1,0 +1,534 @@
+
+<!DOCTYPE HTML>
+
+<html><head>
+
+
+
+
+
+<meta charset="UTF-8">
+
+<title>testing different syntax</title>
+
+
+
+ 
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+
+(function(){
+
+  // if firefox 3.5+, hide content till load to prevent FOUT
+
+  var d = document, e = d.documentElement, s = d.createElement('style');
+
+  if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+
+    s.textContent = 'body{visibility:hidden}';
+
+    e.firstChild.appendChild(s);
+
+    function f(){ s.parentNode && s.parentNode.removeChild(s); }
+
+    addEventListener('load',f,false);
+
+    setTimeout(f,1000);
+
+  }
+
+})();
+
+</script>
+
+<style type="text/css">
+
+
+
+
+
+
+
+@font-face {
+
+    font-family: bulletproof;
+
+    src: url('yanone_kaffeesatzregular-regular-webfont.eot');    
+
+    src: local('Yanone'), url('yanone_kaffeesatzregular-regular-webfont.ttf') format("truetype");
+
+}
+
+.bulletproof {
+
+  font-family:bulletproof,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+/* no quotes on local */
+
+@font-face {
+
+    font-family: bulletproofnoquotes;
+
+    src: url('yanone_kaffeesatzregular-regular-webfont.eot');    
+
+    src: local(Yanone), url('yanone_kaffeesatzregular-regular-webfont.ttf') format("truetype");
+
+}
+
+.bulletproofnoquotes {
+
+  font-family:bulletproofnoquotes,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+@font-face{
+
+  font-family:mobulletproofer;
+
+  src:url(yanone_kaffeesatzregular-regular-webfont.eot);
+
+}
+
+@font-face { 
+
+  font-family:mobulletproofer;
+
+  src:url(//:) format("No-IE-404"),url(yanone_kaffeesatzregular-regular-webfont.ttf) format("truetype");
+
+}
+
+.mobulletproofer {
+
+  font-family:mobulletproofer,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* no quotes on url */
+
+@font-face {
+
+    font-family: bulletproofnoquotes2;
+
+    src: url('yanone_kaffeesatzregular-regular-webfont.eot');    
+
+    src: local('Yanone'), url(yanone_kaffeesatzregular-regular-webfont.ttf) format("truetype");
+
+}
+
+.bulletproofnoquotes2 {
+
+  font-family:bulletproofnoquotes2,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+/* no format */
+
+@font-face {
+
+    font-family: noformat;
+
+    src: url(yanone_kaffeesatzregular-regular-webfont.eot);    
+
+    src: local('Yanone'), url(yanone_kaffeesatzregular-regular-webfont.ttf);
+
+}
+
+.noformat {
+
+  font-family:noformat,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+/* local reference if its installed */
+
+@font-face {
+
+    font-family: localref;
+
+    src: url(yanone_kaffeesatzregular-regular-webfont.eot);    
+
+    src: local('Yanone Tagesschrift'), url(yanone_kaffeesatzregular-regular-webfont.ttf) format('truetype');
+
+}
+
+.localref {
+
+  font-family:localref,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+
+    font-family: basic;
+
+    src: local(Yanone), url('yanone_kaffeesatzregular-regular-webfont.ttf') format("truetype");
+
+}
+
+.basic {
+
+  font-family:basic,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+/* only the eot */
+
+@font-face {
+
+    font-family: onlyeot;
+
+    src: url('yanone_kaffeesatzregular-regular-webfont.eot');    
+
+}
+
+.onlyeot {
+
+  font-family:onlyeot,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+/* smiley bulletproof */
+
+@font-face {
+
+    font-family: bulletproofsmiley;
+
+    src: url('yanone_kaffeesatzregular-regular-webfont.eot');    
+
+    src: local('☺'), url('yanone_kaffeesatzregular-regular-webfont.ttf') format("truetype");
+
+}
+
+.bulletproofsmiley {
+
+  font-family:bulletproofsmiley,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+/* cross domain */
+
+@font-face {
+
+    font-family: crossdomain;
+
+    src: url('https://social.renegade.com/esb/loveAboveAll/yanone_kaffeesatzregular-regular-webfont.eot');    
+
+    src: local('☺'), url('https://social.renegade.com/esb/loveAboveAll/yanone_kaffeesatzregular-regular-webfont.ttf') format("truetype");
+
+}
+
+.crossdomain {
+
+  font-family:crossdomain,Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-device-width: 480px) {
+
+
+
+ body { background: papayawhip;}
+
+ 
+
+    @font-face {
+
+        font-family: bulletproofsmiley;   
+
+        src: url('yanone_kaffeesatzregular-regular-webfont.ttf') format("truetype");
+
+    }
+
+
+
+}
+
+
+
+</style> 
+
+<style >
+
+
+
+</style>
+
+</head><body>
+
+
+
+<h5>This page is a demonstration of a few @font-face syntax techniques, most notably from <a href="http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/">bulletproof @font-face syntax</a> and <a href="http://readableweb.com/mo-bulletproofer-font-face-css-syntax/">Mo’ Bulletproofer @Font-Face CSS Syntax</a>.
+
+
+
+<div id="wrapper">
+
+
+
+<p class="fontdesc">original bulletproof syntax</p>
+
+<p class="example bulletproof">
+
+@font-face {
+
+    font-family: bulletproof;
+
+    src: url('fonts/yanone.eot');    
+
+    src: local('Yanone'), url(fonts/yanone.ttf) format("truetype");
+
+}</p>
+
+
+
+
+
+<p class="fontdesc">bulletproof with no quotes around local name</p>
+
+<p class="example bulletproofnoquotes">
+
+@font-face {
+
+    font-family: bulletproofnoquotes;
+
+    src: url('fonts/yanone.eot');    
+
+    src: local(Yanone), url('fonts/yanone.ttf') format("truetype");
+
+}</p>
+
+
+
+<p class="fontdesc">mo bullet proofer</p>
+
+<p class="example mobulletproofer">
+
+@font-face{
+
+  font-family:mobulletproofer;
+
+  src:url(fonts/yanone.eot);
+
+}
+
+@font-face { 
+
+  font-family:mobulletproofer;
+
+  src:url(//:) format("No-IE-404"),url(fonts/yanone.ttf) format("truetype");
+
+}</p>
+
+
+
+
+
+
+
+<p class="fontdesc">no quotes on url</p>
+
+<p class="example bulletproofnoquotes2">
+
+@font-face {
+
+    font-family: bulletproofnoquotes2;
+
+    src: url('fonts/yanone.eot');    
+
+    src: local('Yanone'), url(fonts/yanone.ttf) format("truetype");
+
+}</p>
+
+
+
+
+
+<p class="fontdesc">no format property, no quotes around either url</p>
+
+<p class="example noformat">
+
+@font-face {
+
+    font-family: noformat;
+
+    src: url(fonts/yanone.eot);    
+
+    src: local('Yanone'), url(fonts/yanone.ttf);
+
+}</p>
+
+
+
+
+
+
+
+<p class="fontdesc">locally installed with local font name</p>
+
+<p class="example localref">
+
+@font-face {
+
+    font-family: localref;
+
+    src: url(fonts/yanone.eot);    
+
+    src: local('Yanone Tagesschrift'), local('Yanone'), local('Yanone Tagesschrift'), url(fonts/nottherealpath.ttf) format('tuetype');
+
+}</p>
+
+
+
+
+
+<p class="fontdesc">basic with missing local quotes (no eot)</p>
+
+<p class="example basic">
+
+@font-face {
+
+    font-family: basic;
+
+    src: local(Yanone), url('fonts/yanone.ttf') format("truetype");
+
+}</p>
+
+
+
+
+
+<p class="fontdesc">only the eot</p>
+
+<p class="example onlyeot">
+
+  @font-face {
+
+      font-family: onlyeot;
+
+      src: url('fonts/yanone.eot');    
+
+  }</p>
+
+
+
+
+
+
+
+
+
+<p class="fontdesc">bulletproof with smileyface as local name</p>
+
+<p class="example bulletproofsmiley">
+
+@font-face {
+
+    font-family: bulletproofsmiley;
+
+    src: url('fonts/yanone.eot');    
+
+    src: local('☺'), url('fonts/yanone.ttf') format("truetype");
+
+}</p>
+
+
+
+
+
+<p class="fontdesc">cross-domain font request</p>
+
+<p class="example crossdomain">
+
+@font-face {
+
+    font-family: crossdomain;
+
+    src: url('http://paulirish.com/tagesschrift.eot');    
+
+    src: local('☺'), url('http://paulirish.com/tagesschrift.ttf') format("truetype");
+
+}</p>
+
+
+
+
+
+</div>
+
+</body>
+
+
+
+
+
+</html>

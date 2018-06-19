@@ -11,37 +11,21 @@ global $taxonomy;
 global $taxonomy_type;
 global $taxonomy_term;
 global $order;
-global $orderB;
 global $orderby;
-global $orderbyB;
-global $ra_publication; 
-global $ra_date;
+global $ra_publication;
 global $meta_value;
 global $metakey;
 global $post_type;
 global $ra_loop;
 global $loopHTML;
 global $year;
-
-$year_arr;
-$pub_arr;
-
-if ( isset($_REQUEST['orderby']) ) {
-    $orderby = $_REQUEST['orderby'];
-} else{
-   $orderby = 'date';
-}
-
-if ( isset($_REQUEST['order']) ) {
-    $orderby = $_REQUEST['order'];
-}
-
-if ( isset($_REQUEST['meta_value']) ) {
-    $orderby = $_REQUEST['meta_value'];
-}
-
+//$orderby = $_REQUEST['orderby'];
 $order = 'ASC';
-$tax_query_arr = array();
+//$orderby = 'date';
+//$taxonomy_type = '';
+//$selected_taxonomy = '';
+$tax_query_arr = array(	
+);
 
 $post_type = '';
 $publication = '';
@@ -82,18 +66,17 @@ function sort_posts( ) {
 	$tax_query_arr = array(
 	);
 	
-	if ( isset($_REQUEST) ) {
+//	if ( isset($_REQUEST) ) {
 		$taxonomy_term = (isset($_REQUEST['taxonomy_term']) ? $_REQUEST['taxonomy_term'] : null);
 		$taxonomy = (isset($_REQUEST['taxonomy']) ? $_REQUEST['taxonomy'] : null);
 		$orderby = $_REQUEST['orderby'];
 		$order = $_REQUEST['order'];
 		$post_type = (isset($_REQUEST['post_type']) ? $_REQUEST['post_type'] : null);
-		$publication = (isset($_REQUEST['publication']) ? $_REQUEST['publication'] : null);
-		$metakey = (isset($_REQUEST['metakey']) ? $_REQUEST['metakey'] : null);
+		//$publication = (isset($_REQUEST['publication']) ? $_REQUEST['publication'] : null);
+	//	$metakey = (isset($_REQUEST['metakey']) ? $_REQUEST['metakey'] : null);
 		$year = (isset($_REQUEST['year']) ? $_REQUEST['year'] : '');
-	}
-
-
+	//}
+	
 	if($taxonomy == 'post_tag'){
 		$taxonomy = 'article_tags';
 	} elseif($taxonomy == 'category'){
@@ -112,21 +95,34 @@ function sort_posts( ) {
 		array_push($tax_query_arr, $tax_queries);
 	}
 	
-	
 	if(!$orderby):
-        	$orderby = 'date';
+//	$orderby = 'date';
 	endif;
-	
 	if($orderby == 'meta_value'):
-	   $metakey = 'ra_publication';
-	   $orderbyB = 'date';
-	   $orderB = 'DESC';
+	
+	//$orderby == 'meta_value';
+	$metakey = 'ra_publication';
 	endif;
+/*			
+	if(!$orderby){
+		$orderby = null;
+	}
 
+	if(!$order){
+		$order = null;
+	}
+
+	if(!$publication){
+		$publication = null;
+	}
+*/
+		//var_dump($tax_query_arr);
+//	var_dump( 'orderby is ' . $orderby);
 
 	$articlesHTML .= '<div class="post-grid-gutter"></div>';
-	
-	$query_results = query_custom_posts($post_type, $orderby, $orderbyB, $orderB, $order, $taxonomy_term, $taxonomy, $tax_query_arr, $metakey);
+	$query_results = query_custom_posts($post_type, $orderby, $order, $taxonomy_term, $taxonomy, $tax_query_arr, $metakey, $year);
+	// $query_results = query_custom_posts('articles', $orderby, $order, 'tag', 'Video' );
+	//$articlesHTML .= '<div class="article-item post-grid-item post-grid-item-w-100">' . $taxonomy_term . '</div>';
 	$articlesHTML .= $query_results;
 
 
@@ -135,7 +131,7 @@ function sort_posts( ) {
 }
 
 
-// Script for filtering posts
+// Script for getting posts
 function filter_posts( ) {
 	$tax_query_arr = array(
 	);
@@ -192,17 +188,63 @@ if(isset($_POST['selected_metakey'])){$selected_metakey = $_POST['selected_metak
 }
 
 $articlesHTML = '';
-
 $articlesHTML .= '<div class="post-grid-gutter">' .  $year . '</div>';
-
   $query_results = query_custom_posts('articles', $orderby, $order, $taxonomy_term, $taxonomy, $tax_query_arr, $metakey, $year);
-$articlesHTML .= $query_results;
-	
+ // $query_results = query_custom_posts('articles', $orderby, $order, 'tag', 'Video' );
+  //$articlesHTML .= '<div class="article-item post-grid-item post-grid-item-w-100">' . $taxonomy_term . '</div>';
+	$articlesHTML .= $query_results;
+  
  echo(   $articlesHTML );
   
   die(); 
 }
 
+/*
+function sort_posts( ) {
+	
+	$post_type = (isset($_REQUEST['post_type']) ? $_REQUEST['post_type'] : null);
+	
+	//$sort = $_POST['orderby'];
+	if(isset($_REQUEST['taxonomy'])){$taxonomy = $_REQUEST['taxonomy'];}else{
+		$taxonomy = null;
+	}
+	if(isset($_REQUEST['taxonomy_term'])){$taxonomy_term = $_REQUEST['taxonomy_term'];}else{
+		$taxonomy_term = null;
+	}
+	if(isset($_REQUEST['order'])){$order = $_REQUEST['order'];}else{
+		$order = '';
+	}
+	if(isset($_REQUEST['orderby'])){$orderby = $_REQUEST['orderby'];}else{
+		$orderby = '';
+	}
+	
+	if(isset($_REQUEST['selected_metakey'])){$selected_metakey = $_REQUEST['selected_metakey'];}else{
+		$selected_metakey  = null;
+	}
+	
+	if(!$orderby || $orderby == ''){
+		$orderby = null;
+	}
+
+	if(!$order || $order == ''){
+		$order = null;
+	}
+
+	$articlesHTML = '';
+	$articlesHTML .= '<div class="post-grid-gutter"></div>';
+	$query_results = query_custom_posts($post_type, $orderby, $order, $taxonomy, $taxonomy_term, $selected_metakey  );
+
+	$articlesHTML .= $query_results;
+
+	
+	echo(   $articlesHTML );
+	
+
+
+	 die();
+}
+
+*/
 
 add_action('wp_ajax_filter_posts', 'filter_posts');
 add_action('wp_ajax_nopriv_filter_posts', 'filter_posts');

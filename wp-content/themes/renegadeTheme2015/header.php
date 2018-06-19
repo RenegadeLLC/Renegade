@@ -29,41 +29,7 @@ document.createElement('hgroup');
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript">
 
-
-$(document).ready(function(){
-    $("p").savetheorphans({
-        orphansToSave: 1
-    });
-
-    $("h1").savetheorphans({
-        orphansToSave: 1
-    });
-
-    $("h2").savetheorphans({
-        orphansToSave: 1
-    });
-
-    $("h3").savetheorphans({
-        orphansToSave: 1
-    });
-
-    $("h4").savetheorphans({
-        orphansToSave: 1
-    });
-
-    $("h5").savetheorphans({
-        orphansToSave: 1
-    });
-
-    $(".newsletter-title").savetheorphans({
-        orphansToSave: 1
-    });
-
-    
-});
-</script>
 </head>
 
 <body <?php body_class(); ?>>

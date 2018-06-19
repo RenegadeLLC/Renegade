@@ -15,8 +15,16 @@ get_header();
 $newsletterHTML = '';
 $accent_color = get_field('accent_color');
 //$headline = get_field('headline');
+$headline = 'News that Made';
+$subheadline = "the Cut";
+//$subheadline = get_field('sub_headline');
+//$sidebar_content = get_field('sidebar_content');
+//$sidebar_items = get_field('sidebar_items');
+//$sidebar = get_field('sidebar');
 
-
+$newsletterHTML .= '<style> li:before{background-color:' . $accent_color . ';}  .newsletter-date{color:' . $accent_color . ';}  .newsletter-final-note a, .newsletter-text a, .newsletter-intro a{color:' . $accent_color . ' !important; text-decoration:none !important;}</style>';
+$newsletterHTML .= '<div style="background:#E6E7E8; display:block; overflow:hidden;"><div style="background-color:#000; width:100%; position:absolute; height:270px; display:block; overflow:hidden;"></div>';
+$newsletterHTML .= '<div class="headline-ct"><h1>'. $headline . ' <span class="gray">' . $subheadline . '</span></h1></div>';
 $newsletterHTML .= '<div class="wrapper"><div class="newsletter-page">';
 //$newsletterHTML .= '<div class="newsletter-ct">';
 $newsletterHTML .= '<div class="grid-item-w-75" style="display:block; overflow:hidden; background:#f2f2f2;">';
@@ -121,7 +129,54 @@ $newsletterHTML .= $categories . '</div>';
 $newsletterHTML .= '</div><!-- #blog-sidebar -->';
 $newsletterHTML .=	'</div><!-- .page-grid-item-25 -->';
 
+//$newsletterHTML .= '</div>'; //newsletter-page-left
 
+	/*
+if($sidebar == 'Yes'):
+$newsletterHTML .= '</div>';//close left side
+$newsletterHTML .= '<div class="newsletter-page-right">';
+$newsletterHTML .= '<div class="news">';
+$newsletterHTML .= '<div class="saw-small-inv"></div>';
+if( in_array( 'archives', $sidebar_items ) ):
+
+//GET POST ARCHIVES
+$newsletterHTML .= '<div class="ribbon-right clearfix sidebar-nav">Archives</div><div class="sidebar-item sidebar-closed"><div class="archive-list clearfix sidebar-content">';
+
+$archives = do_shortcode( '[list_archives type="monthly" format="custom" post_type="newsletters"]' );
+
+$newsletterHTML .= $archives . '</div></div>';
+
+endif;
+
+if( in_array( 'categories', $sidebar_items ) ):
+
+//GET POST CATEGORIES
+$newsletterHTML .= '<div class="ribbon-right clearfix sidebar-nav">Categories</div><div class="sidebar-item sidebar-closed"><div class="categories-list sidebar-content">';
+
+$categories = do_shortcode( '[list_categories]' );
+
+$newsletterHTML .= $categories . '</div></div>';
+
+endif;
+
+if( in_array( 'tags', $sidebar_items ) ):
+
+//GET POST CATEGORIES
+$newsletterHTML .= '<div class="ribbon-right clearfix sidebar-nav">Tags</div><div class="sidebar-item sidebar-closed"><div class="tags-list sidebar-content">';
+
+$tags = do_shortcode( '[list_tags]' );
+
+$newsletterHTML .= $tags . '</div></div>';
+
+endif;
+
+if($sidebar_content):
+$newsletterHTML .=  $sidebar_content;
+endif;
+$newsletterHTML .= '</div></div>';
+endif;
+
+*/
 $newsletterHTML .= '</div></div>';//wrapper
 
 echo $newsletterHTML;

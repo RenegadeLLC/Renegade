@@ -48,7 +48,7 @@ if($rn_section_layout == 'One Column'){
 //$newsletter_content_html .= '<a href="#submenu"><div class="bt-submenu"></div></a><div class="sub-nav-menu-ct" id="submenu">' . wp_nav_menu( array( 'menu' => 'people','theme_location' => 'people', 'menu_class' => 'sub-nav-menu' ) ) . '</div></a>';
 
 $newsletter_content_html .= '</li>';
-
+$rn_final_note = get_field('rn_final_note');
 
 
 $newsletter_html .= $newsletter_content_html;
@@ -67,12 +67,7 @@ else :
 // no rows found
 
 endif;
-
-
 $newsletter_content_html .= '</div>';
-
-
-
 return $newsletter_html;
 
 ?>

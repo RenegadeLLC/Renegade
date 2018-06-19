@@ -383,7 +383,7 @@ echo $pageHTML;
 
 
 <script type="text/javascript">
-if ($(window).width() > 800) {
+
 $(document).ready(function() {
 	  var $container = $('.grid-g-0');
 	  $container.imagesLoaded( function() {
@@ -414,7 +414,7 @@ $(document).ready(function() {
 	  });
 
 	});
-}
+
 </script>
 
 

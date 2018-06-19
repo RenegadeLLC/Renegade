@@ -21,6 +21,7 @@ function getNext($page_id){
 			$people_order[] = get_post_meta( $menu_item->ID, '_menu_item_object_id', true );
 			$thisPage = get_post_meta( $menu_item->ID, '_menu_item_object_id', true );
 			$people_urls[] = get_permalink( $thisPage);
+			
 		}
 /*
 		$thisPerson =  array_search($page_id, $people_order);

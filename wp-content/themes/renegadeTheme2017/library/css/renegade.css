@@ -1268,8 +1268,6 @@ ul, ol{
 }
 a{
 	text-decoration:none;
-	color: #000;
-	font-weight:bold !important;
 }
 
 .article-item h3 a {
@@ -3233,7 +3231,7 @@ ul.section-list > li:before, ol.section-list > li:before {
 
 .sme ul.rss li a.blog-link, .tbd ul.rss li a.blog-link{
 	color:#000!important;
-	/*font-family:'MuseoSans-700', sans-serif !important;*/
+	font-family:'MuseoSans-700', sans-serif !important;
 }
 
 .sme ul.rss li p:nth-of-type(2) {

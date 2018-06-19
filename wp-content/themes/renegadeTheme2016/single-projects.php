@@ -469,6 +469,43 @@ $(document).ready(function(){
 	
 jQuery(document).ready(function($) {
 
+
+//	lazy_load();
+$(".lazy").bttrlazyloading({
+		
+		xs: {
+		//	src: "img/720x200.gif",
+			//width: 200,
+			//height: 267
+		},
+		sm: {
+		//	src: "img/360x200.gif",
+			width: 1200,
+			height: 400
+		},
+		md: {
+		//	src: "img/470x200.gif",
+		//	width: 566,
+			//height: 755
+		},
+		lg: {
+		//	src: "img/347x489.gif",
+			//width: 2700,
+			//height: 3600
+		},
+		//retina: true,
+		animation: 'fadeIn',
+		delay: 1000,
+		event: 'scroll',
+		triggermanually: false,
+		//container: 'document.body',
+		threshold: 666,
+		//backgroundcolor: '#ffffff',
+		//placeholder:'<?php //echo(get_template_directory_uri() . '/library/images/loading.gif');?>',
+		
+
+	})
+	
 	  $('.grid-g-0').isotope({
 			 percentPosition: true,
 		  layoutMode: 'packery',
@@ -539,6 +576,44 @@ jQuery(document).ready(function($) {
 	  
 	});
 
+function lazy_load(){
+
+	$(".lazy").bttrlazyloading({
+		
+		xs: {
+		//	src: "img/720x200.gif",
+			//width: 200,
+			//height: 267
+		},
+		sm: {
+		//	src: "img/360x200.gif",
+			width: 1200,
+			height: 400
+		},
+		md: {
+		//	src: "img/470x200.gif",
+		//	width: 566,
+			//height: 755
+		},
+		lg: {
+		//	src: "img/347x489.gif",
+			//width: 2700,
+			//height: 3600
+		},
+		//retina: true,
+		animation: 'fadeIn',
+		delay: 1000,
+		event: 'scroll',
+		triggermanually: false,
+		//container: 'document.body',
+		//threshold: 666,
+		backgroundcolor: '#000000',
+		//placeholder:'<?php //echo(get_template_directory_uri() . '/library/images/loading.gif');?>',
+		
+
+	})
+	
+	}
 </script>
 
 

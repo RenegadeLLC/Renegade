@@ -5,7 +5,7 @@
  *
  * @package Renegade
  * @subpackage Renegade
- * @since 2016
+ * @since 2015
  */
 
 get_header();
@@ -30,10 +30,9 @@ $pageTopHTML = require_once (FUNCTIONS . '/standard_page_top.php');
 			$industry_vertical = get_field('industry_vertical');
 			
 			if($client_name != 'renegade'):
-				$workHTML .= '<div class="case-image-ct circ case-grid-item case-grid-item-w-25 ';
-				$workHTML .= '"><div class="case-image"><a href="' . $case_link . '"><img src="' . $project_thumbnail_image . '" alt="' . $case_id .'" class="lazy"></a></div></div>';
+			$workHTML .= '<div class="case-image-ct circ case-grid-item case-grid-item-w-25 ';
+			$workHTML .= '"><div class="case-image"><a href="' . $case_link . '"><img src="' . $project_thumbnail_image . '" alt="' . $case_id .'" class="lazy"></a></div></div>';
 			endif;
-			
 			endwhile;
 		
 	$workHTML .= '</div>';//end grid
@@ -62,5 +61,79 @@ echo $workHTML;
 		  });
 
 		});
-</script>
+	
+
+		/*	$(function() {
+				var $menu = $('#submenu'),
+				$html = $('html, body'),
+				$num;
+				$menu.mmenu({
+					navbar 		: {
+						title		: 'WORK',
+					},
+					//isMenu: false,
+					dragOpen: true,
+					offCanvas: 
+						{
+		              position  : 'right',
+		             //   menuWrapperSelector : 'div',
+		             //   pageSelector: 'site-content',
+		            //    moveBackground : false,
+		                //modal: true,
+		           zposition	: "front"
+		             }
+			         // options
+			      }, {
+			         // configuration
+			         classNames: {
+				         divider: 'menu-item',
+
+				      //   panel: 'site-content',
+			            fixedElements: {
+			              //fixedTop: "header-ct",
+			              // fixedBottom: "footer"
+			            },
+			            onClick: {
+			            	setSelected: true,
+			            	close: true
+			            }
+
+			         //   panelNodetype: "div"
+			           
+			         }
+			      });
+			      
+			
+				$menu.find( 'li > a' ).on(
+						'click',
+						function( e )
+						{
+							var href = $(this).attr( 'href' );
+
+							//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+							if ( href.slice( 0, 1 ) == '#' )
+							{
+								$menu.one(
+									'closed.mm',
+									function()
+									{
+										setTimeout(
+												
+											function()
+											{
+												
+												$html.animate({
+														
+													scrollTop: $( href ).offset().top
+
+												});	
+											}, 10
+										);	
+									}
+								);
+							}
+						}
+					);
+			});
+		*/</script>
 <?php get_footer(); ?>

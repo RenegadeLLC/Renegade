@@ -9,7 +9,7 @@
  *
  * @package Renegade
  * @subpackage Renegade
- * @since 2016
+ * @since 2015
  */
 
 get_header();
@@ -313,7 +313,6 @@ if( have_rows('modules') ):
 						$pageHTML .= '<h2>' . $rss_feed_name  . '</h2>';
 						break;
 				}
-				
 				$pageHTML .= '<div class="post-list-inner"><div class="post-list-ct">';
 				
 				if($post_type == 'rss'):
@@ -410,8 +409,6 @@ $(document).ready(function() {
 	});
 
 </script>
-
-
 
 </div></div><!-- .content-wrapper -->
 </div><!-- .company-page -->

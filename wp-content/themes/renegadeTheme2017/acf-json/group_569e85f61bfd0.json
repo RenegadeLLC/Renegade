@@ -16,8 +16,8 @@
                 "id": ""
             },
             "collapsed": "field_569e85f625f8d",
-            "min": "",
-            "max": "",
+            "min": 0,
+            "max": 0,
             "layout": "block",
             "button_label": "Add Grid Layout",
             "sub_fields": [
@@ -566,8 +566,8 @@
                         "id": ""
                     },
                     "collapsed": "field_569e85f634d50",
-                    "min": "",
-                    "max": "",
+                    "min": 0,
+                    "max": 0,
                     "layout": "block",
                     "button_label": "Add Content Module",
                     "sub_fields": [
@@ -732,7 +732,8 @@
                             "default_value": "",
                             "tabs": "all",
                             "toolbar": "full",
-                            "media_upload": 1
+                            "media_upload": 1,
+                            "delay": 0
                         },
                         {
                             "key": "field_569e85f634daf",
@@ -1508,5 +1509,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1487090378
+    "modified": 1487090935
 }

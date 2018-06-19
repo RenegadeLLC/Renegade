@@ -1,0 +1,19 @@
+.wpgdprc .wpgdprc-status--processing,
+.wpgdprc .wpgdprc-status--removed {
+    pointer-events: none;
+}
+
+.wpgdprc .wpgdprc-status--processing {
+    opacity: .5;
+}
+
+.wpgdprc .wpgdprc-status--removed {
+    opacity: .2;
+    text-decoration: line-through;
+}
+
+.wpgdprc .wpgdprc-status--error {
+    background-color: #F7E4E1;
+    border-color: #CC4B37;
+    color: #CC4B37;
+}

@@ -1,0 +1,45 @@
+{
+    "key": "group_5a875dab8acf3",
+    "title": "Articles Archive Fields",
+    "fields": [
+        {
+            "key": "field_5a875dc84a19b",
+            "label": "Archive Year",
+            "name": "archive_year",
+            "type": "number",
+            "instructions": "Enter the archive year",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/articles_archive_page_template.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1518820830
+}

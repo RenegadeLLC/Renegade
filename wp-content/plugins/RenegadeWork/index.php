@@ -281,7 +281,7 @@ function rw_taxonomies() {
 		//	'rewrite'      => array( 'slug' => 'department' ),
 		),
 			
-			/*array(
+			array(
 					'slug'         => 'services',
 					'single_name'  => 'Services',
 					'plural_name'  => 'Services',
@@ -295,7 +295,7 @@ function rw_taxonomies() {
 			'plural_name'  => 'Service Types',
 			'post_type'    => 'projects',
 			//'hierarchical' => true,
-		),*/
+		),
 			
 	/*	array(
 					'slug'         => 'clients',

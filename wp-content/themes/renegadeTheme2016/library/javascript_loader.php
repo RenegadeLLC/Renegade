@@ -22,7 +22,11 @@ function renegade_scripts() {
 	//wp_register_script('jquery', $scriptdir . 'jquery-1.11.3.min.js');
 	wp_enqueue_script('jquery');
 	}
-		
+	
+	//AJAX SCRIPT FOR SORTING POSTS
+	wp_register_script('afp_script', $scriptdir . 'ajax-filter-post.js');
+	wp_enqueue_script('afp_script');
+	
 	wp_localize_script( 'afp_script', 'afp_vars', array(
 		'afp_nonce' => wp_create_nonce( 'afp_nonce' ),
 		'afp_ajax_url' => admin_url( 'admin-ajax.php' ),

@@ -1,0 +1,290 @@
+#mip-form .input_hidden {
+
+    position: absolute;
+
+    left: -99999px;
+
+}
+
+
+
+#mip-form .image-select .selected {
+
+    background-color: #f8f8f8;
+
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+
+	color: #35aa47;
+
+	text-shadow:0px 1px 0px rgba(255,255,255,.6)
+
+}
+
+
+
+#mip-form .image-select label {
+
+    display: inline-block;
+
+    cursor: pointer;
+
+	padding: 5px 10px;
+
+	border-radius: 3px;
+
+	text-align:center;
+
+	margin-right:10px;
+
+}
+
+#mip-form .image-select label:hover{
+
+	color: #35aa47;
+
+	box-shadow: 0px 1px 1px rgba(0,0,0,.2);
+
+	background:#fff;
+
+}
+
+
+
+/*style*/
+
+.mip-setting-page *{
+
+	transition: all linear 0.1s;
+
+}
+
+.mip-setting-page{
+
+	margin-top:10px;
+
+	//border:solid 1px #35aa47;
+
+	box-shadow:0px 1px 2px rgba(0,0,0,.1);
+
+	-webkit-box-shadow:0px 2px 8px rgba(0,0,0,.2);
+
+	border-radius:3px;
+
+	-webkit-border-radius: 3px;
+
+	color:#555;
+
+	overflow:hidden;
+
+}
+
+.mip-head{
+
+	background:#35aa47;
+
+	margin:0;
+
+	padding:10px;
+
+	color:#fff;
+
+	text-shadow:0px 1px 2px rgba(0,0,0,.1);
+
+	font-weight:100;
+
+}
+
+.mip-setting-content{
+
+	padding:15px;
+
+}
+
+h2.option-group{
+
+	color:#555;
+
+	font-weight:100;
+
+	font-size:16px;
+
+	line-height:20px;
+
+	margin: 5px 0 5px 5px;
+
+	padding:10px 0 5px;
+
+	border-bottom:solid 1px #eee;
+
+}
+
+.form-group{
+
+	margin:5px;
+
+	padding:10px;
+
+}
+
+.form-group:hover,.mip-setting-page tr:hover{
+
+	background: #fdfdfd;
+
+	border-right: solid 1px #35aa47;
+
+}
+
+.form-label{
+
+	float:left;
+
+	width:200px;
+
+	text-align:right;
+
+	vertical-align:middle;
+
+}
+
+.form-control{
+
+	margin-left:215px;
+
+}
+
+.mip-setting-page select, .mip-setting-page input[type="text"]{
+
+	height:30px;
+
+	min-width:150px;
+
+	line-height:30px;
+
+}
+
+.mip-setting-page select.mini, .mip-setting-page input[type="text"].mini, .mip-setting-page input[type="number"].mini{
+
+	width:55px;
+
+	min-width:55px;
+
+}
+
+.mip-setting-page input[type="number"]{
+
+	height:28px;
+
+}
+
+.mip-setting-page .button{
+	background:#35AA47;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 0 rgba(0,0,0,.1);
+	border: none;
+	color:#fff;
+	-webkit-transition: all .218s;
+	transition: all .218s;
+	cursor:pointer;
+	padding:1px 12px;
+	line-height:32px;
+	height:32px;
+	text-decoration:none;
+	display: inline-block;
+	text-shadow:none;
+}
+.mip-setting-page .button:hover{
+	background:#35AA47;
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.04);
+	box-shadow: inset 0 -2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.05);
+	text-decoration:none;
+	text-shadow:0 -1px rgba(0,0,0,0.2);
+	color:#fff;
+}
+.mip-setting-page .button#waq-generate{
+	background:#999;
+}
+.mip-setting-page .button:active{
+	-webkit-box-shadow: inset 0 2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.15);
+}
+
+input.color{
+
+	border:solid 1px #ddd;
+
+	border-radius:3px;
+
+	line-height:28px;
+
+	padding:0 0 0 5px;
+
+	margin:0;
+
+	width:50px;
+
+	height:30px
+
+}
+
+.checkbox-item{
+
+	margin: 0 12px 0 0;
+
+	display:inline-block;
+
+	min-width:150px;
+
+}
+
+/*mce button*/
+
+#content_ecs_button .mceSplitButton span.mceAction {
+
+background-image: url("../images/button.png");
+
+background-repeat: no-repeat;
+
+background-color: transparent;
+
+width: 20px;
+
+}
+
+#toplevel_page_ecs_settings a div.wp-menu-image {
+
+	background:url(../js/button.png) no-repeat center;
+
+	background-position:center center !important;
+
+}
+
+#color-blue{
+
+	color:#04b6fc !important;
+
+}
+
+#color-red{
+
+	color:#E02222 !important;
+
+}
+
+#color-green{
+
+	color:#35aa47 !important;
+
+}
+
+#color-gray{
+
+	color:#444 !important;
+
+}
+
+#toplevel_page_waq_settings a div.wp-menu-image {
+	background: url(../js/button.png) no-repeat center;
+	background-position: center center !important;
+}

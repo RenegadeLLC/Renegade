@@ -1,0 +1,625 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** STANDARD SELECTORS **/
+
+body{
+	margin:0px;
+	font-family: 'Raleway', sans-serif;
+	font-size:14px;
+	color:#fff;
+	line-height:140%;
+	overflow-x:hidden;
+	height:auto;
+}
+
+img{
+	float:left;
+}
+
+ul{
+	list-style:outside;
+	padding:0px;
+	margin-left:32px;
+}
+
+li{
+	padding:0px 0px 12px 0px;
+}
+
+li:last-child{
+	padding:0px 0px 0px 0px;
+}
+
+a{
+	color:#fff;
+}
+
+.main-contest a{
+	color:#6f070e;
+}
+/** FORM SELECTORS **/
+
+input[type="checkbox"]
+{
+	margin-right:8px;
+}
+
+input[type="text"]
+{
+	height:20px;
+	float:left;
+}
+
+label{
+	display:block;
+	float:none;
+	clear:both;
+	margin:16px 0px 4px 0px;
+}
+
+input[type="submit"]
+{
+padding:8px 16px;
+display:block;
+font-size:20px;
+}
+
+.btn, .fbgreenbutton, input[type="submit"]{
+font-family: 'Raleway', sans-serif;
+color:#fff;
+border:none;
+display:inline-block;
+-webkit-border-radius: 6px;
+border-radius: 6px;
+
+background: #a70208; /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3MDIwOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MTAyMDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(top,  #a70208 0%, #710208 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a70208), color-stop(100%,#710208)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #a70208 0%,#710208 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #a70208 0%,#710208 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #a70208 0%,#710208 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #a70208 0%,#710208 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a70208', endColorstr='#710208',GradientType=0 ); /* IE6-8 */
+}
+
+
+/** HEADER STYLES **/
+
+#header-ct{
+	display:block;
+	position:relative;
+	width:810px;
+	height:240px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_header_bk.jpg) no-repeat;
+	margin:0px;
+	overflow:hidden;
+}
+
+
+.title{
+	display:block;
+	position:relative;
+	width:435px;
+	height:96px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_headerType.png) no-repeat;
+	margin:132px 0px 0px 132px;
+}
+
+/** TOP NAVIGATION **/
+
+/** hide default nav **/
+#contest-nav{display:none;}
+
+#topNav{
+	display:block;
+	float:right;
+}
+
+#topNav ul{
+	list-style:none;
+}
+
+#topNav ul li{
+	float:left;
+	font-family:'Raleway', sans-serif;
+	font-size:16px;
+	text-transform:uppercase;
+	color:#fff;
+	padding:0px 32px 8px 0px;
+}
+
+#topNav ul li a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.active{
+	border-bottom:4px solid #fff;
+}
+
+
+/** TYPOGRAPHY **/
+
+h1, h2, h3, h4, h5 {
+	font-weight:normal;
+	padding:0px;
+}
+
+h1{
+	font-size:28px;
+	color:#fdd4d4;
+	margin:0px 0px 16px 0px;
+	line-height:36px;
+	
+}
+
+.main-contest h1{
+	color:#55060a;
+}
+
+.main-contest h2{
+	color:#8e080d;
+}
+
+h2{
+	font-size:20px;
+	font-weight:300;
+	color:#fdd4d4;
+	line-height:28px;
+	margin:32px 0px 8px 0px;
+}
+
+
+
+h3{
+	font-size:20px;
+	font-weight:300;
+	color:#fff;
+}
+
+h3:before{
+	content:url(https://social.renegade.com/esb/loveAboveAll/images/downArrow.png);
+	padding:0px 8px 0px 0px;
+}
+
+.topCopy{
+	font-size:20px;
+	line-height:32px;
+	font-weight:300;
+}
+
+.main-enter .topCopy{
+	font-size:18px;
+	line-height:24px;
+	font-weight:300;
+}
+
+.note{
+	font-size:12px;
+}
+
+.highlight{
+	color:#fdd4d4;
+	font-weight:500;
+}
+
+.section-title{
+	background:none;
+	padding-left:32px;
+}
+
+.section{
+	border:none;
+}
+
+.entry-title {
+	font-size:20px;
+	color:#fdd4d4;
+	font-weight:300;
+	border:none;
+}
+
+.section-title{
+	border:none;
+}
+
+.section-bar{
+	display:none;
+}
+
+.space{
+	display:block;
+	clear:both;
+	height:2px;
+}
+
+
+
+/** PAGE BACKGROUNDS**/
+
+.main{
+	display:block;
+	position:relative;
+	width:100%;
+	max-width:810px;
+	overflow:visible;
+	margin:0px;
+	height:auto;
+}
+
+.main-like{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_likeGate_bk.jpg) no-repeat #000;
+	height:1019px;
+}
+
+
+.main-enter{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_enter_bk.jpg) no-repeat #000;
+	height:1652px;
+}
+
+.main-confirmation{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_confirmation_bk.jpg) no-repeat #4e0306 bottom;
+	height:1342px;
+}
+
+.main-gallery{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_gallery_bk.jpg) no-repeat #4e0306 bottom;
+	height:auto;
+	min-height:1000px;
+}
+
+.main-details{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_details_bk.jpg) no-repeat #4e0306 bottom left;
+	height:1400px;
+}
+
+.main-contest{
+	background:#fff;
+	height:auto;
+}
+
+.main-over{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_contestOver_bk.jpg) no-repeat #4e0306;
+	height:1180px;
+}
+
+#content{
+	margin:16px 0px 24px 32px;
+	width:470px;
+}
+
+.main-enter #content{
+	margin:64px 0px 24px 32px;
+	width:470px;
+}
+
+/** LIKE GATE STYLES **/
+
+.likeStuff{
+	display:block;
+	float:right;
+	margin: 24px 24px 0px 0px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_likeThisPage.png) no-repeat;
+	width:353px;
+	height:51px;
+}
+.title-like{
+	display:block;
+	margin: 200px 24px 0px 0px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_likeGate_title.png) no-repeat;
+	width:532px;
+	height:117px;
+}
+
+.likeCopy{
+	font-size:24px;
+	margin-top:32px;
+	font-weight:300;
+	line-height:32px;
+}
+
+.bold{
+	font-weight:500;
+}
+
+/** ENTER PAGE STYLES **/
+
+.title-enter{
+	display:block;
+	position:relative;
+	width:520px;
+	height:121px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_enter_title.png) no-repeat;
+	margin:24px 0px;
+}
+
+#sponsorArea{
+	width:282px;
+	min-height:100px;
+	border-top:1px dotted #fff;
+	border-bottom:1px dotted #fff;
+	padding: 12px 0px 8px 112px;
+	margin:32px 0px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/redEnv_gift.png) no-repeat;
+	background-position:left;
+	overflow:hidden;
+}
+
+.logo{
+	vertical-align:middle;
+	padding:0px 0px 0px 8px;
+}
+
+.like{
+	padding:8px 0px 0px 0px;
+	float:left;
+}
+
+.icon{
+	float:left;
+	margin-left:6px;
+}
+
+
+/** ENTRY CONFIRMATION STYLES **/
+
+.shareBox{
+	width:100%;
+	padding: 16px;
+	background: #1e0203;
+	opacity:.9;
+	overflow:hidden;
+	margin:24px 0px;
+}
+
+.shareBox .btn{
+	margin-right:12px
+}
+
+.fbgreenbutton{
+	font-size:14px;
+	padding:4px 12px;
+	float:left;
+	margin-right:12px;
+}
+
+.fbgreenbutton a{
+	color:#fff;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.extra-entries{
+	display:none !important;
+}
+
+.required{
+	font-family:Raleway, sans-serif;
+	font-weight:500;
+	color:#fdd4d4;
+	font-size:larger;
+	padding-left:4px;
+}
+
+.legal{
+	font-size:12px;
+	display:block;
+	position:relative;
+	clear:both;
+	padding:16px 16px 0px 10px;
+	color:#666;
+}
+
+.legal a, .disclaimer2 a, .footer .disclaimer a{
+	color:#6f070e;
+}
+
+
+
+.overflow, .view, .footer{
+	border:none;
+}
+
+.disclaimer2 {
+	display:block;
+	position:relative;
+font-size: 10px;
+color: #aaa;
+line-height: 12px;
+padding:16px 16px 0px 10px;
+width:77%;
+}
+/** GALLERY PAGE STYLES **/
+
+.contest-media .nav .next, .contest-media .nav .prev { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; float: right; margin: 0; min-width: 40px; width: 15%; }
+.contest-media .nav .prev { float: left }
+.contest-media .nav .next i { background: url(https://social.renegade.com/esb/loveAboveAll/arrow_next.png) no-repeat 0 0; }
+.contest-media .nav .prev i { background: url(https://social.renegade.com/esb/loveAboveAll/arrow_prev.png) no-repeat 0 0; }
+.contest-media .nav .next:hover i { background-image: url(https://social.renegade.com/esb/loveAboveAll/arrow_next_over.png); }
+.contest-media .nav .prev:hover i { background-image: url(https://social.renegade.com/esb/loveAboveAll/arrow_prev_over.png); }
+.contest-media .nav .next i { background-position: 0 0; }
+.contest-media .nav .prev i { background-position: 0 0; }
+
+
+#sponsor, .bar-item, .poweredby, .profile, .footer .poweredby{
+	display:none !important;
+}
+
+.section{
+	background:none;
+}
+
+.item-list .item:last-child, table.item-list tr:last-child td{
+	background:none;
+	border:none;
+}
+
+.gallery{
+	background:none;
+	position:absolute;
+	top:280px;
+	left:32px;
+	text-align:left;
+}
+
+.gallery .gallery-element .element-content { 
+box-sizing: border-box; 
+-moz-box-sizing: border-box; -
+webkit-box-sizing: border-box; 
+margin: auto; 
+overflow: visible; 
+position: relative; 
+width: 100%; 
+height: 100% }
+
+.gallery .gallery-element .element-content .square-thumb { 
+width: 250px; 
+height: 250px; 
+margin: 0; 
+padding: 0; 
+}
+
+.gallery .gallery-element .element-content .square-thumb.fit { 
+width: 100%; 
+height: 100%; 
+}
+
+.gallery .gallery-element .element-info { 
+background: #000; 
+position: relative;
+box-sizing: border-box; 
+-moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+display: block; 
+padding: 7px 5px;  
+width: 100%; 
+z-index: 3; 
+}
+
+.gallery .gallery-element .video-overlay {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: 2;
+background: url(https://social.renegade.com/esb/loveAboveAll/images/playicon.png) center no-repeat;
+}
+
+.gallery .gallery-element .caption {
+	font-family:"Raleway", sans-serif;
+	text-transform:capitalize;
+background-color: transparent;
+color: #fff;
+display: block;
+line-height: 2ex;
+margin: 0;
+max-height: 6ex;
+overflow: hidden;
+padding: 0;
+text-overflow: ellipsis;
+text-shadow: 1px 1px #000;
+width: 70%;
+}
+
+.views {
+max-width: 810px;
+margin: 0 auto;
+padding: 0px;
+background: #fff;
+}
+
+.entries .entry .info .vote-url{
+	display:none;
+}
+
+.entries .entry .info .sharing {
+display: none;
+}
+
+@media all and (max-width: 480px){
+	
+	
+.main-enter{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_enter_MOBILE_bk.jpg) no-repeat #4e0306;
+	height:1754px;
+	width:100%;
+}
+
+.main-confirmation{
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_confirmation_MOBILE_bk.jpg) no-repeat #4e0306 bottom;
+	height:1724px;
+}
+
+
+.title-enter{
+	display:block;
+	position:relative;
+	width:400px;
+	height:168px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_title_MOBILE.png) no-repeat;
+	margin:0px 0px 24px 0px;
+}
+
+/** HEADER STYLES **/
+
+#header-ct{
+	display:block;
+	position:relative;
+	width:500px;
+	height:240px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_header_MOBILE_bk.jpg) no-repeat;
+	margin:0px;
+	overflow:hidden;
+}
+
+.title{
+	display:block;
+	position:relative;
+	width:312px;
+	height:102px;
+	background:url(https://social.renegade.com/esb/loveAboveAll/images/ESB_LAA_headerType_MOBILE.png) no-repeat;
+	margin:132px 0px 0px 88px;
+}
+
+	#topNav{
+	display:block;
+	float:left;
+}
+
+
+.main-enter #content{
+	margin:40px 0px 24px 32px;
+	width:90%
+}
+
+#content{
+	margin:24px 0px 24px 32px;
+	width:320px;
+}
+
+.fbgreenbutton{
+	font-size:14px;
+	padding:4px 12px;
+	float:none;
+	margin-bottom:12px;
+}
+
+.shareBox .btn{
+	margin:0px 0px 12px 0px;
+}
+
+}

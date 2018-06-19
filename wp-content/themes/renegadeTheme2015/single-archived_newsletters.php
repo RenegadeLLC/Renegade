@@ -11,14 +11,14 @@ get_header();
 
 $archived_newsletter_html = '';
 ?>
-<div style="background:#E6E7E8; display:block; overflow:hidden;">
+<div style="background:#E6E7E8;">
 <div class="wrapper">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 		<div class="newsletter-page">
-		<!-- external blog container --><div class="grid-item-w-75" style="background:#f2f2f2;">
-<div class="archived-newsletter-wrapper"><div class="newsletter-ct">
+		<!-- external blog container --><div class="grid-item-w-75" style="background:#fff;">
+<div style="max-width:900px;"><div class="newsletter-ct">
 
 <div class="newsletter-content-ct">
 <?php 

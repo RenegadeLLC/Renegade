@@ -19,6 +19,7 @@
             "max": "",
             "layout": "table",
             "button_label": "Add Utility Link",
+            "collapsed": "",
             "sub_fields": [
                 {
                     "key": "field_557f54d194ef7",
@@ -115,11 +116,10 @@
                     "default_value": "",
                     "placeholder": ""
                 }
-            ],
-            "collapsed": ""
+            ]
         },
         {
-            "key": "field_56e860da57e83",
+            "key": "field_56e87ce5a3719",
             "label": "Footer Address",
             "name": "footer_address",
             "type": "textarea",
@@ -140,7 +140,7 @@
             "disabled": 0
         },
         {
-            "key": "field_56e860f357e84",
+            "key": "field_56e87cd8f84d7",
             "label": "Footer Phone Number",
             "name": "footer_phone_number",
             "type": "text",
@@ -209,11 +209,11 @@
             "disabled": 0
         },
         {
-            "key": "field_56f43e3234363",
+            "key": "field_56f43dabd580c",
             "label": "Google Analytics Code",
             "name": "google_analytics_code",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "Paste the Google Analytics tracking code here",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -226,6 +226,27 @@
             "maxlength": "",
             "rows": "",
             "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56f43dd9d580d",
+            "label": "",
+            "name": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
             "readonly": 0,
             "disabled": 0
         }
@@ -247,5 +268,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1458847391
+    "modified": 1458847209
 }

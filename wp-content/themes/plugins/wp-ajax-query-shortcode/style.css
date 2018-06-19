@@ -1,0 +1,183 @@
+@charset "utf-8";/* CSS Document */
+.clear{
+	clear:both;
+}
+.wp-ajax-query-shortcode{
+	-webkit-transition: all 0.2s;transition: all 0.2s;
+}
+
+.wp-ajax-query-shortcode .wp-ajax-loading-images{
+	width:88px;
+	height:auto;
+	display:none;
+	margin:auto;
+	text-align:center;
+	color:#999;
+}
+
+.wp-ajax-query-shortcode .wp-ajax-loading-images.show{
+	display:block;
+}
+
+.wp-ajax-query-shortcode .wp-ajax-query-content a{
+	text-decoration:none;
+}
+
+.wp-ajax-query-shortcode .ajax-item{
+	clear:both;margin-bottom:0;padding: 15px 10px;border-bottom:solid 1px #efefef;-webkit-transition: all 0.2s;transition: all 0.2s;
+	max-width:100%;
+}
+
+.wp-ajax-query-shortcode .ajax-item:hover{
+	background:rgba(0,0,0,0.03);box-shadow:inset -1px 0px 0px #04b6fc;
+}
+
+.wp-ajax-query-shortcode .ajax-item-thumb{
+	float:left;overflow:hidden;position: relative;margin-right:10px;
+}
+
+.wp-ajax-query-shortcode .ajax-item-thumb img{
+	-webkit-transition: all 0.2s ease;transition: all 0.2s ease;border-radius:0px;border:none;max-width:100%;
+}
+
+.wp-ajax-query-shortcode .ajax-item:hover .ajax-item-thumb img{
+	-webkit-transform: scale(1.15);transform: scale(1.15);
+}
+
+.wp-ajax-query-shortcode .link-overlay {
+	position: absolute;top: 0;left: 0;bottom: 0;right: 0;background: rgba(0,0,0,0);-webkit-transition: background-color 0.3s ease;transition: background-color 0.3s ease;
+}
+
+.wp-ajax-query-shortcode .link-overlay:before {
+	display: block;width: 46px;height: 46px;position: absolute;top: 50%;left: 50%;margin: -22px 0 0 -25px;border-radius: 50%;background: #fff;text-align: center;font: 14px/46px 'FontAwesome';color: #04b6fc;-webkit-transform: scale(0.8);transform: scale(0.8);opacity: 0;-webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.wp-ajax-query-shortcode .ajax-item:hover .ajax-item-thumb .link-overlay {
+	background: rgba(20,22,23,0.4);
+}
+
+.wp-ajax-query-shortcode .ajax-item:hover .ajax-item-thumb .link-overlay:before {
+	-webkit-transform: scale(1);transform: scale(1);opacity: 1;
+}
+
+.wp-ajax-query-shortcode .ajax-item-content-wrap{
+	margin:0px;-webkit-transition: all .2s;transition: all .2s;
+}
+
+.wp-ajax-query-shortcode .ajax-item-content-wrap.no-thumb{
+	margin:0px;
+}
+
+.wp-ajax-query-shortcode .ajax-item-head{
+	display:inline;word-break: break-word;font-size:18px;line-height:140%;
+}
+
+.wp-ajax-query-shortcode .ajax-item-head a{
+	font-size:18px;line-height:140%;font-weight:300;color:#04b6fc;
+}
+
+.wp-ajax-query-shortcode .ajax-item-head a:hover{
+	opacity:0.8;
+}
+
+.wp-ajax-query-shortcode .ajax-item-meta{
+	font-size:11px;line-height:140%;font-weight:100;font-style:italic;color:#999;vertical-align:middle;margin-bottom:5px;display:inline;
+}
+
+.wp-ajax-query-shortcode .ajax-item-content, .wp-ajax-query-shortcode .ajax-item-content p{
+	font-size:14px;line-height:140%;display:inline;
+}
+
+.wp-ajax-query-shortcode .ajax-item-content p{
+	margin:0;padding:0;font-size:14px;line-height:22px;
+}
+
+.wp-ajax-query-shortcode .wp-ajax-query-button{
+	margin: 10px 0;text-align:center;
+}
+
+.wp-ajax-query-shortcode .wp-ajax-query-button a, .wp-ajax-query-shortcode .wp-ajax-query-button a:visited{
+	background:#35AA47;-webkit-border-radius: 3px;border-radius: 3px;-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);box-shadow: 0 1px 0 rgba(0,0,0,.1);border: none;color:#fff;-webkit-transition: all .218s;transition: all .218s;cursor:pointer;padding:1px 12px;line-height:240%;text-decoration:none;display: inline-block;
+}
+
+.wp-ajax-query-shortcode .wp-ajax-query-button a:hover{
+	-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.04);box-shadow: inset 0 -2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.05);text-decoration:none;text-shadow:0 -1px rgba(0,0,0,0.2);
+}
+
+.wp-ajax-query-shortcode .wp-ajax-query-button a:active{
+	-webkit-box-shadow: inset 0 2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.15);box-shadow: inset 0 2px 0 rgba(0,0,0,.27), inset 0 999px 0 rgba(0,0,0,.15);
+}
+
+.hide-button{
+	opacity:0;height:0;width:0;
+}
+
+/*MODERN*/
+.wp-ajax-query-shortcode.modern .wp-ajax-query-content{
+	text-align:center;
+}
+.wp-ajax-query-content.masonry{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:100%;
+}
+.wp-ajax-query-shortcode.modern .ajax-item{
+	width:300px;display:block;float:left;padding:0px;margin-bottom:5px;border-bottom: none;opacity: 0;-webkit-transition: opacity .8s ease-in;-moz-transition: opacity .8s ease-in;-ms-transition: opacity .8s ease-in;-o-transition: opacity .8s ease-in;transition: opacity .8s ease-in;
+	max-width:100%;
+}
+.wp-ajax-query-shortcode.modern .ajax-item.masonry-brick{
+	opacity:1;
+}
+.wp-ajax-query-shortcode.modern .ajax-item:hover{
+	background:none;box-shadow:none;
+}
+.wp-ajax-query-shortcode.modern .ajax-item .ajax-item-pad{
+	padding: 10px;
+}
+.wp-ajax-query-shortcode.modern .ajax-item .ajax-item-thumb{
+	width:100%;margin-bottom:10px;margin-right:0;
+}
+.wp-ajax-query-shortcode.modern .ajax-item .ajax-item-thumb img{
+	width:100%;max-width:100%;
+}
+.wp-ajax-query-shortcode.modern .ajax-item .ajax-item-content-wrap{
+	margin:0px;padding:10px 10px 15px;box-shadow:inset 0px -1px 0px #f5f5f5;background:#fff;
+}
+.wp-ajax-query-shortcode.modern .ajax-item:hover .ajax-item-content-wrap{
+	box-shadow:inset 0px -1px 0px #04b6fc, 0 0px 1px rgba(0,0,0,0.075), 0 1px 2px rgba(0,0,0,0.075);background: rgba(204,204,204,0.1)
+}
+.wp-ajax-query-shortcode.modern .ajax-item-head{
+	display:inline-block;margin: 5px 0;overflow:hidden;
+}
+.wp-ajax-query-shortcode.modern .ajax-item .ajax-item-content{
+	/*max-height:66px;*/
+	overflow:hidden;
+}
+
+/*custom*/
+.wp-ajax-query-shortcode.modern .ajax-item .ajax-item-content-wrap {
+	box-shadow: 0 1px 0px rgba(0,0,0,0.075);background: rgba(204,204,204,0.1);
+}
+
+/*combo*/
+.wp-ajax-query-shortcode.comboed .ajax-item{
+	width: 100% !important;
+}
+.wp-ajax-query-shortcode.comboed .ajax-item .ajax-item-thumb {
+	width: 150px !important;
+	margin-bottom: 0px;
+	margin-right: 10px;
+}
+.wp-ajax-query-shortcode.comboed .ajax-item{
+	margin-bottom:0;
+	border-bottom:solid 1px #efefef;
+}
+.wp-ajax-query-shortcode.comboed .ajax-item:hover{
+	background:rgba(0,0,0,0.03);box-shadow:inset -1px 0px 0px #04b6fc;
+}
+.wp-ajax-query-shortcode.comboed .ajax-item .ajax-item-content-wrap {
+	box-shadow: none !important;
+	background: none !important;
+	padding-top:0;
+	text-align:left;
+}

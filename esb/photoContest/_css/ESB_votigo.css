@@ -1,0 +1,457 @@
+charset "utf-8";
+/*
+Copyright (c) 2010, Votigo, Inc. All rights reserved.
+
+Author:			Votigo, Inc
+Development:	priyanka@votigo.com
+*/
+
+/*
+[struct]		page structure (wrapper, templates, etc.)
+[links]			default link treatments
+[overrides]		overrides for defaults
+[forms]			web forms
+[copy]		 	default copy treatments
+[extras]		extra effects and utility classes
+*/
+
+html {
+	color:#353c41;
+	background:#FFF;
+	/*overflow: -moz-scrollbars-vertical;*/
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+li {
+	list-style:none;
+}
+caption, th {
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+abbr {
+	border:0;
+	font-variant:normal;
+}
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+input, textarea, select {
+*font-size:100%;
+}
+legend {
+	color:#353c41;
+}
+body {
+	font:12px/1 Arial, sans-serif;
+	color:#1b1b1b;
+}
+select, input, button, textarea {
+	font:99% Arial, sans-serif;
+}
+table {
+	font-size:inherit;
+	font:100%;
+}
+pre, code, kbd, samp, tt {
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+/* [links] */
+
+/* default link styles */
+
+a,a:link {
+	color:#555555;
+	text-decoration:none;outline:none;
+}
+a:visited {
+	color:#666666;
+	text-decoration:none;outline:none;
+}
+a:focus ,a:hover {
+	color:#000000;
+	text-decoration:none;outline:none;
+}
+a:active {
+	color:#000000;
+	text-decoration:underline;outline:none;
+}
+
+/*
+Browser-specific (invalid) styles to make preformatted text wrap.
+http: //users.tkk.fi/~tkarvine/pre-wrap-css3-mozilla-opera-ie.html
+*/
+pre {
+	white-space:pre-wrap; /* css-3 */
+	white-space:-moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space:-pre-wrap; /* Opera 4-6 */
+	white-space:-o-pre-wrap; /* Opera 7 */
+}
+/* [extras] */
+
+/* utility classes */
+
+.spacer, .break { /* used for clearing floats, mostly */
+	display:block;
+	clear:both;
+	height:1px;
+	overflow:hidden;
+}
+.break {
+	height:1.231em;
+}
+.print { /* hide me completely! */
+	display:none;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.taleft {
+	 text-align:left;
+}
+.taright {
+	text-align:right;
+}
+.tacenter {
+	text-align:center;
+}
+
+
+/* [struct] */
+.profile {width:810px;	margin:0 auto;}
+.viewallentries {width:810px; margin:0 auto;}
+
+.innerwrap {background:#e6e6e6; clear:both; float:left; width:100%;}
+.innerwrap h2 {font-size:150%; padding:20px 0 10px 20px; clear:both;}
+
+/* [header] */
+#header {clear:both; float:left; width:100%; margin:10px 0 0 0;}
+#header table {width:100%; /*height:100%;*/}
+#header td {text-align:center;}
+#header td h1 {font-weight:bold; font-size:150%; padding:50px 10px; display:block;}
+#header {background:#3b5998;}
+#header td {color:#fff;}
+
+#navigation {background:url(https://platform.votigo.com/img/facebook/nav-bg-inner.png) no-repeat top center; width:100%; height:38px; overflow:hidden; position:relative; margin:10px 0 0 0;}
+#navigation ul {clear:left; float:left; list-style:none; margin:0; padding:0; position:relative; left:50%; text-align:center;}
+#navigation li {display:block; float:left; margin:9px 0 0 0; /*margin:11px 0 0 40px;*/ padding:0; position:relative; right:50%; font-weight:bold; font-size:110%; line-height:1.3;}
+#navigation li a {margin:8px 0 0 1px; padding:3px 16px;}
+#navigation li a.selected {color:#000; text-decoration:underline;}
+
+/* [header: multiple sweepstakes] */
+#nav-multiple {background:url(https://platform.votigo.com/img/facebook/nav-bg-multiple.png) no-repeat top center; width:100%; height:62px; float:left; clear:both; margin:10px 0 0 0;}
+#nav-multiple ul {float:left; margin:0 0 0 72px;}
+#nav-multiple li {float:left; margin:17px 0 0 22px; font-weight:bold; font-size:110%;}
+#nav-multiple li a {float:left; display:block; height:30px; background:url(https://platform.votigo.com/img/facebook/multiple-buttons.png) no-repeat 0 0; width:155px; text-align:center; line-height:2.3; font-size:90%; color:#4d4d4d;}
+#nav-multiple li a.selected {float:left; display:block; height:30px; background:url(https://platform.votigo.com/img/facebook/multiple-buttons.png) no-repeat 0 0; width:155px; text-align:center; line-height:2.3; font-size:90%; color:#bfbfbf;}
+
+.topLnkR, .topLnkRPreview {float:left; width:100%;}
+.topLnkR a, .topLnkRPreview a {display:block; width:60px; height:18px; float:right; text-align:left; text-indent:-9999px; margin:10px 0 0 5px;}
+.topLnkR #facebooktop, .topLnkRPreview #facebooktop {background:url(https://platform.votigo.com/img/facebook/facebook-logo.png);}
+.topLnkR #twittertop, .topLnkRPreview #twittertop {background:url(https://platform.votigo.com/img/facebook/twitter-logo.png?v=1);}
+
+a.cyo:link, a.cyo:visited {color:#888888; display:none !important; clear:both; text-align:right; font-size:120%; margin:0 0 0 0; padding:10px 0 0 0;}
+a.cyo:hover {color:#333333; display:none !important;  clear:both; text-align:right; font-size:120%; text-decoration:underline; margin:0 0 0 0; padding:10px 0 0 0;}
+
+/* [footer powered by] */
+#footer {clear:both; float:right; padding:5px 0 10px 0;}
+#footer a {color:#000;}
+#footer span {display:block; float:left; margin:0 5px 0 0; font-size:125%; padding:4px 0 0 0; line-height:1.1;}
+#footer span.logo {background:url(https://platform.votigo.com/img/facebook/votigo.png?v=3) no-repeat 0 0; width:77px; height:25px; text-align:left; text-indent:-9999px;}
+
+/* [tabs: details / form / rules] */
+#tabs {display:none;}
+.innerwrap .spacer10 {clear:both; height:10px;}
+#tabs-1 {clear:both; float:left; margin:0; padding:10px 0 0 9px; width:510px;}
+.innerwrap .grey-border {float:left; border:1px solid #c4c4c4; width:790px;}
+.innerwrap .entry-limit {color:#ff0000; text-align:center; padding:10px 0;}
+
+/* [details] */
+#tabs-1 div.button {float:left; margin:0 15px 0 15px;}
+#tabs-1 div.button span {font-weight:bold; display:block; width:199px;}
+#tabs-1 .button #button-enter {display:block; background:url(https://platform.votigo.com/img/facebook/enter-to-win.png) no-repeat 0 0; width:199px; height:38px; text-align:left; text-indent:-9999px; margin-bottom:10px; clear:both; float:left;}
+#tabs-1 .button #button-enter:hover {background-position:0 -42px;}
+#tabs-1 .button #button-view {display:block; background:url(https://platform.votigo.com/img/facebook/view-and-vote.png) no-repeat 0 0; width:199px; height:38px; text-align:left; text-indent:-9999px; clear:both; float:left;}
+#tabs-1 .button #button-view:hover {background-position:0 -42px;}
+#tabs-1 .button #button-view-ent {display:block; background:url(https://platform.votigo.com/img/facebook/view-entries.png) no-repeat 0 0; width:199px; height:38px; text-align:left; text-indent:-9999px; clear:both; float:left;}
+#tabs-1 .button #button-view-ent:hover {background-position:0 -42px;}
+
+#tabs-1 h2 {font-weight:bold; padding:20px 20px 0px 20px; font-size:120%; word-wrap:break-word; width:460px;}
+#tabs-1 p {color:#828282; font-size:100%; padding:20px; line-height:1.3;}
+#tabs-1 .rightnav {float:left; width:545px;}
+#tabs-1 .rightnav p {padding:0; margin:0; line-height:1;}
+#tabs-1 ul {float:left; width:250px; margin:0 0 0 0;}
+#tabs-1 ul.prizes {/*clear:both; margin-top:10px;*/ margin-left:5px; margin-bottom:20px; width:300px;}
+#tabs-1 ul.dates {width:240px;}
+#tabs-1 li {color:#828282; background:url(https://platform.votigo.com/img/facebook/lines.png) no-repeat bottom left; padding:5px 0 10px 0; line-height:1.2;}
+#tabs-1 ul.prizes p {width:200px;}
+#tabs-1 li span {text-transform:uppercase; font-weight:bold; display:block;}
+#tabs-1 ul.prizes li {background:none;}
+#tabs-1 ul.dates .hdr, #tabs-1 ul.prizes .hdr {background:url(https://platform.votigo.com/img/facebook/tabs-bg.png) no-repeat; height:38px; padding:0;}
+#tabs-1 ul .hdr p {color:#4f4f4f; font-weight:bold; text-transform:uppercase; padding:12px 0 0 30px;}
+#tabs-1 ul.dates p, #tabs-1 ul.prizes p {padding-left:30px; line-height:1.2; word-wrap:break-word;}
+
+/* [details: multiple contests] */
+#tabs-1 .contest-container {width:501px; height:230px; float:left; clear:both; margin:10px 0; background:url(https://platform.votigo.com/img/facebook/multiple-entry-bg.png) no-repeat center top;}
+#tabs-1 .contest-container h2 {font-size:130%; padding:20px 10px 0px 30px; }
+#tabs-1 .viral a {display:block; float:left; margin:0 5px 0 0;}
+#tabs-1 .viral .st_sharethis_custom {background: url("https://platform.votigo.com/img/facebook/sm-share.png") no-repeat scroll left top transparent;  padding:0; margin:0; width:20px; height:20px; display:block; float:left; cursor:pointer;}
+#tabs-1 .contest-container .con-content {float:left; width:460px; margin:15px 0 0 30px;}
+#tabs-1 .contest-container .con-content > span {display:block; float:left; width:190px; height:150px;}
+#tabs-1 .contest-container .con-content > p {float:left; padding:0; width:260px; height:35px;}
+#tabs-1 .contest-container .con-content p.title {float:left; padding:0 0 5px 0; width:120px; font-size:110%; font-weight:bold; color:#000; height:auto; margin:0;}
+#tabs-1 .contest-container .con-content > div {float:left; width:135px; padding:10px 0 0 0;}
+#tabs-1 .contest-container div.button {width:270px; padding:12px 0 0 0; margin:0;}
+#tabs-1 .contest-container .button #button-enter {float:left; display:block; background:url(https://platform.votigo.com/img/facebook/enter-to-win-small.png) no-repeat 0 0; width:118px; height:31px; text-align:left; text-indent:-9999px; margin:0 10px 10px 0; clear:both; float:left;}
+#tabs-1 .contest-container .button #button-enter:hover {background-position:0 -36px;}
+#tabs-1 .contest-container .button #button-view {clear:none; display:block; background:url(https://platform.votigo.com/img/facebook/view-and-vote-small.png) no-repeat 0 0; width:118px; height:31px; text-align:left; text-indent:-9999px; float:left; margin:0;}
+#tabs-1 .contest-container .button #button-view:hover {background-position:0 -36px;}
+#tabs-1 .contest-container .button #button-view-ent {clear:none; display:block; background:url(https://platform.votigo.com/img/facebook/view-entries-small.png) no-repeat 0 0; width:118px; height:31px; text-align:left; text-indent:-9999px; float:left; margin:0;}
+#tabs-1 .contest-container .button #button-view-ent:hover {background-position:0 -36px;}
+#tabs-1 .contest-nav {width:210px; float:right; padding:10px 0 0 0;}
+#tabs-1 .contest-nav a {display:block; float:left; text-decoration:underline;}
+#tabs-1 .contest-nav p {float:left; padding:0; margin:0; color:#000; font-weight:bold;}
+#tabs-1 .contest-nav span {float:left; padding:0 8px;}
+#tabs-1 span.ctndown {display:block; clear:both; color:#0000FF; font-size:120%; font-weight:bold;}
+#tabs-1 div.pagination {padding:0 10px 10px 0; margin:0; float:right;}
+#tabs-1 .pagination > p {display:block; float:left; padding:0 5px 0 5px; margin:0; color:#D4D4D4; line-height:1.3}
+#tabs-1 .pagination > p.total {color:#555555;}
+#tabs-1 .pagination > a {display:block; float:left; padding:0 5px 0 5px; margin:0; line-height:1.3}
+#tabs-1 .pagination > span {display:none;}
+
+/* [view all] */
+.viewallentries {width:810px; margin:auto;}
+.viewallentries .content {padding:0 0 0px 22px;}
+.viewallentries .content li {float:left; padding:21px 18px 21px 18px; background:#fff; margin:22px 22px 0 0; height:153px;}
+.viewallentries .content li p {padding-top:3px;}
+.viewallentries .noentries {clear:both; text-align:center; padding:50px 0; font-weight:bold;}
+.viewallentries .noentries a {color:#1B1B1B; text-decoration:underline;}
+.viewallentries h2 {float:left;}
+.viewallentries .filters {float:right; padding:25px 20px 0 0;}
+.viewallentries .filters span {display:block; float:left; margin:0 5px;}
+.viewallentries .filters span.sortby {font-weight:bold;}
+.viewallentries .filters a {display:block; float:left;}
+.viewallentries .filters p {padding:0; margin:0; float:left;}
+.viewallentries div.pagination {float:right; margin:10px 15px 0 0;}
+.viewallentries .pagination > p {display:block; float:left; padding:0 5px 0 5px; margin:0; color:#D4D4D4; line-height:1.3}
+.viewallentries .pagination > p.total {color:#555555;}
+.viewallentries .pagination > a {display:block; float:left; padding:0 5px 0 5px; margin:0; line-height:1.3}
+.viewallentries .pagination > span {display:none;}
+/*
+.viewallentries .e-title {word-wrap: break-word; width:130px; overflow: hidden; height:13px;}
+.viewallentries .e-desc {word-wrap: break-word; width:130px; overflow: hidden; height:13px; font-style:italic; opacity:0.8; filter:alpha(opacity=80);}
+.viewallentries .e-title {white-space:nowrap; overflow: hidden; text-overflow:ellipsis; width:132px;}
+.viewallentries .e-title:after {content:'...';}
+*/
+.viewallentries .e-title {word-wrap: break-word; width:130px;}
+.viewallentries .e-desc {display:none; white-space:nowrap; overflow: hidden; text-overflow:ellipsis; width:132px; font-style:italic; opacity:0.6; filter:alpha(opacity=60);}
+.viewallentries .e-desc:after {display:none; content:'...';}
+
+
+/* [show entry] */
+.showentry {width:810px; margin:auto;}
+.showentry h2 {padding:15px 0 0 0; margin:0;}
+.showentry .pagination {float:right; margin:10px 20px 0 0;}
+.showentry .content {padding:10px 0 20px 20px; clear:both; float:left;}
+.showentry .pagination {float:right; padding:0 0 0 20px}
+.showentry .pagination a {display:block; float:left; padding:0 0 0 10px;}
+.showentry .pagination p  {display:block; float:left; padding:0 0 0 10px; color:#d4d4d4;}
+.showentry .content table {width:720px; clear:both; float:left; background:#fff;}
+.showentry .entrymedia {background:#fff; text-align:center; padding:20px 0 20px 20px; width:445px;}
+.showentry .votebox {float:left; margin-left:10px; width:295px;}
+.showentry .votebox h2 {word-wrap: break-word; width:230px;}
+.showentry .votebox p {line-height:1.3; word-wrap: break-word; width:230px; }
+.showentry .votebox p.entrydesc { max-height: 300px; overflow: auto; }
+.showentry .votebox .buttons {padding:10px 0;}
+.showentry .votebox .buttons p {border:1px solid #ff0000; width:235px; clear:both; float:left; padding:10px 0; text-align:center; font-weight:bold;}
+.showentry .buttons #my_love_it_button {float:left; text-indent:-9999px; width:95px; height:38px; background:url(https://platform.votigo.com/img/facebook/but-love.png); border:0px; display:block; cursor:pointer; margin:0 0 0 0px;}
+.showentry .buttons #my_love_it_button:hover {background-position:0 -42px;}
+.showentry .buttons #my_leave_it_button {float:left; text-indent:-9999px; width:95px; height:38px; background:url(https://platform.votigo.com/img/facebook/but-leave.png); border:0px; display:block; cursor:pointer; margin:0 0 0 20px;}
+.showentry .buttons #my_leave_it_button:hover {background-position:0 -42px;}
+.showentry .sharebox {border:1px solid #e6e6e6; width:235px; clear:both; float:left; padding:10px 0; margin:10px 0 10px 0;}
+.showentry .sharebox p.title {font-size:120%; font-weight:bold; padding:0 0 10px 10px; margin:0;}
+.showentry .sharebox p {padding:10px 0 0 10px; clear:both; float:left;}
+.showentry .viral {float:left; width:200px;}
+.showentry .viral .fb {margin:0 10px 0 10px; clear:both; float:left; display:block;}
+.showentry .viral .tw {margin:0 10px 0 0;float:left; display:block;}
+.showentry .viral .st_sharethis_custom {background: url("https://platform.votigo.com/img/facebook/sm-share.png") no-repeat scroll left top transparent;  padding:0; margin:0; width:20px; height:20px; display:block; float:left; cursor:pointer;}
+.showentry .error-container {text-align:center; padding:0; clear:both; height:300px;}
+.showentry .error-container p {color:#ff0000; font-weight:bold; font-size:140%; padding:50px 0 0 0;}
+.showentry .error-container #button-enter {margin:10px 0 0 280px; display:block; background:url(https://platform.votigo.com/img/facebook/enter-to-win.png) no-repeat 0 0; width:199px; height:38px; text-align:left; text-indent:-9999px; margin-bottom:10px; clear:both; float:left;}
+.showentry .error-container #button-enter:hover {background-position:0 -42px;}
+
+
+/* [show entry: with multipe entries] */
+.showentrymultiple {width:810px; margin:auto;}
+.showentrymultiple h2 {padding:15px 0 10px 10px; margin:0; float:left; width:320px;}
+.showentrymultiple .content {padding:10px 0 20px 40px; clear:both; float:left;}
+.showentrymultiple .pagination {float:right; margin:21px 10px 0 0;}
+.showentrymultiple .pagination a {display:block; float:left; padding:0 0 0 10px;}
+.showentrymultiple .pagination p  {display:block; float:left; padding:0 0 0 10px; color:#d4d4d4;}
+.showentrymultiple .content table {width:730px; clear:both; float:left;}
+.showentrymultiple .entrymedia {text-align:center; padding:20px 0 20px 0; border-top:1px solid #d7d7d7; clear:both; width:510px;}
+.showentrymultiple .votebox {float:left; margin-left:10px;  border:1px solid red;}
+.showentrymultiple .votebox h2 {word-wrap: break-word;}
+.showentrymultiple .votebox p {line-height:1.3; word-wrap: break-word; width:230px;}
+.showentrymultiple .buttons {clear:both; float:left; width:510px; text-align:center; padding:5px 0;}
+.showentrymultiple .buttons p {border:1px solid #ff0000; width:510px; clear:both; float:left; padding:10px 0; text-align:center; font-weight:bold;}
+.showentrymultiple .buttons #my_love_it_button {float:left; text-indent:-9999px; width:95px; height:38px; background:url(https://platform.votigo.com/img/facebook/but-love.png); border:0px; display:block; cursor:pointer; margin:0 0 0 150px;}
+.showentrymultiple .buttons #my_love_it_button:hover {background-position:0 -42px;}
+.showentrymultiple .buttons #my_leave_it_button {float:left; text-indent:-9999px; width:95px; height:38px; background:url(https://platform.votigo.com/img/facebook/but-leave.png); border:0px; display:block; cursor:pointer; margin:0 0 0 20px;}
+.showentrymultiple .buttons #my_leave_it_button:hover {background-position:0 -42px;}
+.showentrymultiple .sharebox {border-top:1px solid #d7d7d7; width:510px; clear:both; float:left; padding:5px 0 0 0; margin:10px 0 10px 0;}
+.showentrymultiple .sharebox p.title {font-size:120%; font-weight:bold; padding:0 0 10px 10px; float:left;}
+.showentrymultiple .sharebox p {float:right; padding:0 10px 0 0;}
+.showentry .sharebox p {padding:10px 0 0 10px; clear:both; float:left;}
+.showentrymultiple .viral {float:left;}
+.showentrymultiple .viral .fb {margin:0 10px 0 10px; clear:both; float:left; display:block;}
+.showentrymultiple .viral .tw {margin:0 10px 0 0;float:left; display:block;}
+.showentrymultiple .viral .st_sharethis_custom {background: url("https://platform.votigo.com/img/facebook/sm-share.png") no-repeat scroll left top transparent;  padding:0; margin:0; width:20px; height:20px; display:block; float:left; cursor:pointer;}
+.showentrymultiple .moreentries {border:1x solid #000; width:200px; float:right; border:1px solid #d7d7d7; margin:45px 0 0 0;}
+.showentrymultiple .moreentries ul {float:left; padding:10px 0 5px 9px;}
+.showentrymultiple .moreentries ul > li {clear:both; float:left; width:170px; background:#fff; margin:0 0 10px 0; padding:5px; /*border:1px solid #a7a7a7;*/ font-size:90%; line-height:1.3;}
+.showentrymultiple .moreentries li > a {float:left; padding:0 0 0 0;}
+.showentrymultiple .moreentries li > p {float:left; padding:0 0 0 10px;}
+.showentrymultiple .show_sort {float:left; padding:10px 0 0 9px;}
+.showentrymultiple .moreentries a.viewall {float:right; padding:10px 10px 0 0;}
+.showentrymultiple .moreentries .pagination {float:right; padding:5px 10px 10px 0; margin:0;}
+.showentrymultiple .description-box {border:1px solid #d7d7d7; float:left; width:728px; background:#fff; margin:10px 0 0 0;}
+.showentrymultiple .description-box p {float:left; padding:10px; width:470px;}
+.showentrymultiple .description-box p.byuser {float:right; border-left:1px solid #d7d7d7; width:150px;}
+.showentrymultiple .error-container {text-align:center; padding:0; clear:both; height:300px;}
+.showentrymultiple .error-container p {color:#ff0000; font-weight:bold; font-size:140%; padding:50px 0 0 0;}
+.showentrymultiple .error-container #button-enter {margin:10px 0 0 280px; display:block; background:url(https://platform.votigo.com/img/facebook/enter-to-win.png) no-repeat 0 0; width:199px; height:38px; text-align:left; text-indent:-9999px; margin-bottom:10px; clear:both; float:left;}
+.showentrymultiple .error-container #button-enter:hover {background-position:0 -42px;}
+
+
+/* [confirmation] */
+.confirmation {width:810px; margin:auto;}
+.confirmation h2 {padding:15px 0 0 0; margin:0;}
+.confirmation .content {padding:10px 0 20px 20px; clear:both; float:left; width:700px;}
+.confirmation .content p {padding:5px 0 0 0; line-height:1.3;}
+.confirmation .sharebox {border:1px solid #ffffff; width:235px; clear:both; float:left; padding:10px 0; margin:30px 0 0 241px;}
+.confirmation .sharebox p.title {font-size:120%; font-weight:bold; padding:0 0 10px 10px; line-height:1;}
+.confirmation .sharebox p {padding:10px 0 0 10px; clear:both; float:left; line-height:1}
+.confirmation .viral .fb {margin:0 10px 0 10px; clear:both; float:left; display:block;}
+.confirmation .viral .tw {margin:0 10px 0 0;float:left; display:block;}
+.confirmation .viral .st_sharethis_custom {background: url("https://platform.votigo.com/img/facebook/sm-share.png") no-repeat scroll left top transparent;  padding:0; margin:0; width:20px; height:20px; display:block; float:left; cursor:pointer;}
+
+
+/* [add entry] */
+.addentry {width:810px; margin:auto;}
+.addentry h2 {padding:15px 0 0 0; margin:0; width:700px;}
+.addentry .content {padding:10px 0 20px 20px; float:left;}
+.addentry .content p {padding:5px 0 0 0; width:700px;}
+.addentry .form {clear:both; float:left; padding:20px 0 0 0;}
+.addentry .form div {clear:both; padding:5px 0 0 0; margin:0; float:left; width:700px;}
+.addentry .form label {display:block; line-height:1.9; font-weight:bold; float:left; width:100px; text-align:right; padding:6px 10px 0 0;}
+.addentry .form label span {color:#ff0000;}
+.addentry .form div.text {clear:none; float:left; width:500px;}
+.addentry .form div.text p.counter {width:500px;}
+.addentry .form div.text p {clear:both; width:500px;}
+.addentry .form input {padding:5px; width:380px; float:left;}
+.addentry .form textarea {width:380px; float:left; padding:5px;}
+.addentry .form span.error-span {display:block; clear:both; float:left; color:#ff0000; padding:5px 0 0 0; width:400px;}
+.addentry .form .subbut_cont {float:left; width:700px; clear:both;}
+.addentry .form .subbut_cont input {float:left; text-indent:-9999px; width:139px; height:38px; background:url(https://platform.votigo.com/img/facebook/submit.png); border:0px;  display:block; cursor:pointer; margin:10px 0 0 110px;}
+.addentry .form .subbut_cont input {background-position:0 0;}
+.addentry .form .subbut_cont input:hover {background-position:0 -42px;}
+.addentry .content .error-message {display:block; clear:both; float:left; color:#ff0000; padding:10px 0 0 0;}
+.addentry .content .reqfields {clear:both; float:left; margin:20px 0 0 110px; width:500px;}
+.addentry .content .reqfields span {color:#ff0000;}
+.addentry .content #divWait {padding:10px 0 0 110px; margin:0; clear:both; float:left; width:400px; font-weight:bold;}
+.addentry #flashMessage {color:#ff0000; padding:10px 0;}
+
+
+/* [register] */
+.registerpage {width:810px; margin:auto;}
+.registerpage h2 {padding:15px 0 0 0; margin:0; width:700px;}
+.registerpage .content {padding:10px 0 20px 60px; float:left;}
+.registerpage .content p {padding:5px 0 0 0; width:600px;}
+.registerpage .form {clear:both; float:left; padding:20px 0 0 0;}
+.registerpage .form div {padding:5px 0 0 0; margin:0; float:left; width:640px;}
+.registerpage .form label {display:block; line-height:1.9; font-weight:bold; float:left; width:100%; text-align:left; padding:6px 10px 0 0;}
+.registerpage .form label span {color:#ff0000;}
+.registerpage .form div.text {clear:none; float:left; width:300px;}
+.registerpage .form div.text p {clear:both;}
+.registerpage .form input {padding:5px; width:280px; float:left;}
+.registerpage .form textarea {width:380px; float:left; padding:5px;}
+.registerpage .form #ContestantfieldField2Month {float:left; padding:5px; height:30px;}
+.registerpage .form #ContestantfieldField2Day {float:left; padding:5px; margin-left:5px;height:30px;}
+.registerpage .form #ContestantfieldField2Year  {float:left; padding:5px; margin-left:5px;height:30px;}
+.registerpage .form #ContestantfieldField14 {float:left; padding:5px; height:30px;}
+.registerpage .form span.error-span {display:block; clear:both; float:left; color:#ff0000; padding:5px 0 0 0; width:400px;}
+.registerpage .form #newsletter_text {padding:15px 0 0 0; margin:0; float:left; clear:both; width:640px;}
+.registerpage .form .newsletter_text {padding:15px 0 0 0; margin:0; float:left; clear:both; width:640px;}
+.registerpage .form #newsletter_text input {float:left; width:16px; padding:0; margin:0; line-height:1.1; text-align:left;}
+.registerpage .form .newsletter_text input {float:left; width:16px; padding:0; margin:0; line-height:1.1; text-align:left;}
+.registerpage .form .newsletter_text label {float:left; width:auto;	padding:0 0 0 8px;	line-height:1.1; text-align:left; width:600px; font-weight:normal;}
+.registerpage .form #newsletter_text label {float:left; width:auto;	padding:0 0 0 8px;	line-height:1.1; text-align:left; width:600px; font-weight:normal;}
+.registerpage .form #newsletter_text p, .registerpage .form .newsletter_text p {/*display:none;*/}
+.registerpage .form .subbut_cont {padding:20px 0 0 0; text-align:left; margin:0; clear:both; float:left;}
+.registerpage .form .subbut_cont input {float:left; text-indent:-9999px; width:124px; height:38px; background:url(https://platform.votigo.com/img/facebook/next.png); border:0px; display:block; cursor:pointer; margin:0 0 0 0;}
+.registerpage .form .subbut_cont input {background-position:0 0;}
+.registerpage .form .subbut_cont input:hover {background-position:0 -42px;}
+.registerpage .form .error-message {color:#ff0000; font-weight:bold; padding:5px 0 0 0; clear:both; float:left;}
+.registerpage .content .reqfields {clear:both; float:left; margin:20px 0 0 0; padding:0;}
+.registerpage .content .reqfields span {color:#ff0000;}
+.registerpage .content div.disclaimer {border-top:1px solid #ccc; margin:20px 0 0 0; width:640px; padding:10px 0 0 0; line-height:1.2; font-size:8pt;}
+.registerpage #flashMessage {color:#ff0000; padding:10px 0;}
+
+/* [custom questions] */
+.registerpage .form div.text-custom {clear:both; float:left; margin:0; float:left; width:640px;}
+.registerpage .form div.text-custom p {clear:both;}
+.registerpage .form div.text-custom i {display:block; float:left; width:640px; padding:0 0 10px 0;}
+.registerpage .form div.text-custom select {float:left; padding:5px;}
+.registerpage .form div.userquestionCheckbox {clear:none; float:left; width:100%;}
+.registerpage .form div.userquestionCheckbox i {display:block; float:left; width:640px; padding:0 0 10px 0;}
+.registerpage .form div.userquestionCheckbox input {width:20px; height:20px; padding:0; margin:0; clear:both; float:left;}
+.registerpage .form div.userquestionCheckbox label {float:left; padding:0; margin:0; text-align:left; width:600px; font-weight:normal;}
+
+/* [rules] */
+.rulespage {width:810px; margin:auto;}
+.rulespage h2 {padding:15px 0 0 0; margin:0;}
+.rulespage .content {padding:10px 0 20px 20px; clear:both; float:left; width:770px; text-align:left;}
+.rulespage .content p {padding:5px 10px 5px 0; line-height:1.2}
+.rulespage .content .rules-container {padding:10px 20px 0 0; line-height:1.2}
+
+/* [getstarted] */
+.getstarted .wrapper-started {width: 520px; height: auto; margin: 0 auto;}
+.getstarted .away {color:#000000; font-family:Trebuchet MS; font-size:21px; margin:20px auto 10px auto; width:468px; font-weight:bold; text-align:center; line-height:120%;}
+.getstarted .platform-text {color: #000000; font-family: Trebuchet MS; font-size: 17px; font-weight:bold; text-align:center; width:520px;}
+.getstarted .fortune {color: #000000; font-family: Trebuchet MS; font-size: 14px; font-style:italic; margin-bottom:20px; text-align:center; width:520px; line-height:120%;}
+.getstarted .votigo-logo {color: #f98f00; font-family: Trebuchet MS; font-size: 54px; font-weight:bold; margin-bottom:10px;text-align:center; width:520px;}
+.getstarted .started {text-align:center;}
+
+/* [like gate] */
+.like-gate-image {text-align:center;}

@@ -105,8 +105,7 @@ $project_args = array(
 	'posts_per_page' => -1 ,
 	//'meta_key' => 'colorway' ,
 	'orderby' => 'menu_order',
-	'order' => 'ASC',
-	'post_status' => 'publish'
+	'order' => 'ASC'
 );
 
 	$project_loop = new WP_Query( $project_args );
@@ -170,19 +169,9 @@ $project_args = array(
 		$cl_id = '';
 		$clientid = get_the_ID();
 		$client_name = get_the_title($clientid);
-		$client_logo= get_field('clientLogo');		
+		$client_logo= get_field('clientLogo');
 		
-		if( have_rows('client_testimonial') ):
-        		while ( have_rows('client_testimonial') ) : the_row();
-            		$first_name = get_sub_field('first_name');
-            		$last_name = get_sub_field('last_name');
-            		$job_title = get_sub_field('job_title');
-            		$client_name = get_the_title;
-            		$quote_text = get_sub_field('quote_text');
-        		endwhile;
-        	endif;//end if have client testimonial
-		
-		if($client_name != 'Renegade'):
+			if($client_name != 'Renegade'):
 				$projectsHTML .= '<li class="ui-state-default" id="' . $clientid . '"><div class="client-thumb-ct"><div class="client-thumb"><img src="' . $client_logo . '" alt="' . $client_name . '">';
 				$projectsHTML .= '</div></li>';
 			endif;

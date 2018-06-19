@@ -48,7 +48,7 @@ function create_newsletter_post_type() {
 			'add_new_item' => __( 'Add New Newsletter' ),
 			'add_new' => __( 'Add New' ),
 			'show_in_menu' => true,
-			'menu_position' => 22,
+			'menu_position' => 24,
 			//'taxonomies' => array('category', 'post_tag'),
 			'show_in_admin_bar' => true,
 			'capability_type' => 'post',
@@ -56,7 +56,7 @@ function create_newsletter_post_type() {
 			'hierarchical' => false,
 			'rewrite' => true,
 			'has_archive' => true,
-			'supports' => array('editor', 'title', 'revisions', 'tags', 'categories', 'archives', 'thumbnail')
+			'supports' => array('title', 'revisions', 'tags', 'categories', 'archives')
 	);
 
 	register_post_type( 'newsletters' , $args );

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying 410 pages (file removed).
+ * The template for displaying 404 pages (not found).
  *
  * @package Renegade
  */
@@ -20,7 +20,7 @@ get_header(); ?>
 <div class="not-found">PAGE DELETED</div></div><!-- .wrapper -->
 <div style="height:160px;"></div>
 				</div><!-- .page-content -->
-			</section><!-- .error-410 -->
+			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
